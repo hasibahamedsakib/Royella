@@ -1,8 +1,14 @@
+import BookingInfo from "../../Components/BookingInfo/BookingInfo";
+import HeroSection from "../../Components/HeroSection/HeroSection";
+import Rooms from "../../Components/Rooms/Rooms";
+
 const Home1 = () => {
   return (
-    <div>
-      <h1 className="text-3xl">Home One.</h1>
-    </div>
+    <>
+      <HeroSection />
+      <BookingInfo />
+      <Rooms />
+    </>
   );
 };
 

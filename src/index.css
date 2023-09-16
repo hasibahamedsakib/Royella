@@ -1,10 +1,12 @@
+/* Google Fonts Link */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
+
+/* Tailwind  layer configure */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Google Fonts Link */
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
-
-.ContainerLg {
-  @apply;
+/* container code */
+.Container {
+  @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1330px]  px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;
 }

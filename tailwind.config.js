@@ -4,10 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        black: "#161616",
+        Black: "#161616",
         lightBlack: " #1e1e1e",
-        slateGray: "#161616",
+        slateGray: "",
         gray: "#616161",
+        lightGray: "#acacac",
         khaki: "#c19d68",
       },
       fontFamily: {
@@ -20,8 +21,9 @@ export default {
         lg: "992px",
         xl: "1200px",
         "2xl": "1400px",
+        "3xl": "1600px ",
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
