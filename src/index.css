@@ -10,3 +10,21 @@
 .Container {
   @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1330px]  px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;
 }
+
+/* primary button */
+.btn-primary {
+  @apply w-[185px] h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16 text-white uppercase;
+}
+
+/* Move animation */
+.animation-move {
+  animation: MOVE-BG 3s infinite ease alternate;
+}
+@keyframes MOVE-BG {
+  from {
+    transform: translateX(-2px);
+  }
+  to {
+    transform: translateX(540px);
+  }
+}
