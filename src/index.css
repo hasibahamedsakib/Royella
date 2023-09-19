@@ -13,7 +13,35 @@
 
 /* primary button */
 .btn-primary {
-  @apply w-[185px] h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16 text-white uppercase;
+  @apply w-[185px] h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16 text-white uppercase text-base font-medium  font-Garamond;
+}
+
+.btn-secondary {
+  @apply border border-white w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-white before:absolute before:left-0 before:top-14 text-white uppercase text-base font-medium font-Garamond;
+}
+.btn-items {
+  @apply border border-lightBlack w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-lightBlack before:absolute before:left-0 before:top-14 text-lightBlack uppercase text-base font-medium font-Garamond;
+}
+
+/* video animation */
+.video-animation {
+  animation: ripple 1.6s ease-out infinite;
+}
+
+@keyframes ripple {
+  0%,
+  35% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
 }
 
 /* Move animation */

@@ -1,3 +1,5 @@
+import { BsPlay } from "react-icons/bs";
+
 const Action = () => {
   return (
     <section className="Container mt-[-90px]">
@@ -37,12 +39,16 @@ const Action = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 h-[100%] w-full ">
+        <div className="flex-1 h-[100%] w-full relative ">
           <img
             src="/images/home-1/action-img.png"
             className="h-full w-full "
             alt=""
           />
+          <div className="w-[70px] h-[70px]  text-white absolute top-1/2 left-[45%] bg-khaki rounded-full flex items-center justify-center cursor-pointer z-[1] ">
+            <BsPlay className="w-8 h-8" />
+          </div>
+          <span className=" top-[48%] left-[43.5%] border w-[90px] h-[90px] rounded-full absolute border-white video-animation"></span>
         </div>
       </div>
     </section>

@@ -193,9 +193,7 @@ const Navbar = () => {
           <div className="">
             <Link to="/booking">
               {" "}
-              <button className="border text-white border-white w-[192px] h-[48px]">
-                Booking Online
-              </button>
+              <button className="btn-secondary">Booking Online</button>
             </Link>
           </div>
         </div>

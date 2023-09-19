@@ -1,4 +1,5 @@
 import Action from "../../Components/CallDoAction/Action";
+import Facilities from "../../Components/Facilities/Facilities";
 import HeroSection from "../../Components/HeroSection/HeroSection";
 import HotelAndFacilities from "../../Components/HotelAndFacilities/HotelAndFacilities";
 import HotelAndResort from "../../Components/HotelAndResort/HotelAndResort";
@@ -12,6 +13,7 @@ const Home1 = () => {
       <HotelAndResort />
       <HotelAndFacilities />
       <Action />
+      <Facilities />
     </>
   );
 };
