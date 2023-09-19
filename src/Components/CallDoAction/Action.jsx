@@ -45,6 +45,7 @@ const Action = () => {
             className="h-full w-full "
             alt=""
           />
+
           <div className="w-[70px] h-[70px]  text-white absolute top-1/2 left-[45%] bg-khaki rounded-full flex items-center justify-center cursor-pointer z-[1] ">
             <BsPlay className="w-8 h-8" />
           </div>
