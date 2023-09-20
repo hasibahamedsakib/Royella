@@ -4,9 +4,9 @@ import "./hotel.css";
 const HotelAndResort = () => {
   return (
     <div className="Container py-[115px] mt-[100px] ">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Slider */}
-        <div className="2xl:w-[580px]">
+        <div className="w-[50%] 2xl:w-[580px]">
           <Swiper
             centeredSlides={true}
             navigation={true}
@@ -14,7 +14,7 @@ const HotelAndResort = () => {
               clickable: true,
             }}
             modules={[Navigation, Autoplay, Pagination]}
-            className="mySwiper1"
+            className="mySwiper1 "
           >
             {/* slider 1 */}
             <SwiperSlide>
@@ -26,7 +26,7 @@ const HotelAndResort = () => {
           </Swiper>
         </div>
         {/* text */}
-        <div className="lg:ml-[110px] font-Garamond space-y-5">
+        <div className=" lg:ml-[110px] font-Garamond space-y-5">
           <h5 className="text-base text-khaki leading-[26px] font-medium">
             LUXURY HOTEL AND RESORT
           </h5>

@@ -61,7 +61,7 @@ const Rooms = () => {
             >
               <SwiperSlide>
                 {/* card one */}
-                <div className="overflow-x-hidden w-[410px] group">
+                <div className="overflow-x-hidden 3xl:w-[410px] group">
                   <div className="relative">
                     <img
                       src="/images/home-1/room-1.jpg "
@@ -133,7 +133,7 @@ const Rooms = () => {
               </SwiperSlide>
               <SwiperSlide>
                 {/* card two */}
-                <div className="overflow-x-hidden w-[410px] group">
+                <div className="overflow-x-hidden 3xl:w-[410px] group">
                   <div className="relative">
                     <img
                       src="/images/home-1/room-2.jpg "
@@ -205,7 +205,7 @@ const Rooms = () => {
               </SwiperSlide>
               <SwiperSlide>
                 {/* card three */}
-                <div className="overflow-x-hidden w-[410px] group">
+                <div className="overflow-x-hidden 3xl:w-[410px] group">
                   <div className="relative">
                     <img
                       src="/images/home-1/room-3.jpg "
@@ -277,7 +277,7 @@ const Rooms = () => {
               </SwiperSlide>
               <SwiperSlide>
                 {/* card four */}
-                <div className="overflow-x-hidden w-[410px] group">
+                <div className="overflow-x-hidden 3xl:w-[410px] group">
                   <div className="relative">
                     <img
                       src="/images/home-1/room-1.jpg "
@@ -349,7 +349,7 @@ const Rooms = () => {
               </SwiperSlide>
               <SwiperSlide>
                 {/* card five */}
-                <div className="overflow-x-hidden w-[410px] group">
+                <div className="overflow-x-hidden 3xl:w-[410px] group">
                   <div className="relative">
                     <img
                       src="/images/home-1/room-2.jpg "
@@ -421,7 +421,7 @@ const Rooms = () => {
               </SwiperSlide>
               <SwiperSlide>
                 {/* card six */}
-                <div className="overflow-x-hidden w-[410px] group">
+                <div className="overflow-x-hidden 3xl:w-[410px] group">
                   <div className="relative">
                     <img
                       src="/images/home-1/room-3.jpg "
