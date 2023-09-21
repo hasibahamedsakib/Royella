@@ -37,7 +37,10 @@
 .mySwiper .swiper-pagination {
   position: inherit;
   /* padding: 70px 0; */
+  padding-bottom: 10px;
+  bottom: var(--swiper-pagination-bottom, -15px) !important;
 }
+
 .swiper-pagination-bullet-active {
   color: #c19d68;
 }

@@ -37,7 +37,7 @@ const Rooms = () => {
             <img
               src="/images/home-1/section-shape1.png"
               alt="room_section_logo"
-              className="w-[50px] h-[50px] mx-auto before:w-[100px] after:w-[100px] relative before:absolute after:absolute before:h-[20px] after:h-[20px] before:bg-lightBlack after:bg-lightBlack before:left-10 after:right-10 before:top-0 after:bottom-0"
+              className="w-[50px] h-[50px] mx-auto"
             />
             <h1 className="text-[38px] leading-[52px] text-lightBlack mt-[30px] mb-[24px] font-Garamond font-semibold uppercase">
               Royella’s Rooms & Suites

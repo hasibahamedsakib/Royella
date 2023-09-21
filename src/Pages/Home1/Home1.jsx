@@ -5,6 +5,7 @@ import HotelAndFacilities from "../../Components/HotelAndFacilities/HotelAndFaci
 import HotelAndResort from "../../Components/HotelAndResort/HotelAndResort";
 import Offers from "../../Components/Offers/Offers";
 import Rooms from "../../Components/Rooms/Rooms";
+import Testimonial from "../../Components/Testimonial/Testimonial";
 
 const Home1 = () => {
   return (
@@ -16,6 +17,7 @@ const Home1 = () => {
       <Action />
       <Facilities />
       <Offers />
+      <Testimonial />
     </>
   );
 };
