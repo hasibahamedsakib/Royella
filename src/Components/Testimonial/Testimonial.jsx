@@ -79,10 +79,11 @@ const Testimonial = () => {
                       <FaStar size={"16px"} />
                     </li>
                   </ul>
-                  <p className="font-Lora leading-[26px] text-lightGray font-normal text-lg mt-[30px] mb-[45px] before:absolute before:h-[30px] before:left-0 before:bottom-[-36px] before:bg-khaki before:w-[1px] relative">
-                    Proactively morph optimal infomediaries rather than accurate
-                    expertise. Intrinsicly progressive resources rather than
-                    resource-leveling
+                  <p className="font-Lora leading-[26px] text-gray font-normal text-lg mt-[30px] italic mb-[45px] before:absolute before:h-[30px] before:left-0 before:bottom-[-36px] before:bg-khaki before:w-[1px] relative">
+                    “Professionally repurpose flexible testing procedures via
+                    molla in customer service. Dynamically reconceptualize
+                    value-added the systems before manufactured products.
+                    Enthusiastically envisioneer emerging best”
                   </p>
                   <span className="w-[1px] h-[25px] bg-[#ddd]"></span>
 
@@ -136,10 +137,11 @@ const Testimonial = () => {
                       <FaStar size={"16px"} />
                     </li>
                   </ul>
-                  <p className="font-Lora leading-[26px] text-lightGray font-normal text-lg mt-[30px] mb-[45px] before:absolute before:h-[30px] before:left-0 before:bottom-[-36px] before:bg-khaki before:w-[1px] relative">
-                    Proactively morph optimal infomediaries rather than accurate
-                    expertise. Intrinsicly progressive resources rather than
-                    resource-leveling
+                  <p className="font-Lora leading-[26px] text-lightGray font-normal text-lg mt-[30px] italic mb-[45px] before:absolute before:h-[30px] before:left-0 before:bottom-[-36px] before:bg-khaki before:w-[1px] relative">
+                    “Professionally repurpose flexible testing procedures via
+                    molla in customer service. Dynamically reconceptualize
+                    value-added the systems before manufactured products.
+                    Enthusiastically envisioneer emerging best”
                   </p>
                   <span className="w-[1px] h-[25px] bg-[#ddd]"></span>
 
@@ -192,10 +194,11 @@ const Testimonial = () => {
                       <FaStar size={"16px"} />
                     </li>
                   </ul>
-                  <p className="font-Lora leading-[26px] text-lightGray font-normal text-lg mt-[30px] mb-[45px] before:absolute before:h-[30px] before:left-0 before:bottom-[-36px] before:bg-khaki before:w-[1px] relative">
-                    Proactively morph optimal infomediaries rather than accurate
-                    expertise. Intrinsicly progressive resources rather than
-                    resource-leveling
+                  <p className="font-Lora leading-[26px] text-lightGray font-normal text-lg mt-[30px] italic mb-[45px] before:absolute before:h-[30px] before:left-0 before:bottom-[-36px] before:bg-khaki before:w-[1px] relative">
+                    “Professionally repurpose flexible testing procedures via
+                    molla in customer service. Dynamically reconceptualize
+                    value-added the systems before manufactured products.
+                    Enthusiastically envisioneer emerging best”
                   </p>
                   <span className="w-[1px] h-[25px] bg-[#ddd]"></span>
 
@@ -249,10 +252,11 @@ const Testimonial = () => {
                       <FaStar size={"16px"} />
                     </li>
                   </ul>
-                  <p className="font-Lora leading-[26px] text-lightGray font-normal text-lg mt-[30px] mb-[45px] before:absolute before:h-[30px] before:left-0 before:bottom-[-36px] before:bg-khaki before:w-[1px] relative">
-                    Proactively morph optimal infomediaries rather than accurate
-                    expertise. Intrinsicly progressive resources rather than
-                    resource-leveling
+                  <p className="font-Lora leading-[26px] text-lightGray font-normal text-lg mt-[30px] italic mb-[45px] before:absolute before:h-[30px] before:left-0 before:bottom-[-36px] before:bg-khaki before:w-[1px] relative">
+                    “Professionally repurpose flexible testing procedures via
+                    molla in customer service. Dynamically reconceptualize
+                    value-added the systems before manufactured products.
+                    Enthusiastically envisioneer emerging best”
                   </p>
                   <span className="w-[1px] h-[25px] bg-[#ddd]"></span>
 
@@ -305,10 +309,11 @@ const Testimonial = () => {
                       <FaStar size={"16px"} />
                     </li>
                   </ul>
-                  <p className="font-Lora leading-[26px] text-lightGray font-normal text-lg mt-[30px] mb-[45px] before:absolute before:h-[30px] before:left-0 before:bottom-[-36px] before:bg-khaki before:w-[1px] relative">
-                    Proactively morph optimal infomediaries rather than accurate
-                    expertise. Intrinsicly progressive resources rather than
-                    resource-leveling
+                  <p className="font-Lora leading-[26px] text-lightGray font-normal text-lg mt-[30px] italic mb-[45px] before:absolute before:h-[30px] before:left-0 before:bottom-[-36px] before:bg-khaki before:w-[1px] relative">
+                    “Professionally repurpose flexible testing procedures via
+                    molla in customer service. Dynamically reconceptualize
+                    value-added the systems before manufactured products.
+                    Enthusiastically envisioneer emerging best”
                   </p>
                   <span className="w-[1px] h-[25px] bg-[#ddd]"></span>
 
@@ -362,10 +367,11 @@ const Testimonial = () => {
                       <FaStar size={"16px"} />
                     </li>
                   </ul>
-                  <p className="font-Lora leading-[26px] text-lightGray font-normal text-lg mt-[30px] mb-[45px] before:absolute before:h-[30px] before:left-0 before:bottom-[-36px] before:bg-khaki before:w-[1px] relative">
-                    Proactively morph optimal infomediaries rather than accurate
-                    expertise. Intrinsicly progressive resources rather than
-                    resource-leveling
+                  <p className="font-Lora leading-[26px] text-lightGray font-normal text-lg mt-[30px] italic mb-[45px] before:absolute before:h-[30px] before:left-0 before:bottom-[-36px] before:bg-khaki before:w-[1px] relative">
+                    “Professionally repurpose flexible testing procedures via
+                    molla in customer service. Dynamically reconceptualize
+                    value-added the systems before manufactured products.
+                    Enthusiastically envisioneer emerging best”
                   </p>
                   <span className="w-[1px] h-[25px] bg-[#ddd]"></span>
 
