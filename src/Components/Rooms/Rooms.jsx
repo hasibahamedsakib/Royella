@@ -33,13 +33,13 @@ const Rooms = () => {
     <section className="2xl:h-[950px] bg-white">
       <div className="bg-[#f8f6f3]  w-full h-[758px]">
         <div className="Container pt-[170px] pb-20 ">
-          <div className="bg-[url('/images/home-1/section-shape2.png')] bg-no-repeat bg-center bg-opacity-[0.07] text-center 2xl:px-[335px]  mx-auto  px-5">
+          <div className="bg-[url('/images/home-1/section-shape2.png')] bg-no-repeat bg-center bg-opacity-[0.07] text-center sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px]  mx-auto  px-5">
             <img
               src="/images/home-1/section-shape1.png"
               alt="room_section_logo"
               className="w-[50px] h-[50px] mx-auto"
             />
-            <h1 className="text-[38px] leading-[52px] text-lightBlack mt-[30px] mb-[24px] font-Garamond font-semibold uppercase">
+            <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[42px] 2xl:leading-[52px] text-lightBlack mt-[30px] mb-[24px] font-Garamond font-semibold uppercase">
               Royella’s Rooms & Suites
             </h1>
             <p className="font-Lora leading-[26px] text-gray font-normal text-base">
@@ -88,7 +88,7 @@ const Rooms = () => {
                           Luxury Room
                         </h4>
                         <Link to="#">
-                          <h2 className="text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
+                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
                             Double Suite Rooms
                           </h2>
                         </Link>
@@ -160,7 +160,7 @@ const Rooms = () => {
                           Luxury Room
                         </h4>
                         <Link to="#">
-                          <h2 className="text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
+                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
                             Double Suite Rooms
                           </h2>
                         </Link>
@@ -232,7 +232,7 @@ const Rooms = () => {
                           Luxury Room
                         </h4>
                         <Link to="#">
-                          <h2 className="text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
+                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
                             Double Suite Rooms
                           </h2>
                         </Link>
@@ -304,7 +304,7 @@ const Rooms = () => {
                           Luxury Room
                         </h4>
                         <Link to="#">
-                          <h2 className="text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
+                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
                             Double Suite Rooms
                           </h2>
                         </Link>
@@ -376,7 +376,7 @@ const Rooms = () => {
                           Luxury Room
                         </h4>
                         <Link to="#">
-                          <h2 className="text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
+                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
                             Double Suite Rooms
                           </h2>
                         </Link>
@@ -448,7 +448,7 @@ const Rooms = () => {
                           Luxury Room
                         </h4>
                         <Link to="#">
-                          <h2 className="text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
+                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
                             Double Suite Rooms
                           </h2>
                         </Link>

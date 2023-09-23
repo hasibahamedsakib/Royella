@@ -12,8 +12,8 @@ const Home1 = () => {
   return (
     <>
       <HeroSection />
-      {/* <Rooms />
-      <HotelAndResort />
+      <Rooms />
+      {/* <HotelAndResort />
       <HotelAndFacilities />
       <Action />
       <Facilities />
