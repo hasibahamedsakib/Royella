@@ -22,6 +22,9 @@
 .btn-items {
   @apply border border-lightBlack w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-lightBlack before:absolute before:left-0 before:top-14 text-lightBlack uppercase text-base font-medium font-Garamond;
 }
+.btn-subscribe {
+  @apply h-[56px] bg-khaki w-full text-white uppercase text-base font-medium  font-Garamond;
+}
 
 /* video animation */
 .video-animation {

@@ -76,7 +76,7 @@ const Offers = () => {
                   />
                 </div>
                 <div className="font-Garamond">
-                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white">
+                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white    group-hover:bg-khaki transition-all duration-300">
                     <span className="text-[22px] leading-[26px] font-Garamond ">
                       25% off
                     </span>
@@ -109,7 +109,7 @@ const Offers = () => {
                   />
                 </div>
                 <div className="font-Garamond">
-                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white">
+                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white group-hover:bg-khaki transition-all duration-300">
                     <span className="text-[22px] leading-[26px] font-Garamond ">
                       25% off
                     </span>
@@ -118,7 +118,7 @@ const Offers = () => {
                   <div className="bg-white">
                     <div className="py-[30px] text-center">
                       <Link to="#">
-                        <h2 className="text-[24px] leading-[26px] font-semibold text-lightBlack">
+                        <h2 className="text-[24px] leading-[26px] font-semibold text-lightBlack hover:underline hover:underline-offset-2">
                           Suprior Bed Room
                         </h2>
                       </Link>
@@ -139,7 +139,7 @@ const Offers = () => {
                   />
                 </div>
                 <div className="font-Garamond">
-                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white">
+                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white group-hover:bg-khaki transition-all duration-300">
                     <span className="text-[22px] leading-[26px] font-Garamond ">
                       25% off
                     </span>
@@ -148,7 +148,7 @@ const Offers = () => {
                   <div className="bg-white">
                     <div className="py-[30px] text-center">
                       <Link to="#">
-                        <h2 className="text-[24px] leading-[26px] font-semibold text-lightBlack">
+                        <h2 className="text-[24px] leading-[26px] font-semibold text-lightBlack hover:underline hover:underline-offset-2">
                           Junior Suite Room
                         </h2>
                       </Link>
@@ -169,7 +169,7 @@ const Offers = () => {
                   />
                 </div>
                 <div className="font-Garamond">
-                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white">
+                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white group-hover:bg-khaki transition-all duration-300">
                     <span className="text-[22px] leading-[26px] font-Garamond ">
                       25% off
                     </span>
@@ -178,7 +178,7 @@ const Offers = () => {
                   <div className="bg-white">
                     <div className="py-[30px] text-center">
                       <Link to="#">
-                        <h2 className="text-[24px] leading-[26px] font-semibold text-lightBlack">
+                        <h2 className="text-[24px] leading-[26px] font-semibold text-lightBlack hover:underline hover:underline-offset-2">
                           Double Suite Rooms
                         </h2>
                       </Link>
@@ -199,7 +199,7 @@ const Offers = () => {
                   />
                 </div>
                 <div className="font-Garamond">
-                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white">
+                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white group-hover:bg-khaki transition-all duration-300">
                     <span className="text-[22px] leading-[26px] font-Garamond ">
                       25% off
                     </span>
@@ -208,7 +208,7 @@ const Offers = () => {
                   <div className="bg-white">
                     <div className="py-[30px] text-center">
                       <Link to="#">
-                        <h2 className="text-[24px] leading-[26px] font-semibold text-lightBlack">
+                        <h2 className="text-[24px] leading-[26px] font-semibold text-lightBlack hover:underline hover:underline-offset-2">
                           Delux Family Rooms
                         </h2>
                       </Link>
@@ -229,7 +229,7 @@ const Offers = () => {
                   />
                 </div>
                 <div className="font-Garamond">
-                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white">
+                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white group-hover:bg-khaki transition-all duration-300">
                     <span className="text-[22px] leading-[26px] font-Garamond ">
                       25% off
                     </span>
@@ -238,7 +238,7 @@ const Offers = () => {
                   <div className="bg-white">
                     <div className="py-[30px] text-center">
                       <Link to="#">
-                        <h2 className="text-[24px] leading-[26px] font-semibold text-lightBlack">
+                        <h2 className="text-[24px] leading-[26px] font-semibold text-lightBlack hover:underline hover:underline-offset-2">
                           Double Suite Rooms
                         </h2>
                       </Link>
@@ -258,7 +258,7 @@ const Offers = () => {
                   />
                 </div>
                 <div className="font-Garamond">
-                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white">
+                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white group-hover:bg-khaki transition-all duration-300">
                     <span className="text-[22px] leading-[26px] font-Garamond ">
                       25% off
                     </span>
@@ -267,7 +267,7 @@ const Offers = () => {
                   <div className="bg-white">
                     <div className="py-[30px] text-center">
                       <Link to="#">
-                        <h2 className="text-[24px] leading-[26px] font-semibold text-lightBlack">
+                        <h2 className="text-[24px] leading-[26px] font-semibold text-lightBlack hover:underline hover:underline-offset-2">
                           Delux Family Rooms
                         </h2>
                       </Link>
@@ -288,7 +288,7 @@ const Offers = () => {
                   />
                 </div>
                 <div className="font-Garamond">
-                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white">
+                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white group-hover:bg-khaki transition-all duration-300">
                     <span className="text-[22px] leading-[26px] font-Garamond ">
                       25% off
                     </span>
@@ -297,7 +297,7 @@ const Offers = () => {
                   <div className="bg-white">
                     <div className="py-[30px] text-center">
                       <Link to="#">
-                        <h2 className="text-[24px] leading-[26px] font-semibold text-lightBlack">
+                        <h2 className="text-[24px] leading-[26px] font-semibold text-lightBlack hover:underline hover:underline-offset-2">
                           Double Suite Rooms
                         </h2>
                       </Link>
