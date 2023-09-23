@@ -10,17 +10,20 @@
 .Container {
   @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1330px]  px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;
 }
+.Container-Hero {
+  @apply w-full sm:w-[540px] md:w-[720px] xl:w-[960px] 2xl:w-[1100px]  3xl:w-[1250px]  px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;
+}
 
 /* primary button */
 .btn-primary {
-  @apply w-[185px] h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16 text-white uppercase text-base font-medium  font-Garamond;
+  @apply h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16 text-white uppercase text-base font-medium  font-Garamond;
 }
 
 .btn-secondary {
-  @apply border border-white w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-white before:absolute before:left-0 before:top-14 text-white uppercase text-base font-medium font-Garamond;
+  @apply border border-white w-[130px] md:w-[145] lg:w-[155px] xl:w-[170px] 2xl:w-[185px] 3xl:w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-white before:absolute before:left-0 before:top-14 text-white uppercase text-base font-medium font-Garamond;
 }
 .btn-items {
-  @apply border border-lightBlack w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-lightBlack before:absolute before:left-0 before:top-14 text-lightBlack uppercase text-base font-medium font-Garamond;
+  @apply border border-lightBlack  w-[130px] md:w-[145] lg:w-[155px] xl:w-[170px] 2xl:w-[185px] 3xl:w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-lightBlack before:absolute before:left-0 before:top-14 text-lightBlack uppercase text-base font-medium font-Garamond;
 }
 .btn-subscribe {
   @apply h-[56px] bg-khaki w-full text-white uppercase text-base font-medium  font-Garamond;
