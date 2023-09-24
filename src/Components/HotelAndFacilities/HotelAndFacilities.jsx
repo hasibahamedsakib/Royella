@@ -20,23 +20,23 @@ const HotelAndFacilities = () => {
   return (
     <section className="bg-lightBlack py-[115px]">
       <div className="Container">
-        <div className="bg-[url('/images/home-1/section-shape2.png')] bg-no-repeat bg-center bg-opacity-[0.07] text-center 2xl:px-[335px]  mx-auto px-5 ">
+        <div className="bg-[url('/images/home-1/section-shape2.png')] bg-no-repeat bg-center bg-opacity-[0.07] text-center mx-auto px-5 sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px]">
           <img
             src="/images/home-1/section-shape1.png"
             alt="room_section_logo"
             className="w-[50px] h-[50px] mx-auto before:w- group[50%] after:w-[50%] relative before group:absolute after:absolute before:h- group[20px] after:h-[20px] before:bg group-lightBlack after:bg-lightBlack before:left group-10 after:right-10 before:top group-0 after:bottom-0"
           />
-          <h1 className="text-[38px] leading-[52px] text-white mt-[30px] mb-[24px] font-Garamond font-semibold uppercase">
+          <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] 2xl:leading-[52px] text-white mt-[30px] mb-[24px] font-Garamond font-semibold uppercase">
             HOTEL’S FACILITIES
           </h1>
-          <p className="font-Lora leading-[26px] text-lightGray font-normal text-base">
+          <p className="font-Lora leading-[26px] text-lightGray font-normal text-sm sm:text-base">
             Proactively morph optimal infomediaries rather than accurate
             expertise. Intrinsicly progressive resources rather than
             resource-leveling
           </p>
         </div>
         {/* HOTEL’S FACILITIES content */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-4 md:gap-5 xl:gap-[26px] pt-[60px] pb-[110px]">
+        <div className="grid items-center justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-4  xl:gap-[26px] pt-[60px] pb-[110px] px-8 lg:px-12 2xl:px-0">
           <div className="h-[200px] w-[191px] pt-[37px] pb-[27px] border border-[#343434] text-center transition-all duration-500 relative z-[1] before:bg-[url('/images/home-1/feature-imgs-1.jpg')] before:absolute before:w-0 before:h-full before:left-[-222px] before:top-0 before:transition-all before:duration-500 before:bg-cover before:bg-center hover:before:w-[116%] group  after:absolute after:w-0 after:h-full after:left-0 after:top-0 after:hover:bg-[#272727] after:transition after:duration-500 after:z-[-1] after:hover:w-full">
             <div>
               <img

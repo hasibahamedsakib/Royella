@@ -22,26 +22,26 @@ const Navbar = () => {
     <nav
       className={` w-full lg:fixed font-Lora z-10  lg:px-5 lg:py-2  transition-all duration-300 ${navbarBgColor} `}
     >
-      <div className="px-10">
+      <div className="lg:px-10">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* website Logo */}
-          <div className=" w-48 lg:w-40   p-4 ">
+          <div className=" w-48 lg:w-40   lg:p-4 ">
             <Link to="/">
               <img
                 src="/images/home-1/logo-1.png"
                 className="hidden lg:block"
-                alt="Zomia_website_logo"
+                alt="website_logo"
               />
             </Link>
           </div>
           {/* small screen size */}
           <div className="px-3 w-full lg:hidden flex justify-between text-white bg-khaki p-3">
             <Link to="/">
-              <div className=" w-48 lg:w-40   p-4 ">
+              <div className=" w-28  ">
                 <Link to="/">
                   <img
                     src="/images/home-1/logo-1.png"
-                    className="hidden lg:block"
+                    className="block lg:hidden "
                     alt="Zomia_website_logo"
                   />
                 </Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
           <ul
             className={`${
               isOpen ? "block" : "hidden"
-            } text-left w-full lg:w-fit  ease-in-out lg:flex space-y-2 lg:space-y-0 lg:text-center  lg:space-x-3 space-x-0 flex flex-col lg:flex-row text-sm text-white uppercase font-normal`}
+            } text-left w-full lg:w-fit  ease-in-out lg:flex space-y-2 lg:space-y-0 lg:text-center  lg:space-x-3 space-x-0 flex flex-col lg:flex-row text-sm text-lightBlack uppercase font-normal`}
           >
             <NavLink
               className={`${({ isActive, isPending }) =>
@@ -190,7 +190,7 @@ const Navbar = () => {
           </ul>
 
           {/* large device visible button and search icon */}
-          <div className="">
+          <div className="hidden lg:block">
             <Link to="/booking">
               {" "}
               <button className="btn-secondary">Booking Online</button>

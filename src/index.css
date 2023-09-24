@@ -20,10 +20,10 @@
 }
 
 .btn-secondary {
-  @apply border border-white w-[130px] md:w-[145] lg:w-[155px] xl:w-[170px] 2xl:w-[185px] 3xl:w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-white before:absolute before:left-0 before:top-14 text-white uppercase text-base font-medium font-Garamond;
+  @apply border border-white w-[145px] lg:w-[155px] xl:w-[170px] 2xl:w-[185px] 3xl:w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-white before:absolute before:left-0 before:top-14 text-white uppercase text-base font-medium font-Garamond;
 }
 .btn-items {
-  @apply border border-lightBlack  w-[130px] md:w-[145] lg:w-[155px] xl:w-[170px] 2xl:w-[185px] 3xl:w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-lightBlack before:absolute before:left-0 before:top-14 text-lightBlack uppercase text-base font-medium font-Garamond;
+  @apply border border-lightBlack  w-[145px] lg:w-[155px] xl:w-[170px] 2xl:w-[185px] 3xl:w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-lightBlack before:absolute before:left-0 before:top-14 text-lightBlack uppercase text-base font-medium font-Garamond;
 }
 .btn-subscribe {
   @apply h-[56px] bg-khaki w-full text-white uppercase text-base font-medium  font-Garamond;
@@ -54,6 +54,9 @@
 .animation-move {
   animation: MOVE-BG 3s infinite ease alternate;
 }
+
+/* slider responsive */
+
 @keyframes MOVE-BG {
   from {
     transform: translateX(-2px);

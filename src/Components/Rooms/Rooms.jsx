@@ -30,7 +30,7 @@ const Rooms = () => {
   };
 
   return (
-    <section className="2xl:h-[950px] bg-white">
+    <section className="2xl:h-[950px] bg-white mt-[-35px] mb-10">
       <div className="bg-[#f8f6f3]  w-full h-[758px]">
         <div className="Container pt-[170px] pb-20 ">
           <div className="bg-[url('/images/home-1/section-shape2.png')] bg-no-repeat bg-center bg-opacity-[0.07] text-center sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px]  mx-auto  px-5">

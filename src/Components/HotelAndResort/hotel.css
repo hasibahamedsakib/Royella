@@ -23,3 +23,12 @@
   height: 10px !important;
   width: 10px !important;
 }
+
+/* slider responsive */
+@media (min-width: 320px) {
+  .mySwiper1 .swiper-pagination {
+    background-color: white;
+    left: 35% !important;
+    bottom: 0 !important;
+  }
+}
