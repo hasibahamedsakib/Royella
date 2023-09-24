@@ -3,8 +3,8 @@ import { BsPlay } from "react-icons/bs";
 const Action = () => {
   return (
     <section className="Container mt-[-90px] ">
-      <div className="bg-[#f8f6f3] w-full h-[576px] grid grid-cols-1 lg:grid-cols-2 items-center gap-[70px] ">
-        <div className="space-y-5 flex-1 font-Garamond px-5 sm:px-7 md:px-9 lg:pl-[70px] py-12">
+      <div className=" w-full grid grid-cols-1 lg:grid-cols-2 items-center ">
+        <div className="bg-[#f8f6f3] space-y-5 flex-1 font-Garamond px-5 sm:px-7 md:px-9 lg:pl-[70px] py-12 lg:pr-[70px]">
           <h5 className="text-base text-khaki leading-[26px] font-medium">
             MANAGER
           </h5>
