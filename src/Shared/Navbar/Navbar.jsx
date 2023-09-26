@@ -2,12 +2,17 @@ import { Link, NavLink } from "react-router-dom";
 import useScrollPosition from "./useScrollPosition";
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
-import { BiChevronDown } from "react-icons/bi";
-import { useState } from "react";
+import { BiChevronDown, BiSun } from "react-icons/bi";
+import { IoMoonSharp } from "react-icons/io5";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   // modal openar
   const [isOpen, setIsOpen] = useState(false);
+  // dark mode toggle bar
+  const [isDarkMode, setIsDarkMode] = useState(
+    localStorage.getItem("darkMode") === "true"
+  );
   // scrolling tracker
   const scrollPosition = useScrollPosition();
   // background color add and remover
@@ -17,6 +22,20 @@ const Navbar = () => {
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleClick = () => {
+    const newMode = !isDarkMode;
+    setIsDarkMode(newMode);
+    localStorage.setItem("darkMode", newMode);
+  };
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [isDarkMode]);
 
   return (
     <nav
@@ -40,30 +59,48 @@ const Navbar = () => {
               <div className=" w-28  ">
                 <Link to="/">
                   <img
-                    src="/images/home-1/logo-1.png"
+                    src="/images/home-1/brand-1.png"
                     className="block lg:hidden "
                     alt="Zomia_website_logo"
                   />
                 </Link>
               </div>
             </Link>
-            <button
-              className="lg:hidden block focus:outline-none "
-              onClick={toggleNavbar}
-            >
-              {/* modal open and close */}
-              {isOpen ? (
-                <IoMdClose className="w-6 h-6 text-white" />
-              ) : (
-                <FaBars className="w-5 h-5 text-white" />
-              )}
-            </button>
+            {/* toggle bar and dark and light mode. */}
+            <div className="flex items-center ">
+              <span onClick={handleClick} className="mr-3 cursor-pointer">
+                {isDarkMode ? (
+                  <BiSun
+                    className="text-white"
+                    title="Apply Light Mode"
+                    size={20}
+                  />
+                ) : (
+                  <IoMoonSharp
+                    size={20}
+                    className="text-white"
+                    title="Apply Dark Mode"
+                  />
+                )}
+              </span>
+              <button
+                className="lg:hidden block focus:outline-none "
+                onClick={toggleNavbar}
+              >
+                {/* modal open and close */}
+                {isOpen ? (
+                  <IoMdClose className="w-6 h-6 text-white" />
+                ) : (
+                  <FaBars className="w-5 h-5 text-white" />
+                )}
+              </button>
+            </div>
           </div>
           {/* All navLink are hear with active */}
           <ul
             className={`${
               isOpen ? "block" : "hidden"
-            } text-left w-full lg:w-fit  ease-in-out lg:flex space-y-2 lg:space-y-0 lg:text-center  lg:space-x-3 space-x-0 flex flex-col lg:flex-row text-sm text-lightBlack uppercase font-normal`}
+            } text-left w-full lg:w-fit  ease-in-out lg:flex space-y-2 lg:space-y-0 lg:text-center  lg:space-x-3 space-x-0 flex flex-col lg:flex-row text-sm text-lightBlack uppercase font-normal bg-normalBlack lg:bg-transparent py-3 lg:py-0 `}
           >
             <NavLink
               className={`${({ isActive, isPending }) =>
@@ -71,7 +108,7 @@ const Navbar = () => {
                   ? "pending"
                   : isActive
                   ? "active"
-                  : ""} lg:text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block`}
+                  : ""} text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block`}
               to="/"
             >
               Home
@@ -82,7 +119,7 @@ const Navbar = () => {
                   ? "pending"
                   : isActive
                   ? "active"
-                  : ""} lg:text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
+                  : ""} text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
               to="/about"
             >
               About
@@ -93,7 +130,7 @@ const Navbar = () => {
                   ? "pending"
                   : isActive
                   ? "active"
-                  : ""} lg:text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
+                  : ""} text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
               to="/services"
             >
               Rooms
@@ -105,7 +142,7 @@ const Navbar = () => {
                   ? "pending"
                   : isActive
                   ? "active"
-                  : ""} lg:text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300 group relative `}
+                  : ""} text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300 group relative `}
               to="#"
             >
               <span className="flex items-center">
@@ -149,7 +186,7 @@ const Navbar = () => {
                   ? "pending"
                   : isActive
                   ? "active"
-                  : ""} lg:text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300 group relative `}
+                  : ""} text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300 group relative `}
               to="#"
             >
               <span className="flex items-center">
@@ -182,7 +219,7 @@ const Navbar = () => {
                   ? "pending"
                   : isActive
                   ? "active"
-                  : ""} lg:text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
+                  : ""} text-white lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
               to="/contact"
             >
               Contact
@@ -190,7 +227,22 @@ const Navbar = () => {
           </ul>
 
           {/* large device visible button and search icon */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex items-center">
+            <span onClick={handleClick} className="mr-2 cursor-pointer">
+              {isDarkMode ? (
+                <BiSun
+                  className="text-white"
+                  title="Apply Light Mode"
+                  size={35}
+                />
+              ) : (
+                <IoMoonSharp
+                  className="text-white"
+                  title="Apply Dark Mode"
+                  size={35}
+                />
+              )}
+            </span>
             <Link to="/booking">
               {" "}
               <button className="btn-secondary">Booking Online</button>

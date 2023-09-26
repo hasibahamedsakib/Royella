@@ -18,8 +18,9 @@ const Home1 = () => {
       <Action />
       <Facilities />
       <Offers />
-      {/* <Testimonial />
-      <LatestBlog /> */}
+      <Testimonial />
+      {/* <ClientsReview /> */}
+      <LatestBlog />
     </>
   );
 };

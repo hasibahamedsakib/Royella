@@ -35,15 +35,16 @@
     left: 93%;
   }
 }
-.mySwiper3 .swiper-pagination {
-  /* position: inherit;
-  padding: 70px 0; */
-  display: none;
-}
+
 .swiper-pagination-bullet-active {
   color: #c19d68;
 }
 
+@media (min-width: 1024px) {
+  .mySwiper3 .swiper-pagination {
+    display: none;
+  }
+}
 /* Button */
 /* .hero-btn {
   border: 2px solid #c19d68;

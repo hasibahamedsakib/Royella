@@ -23,15 +23,15 @@ const Rooms = () => {
       spaceBetween: 30,
     },
 
-    993: {
+    992: {
       slidesPerView: 3,
       spaceBetween: 30,
     },
   };
 
   return (
-    <section className="2xl:h-[950px] bg-white mt-[-35px] mb-10">
-      <div className="bg-[#f8f6f3]  w-full h-[758px]">
+    <section className="2xl:h-[950px] bg-white dark:mediumBlack mt-[-35px] mb-10">
+      <div className="bg-[#f8f6f3] dark:bg-lightBlack  w-full h-[758px]">
         <div className="Container pt-[170px] pb-20 ">
           <div className="bg-[url('/images/home-1/section-shape2.png')] bg-no-repeat bg-center bg-opacity-[0.07] text-center sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px]  mx-auto  px-5">
             <img
@@ -39,10 +39,10 @@ const Rooms = () => {
               alt="room_section_logo"
               className="w-[50px] h-[50px] mx-auto"
             />
-            <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[42px] 2xl:leading-[52px] text-lightBlack mt-[30px] mb-[24px] font-Garamond font-semibold uppercase">
+            <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[42px] 2xl:leading-[52px] text-lightBlack dark:text-white mt-[30px] mb-[24px] font-Garamond font-semibold uppercase">
               Royella’s Rooms & Suites
             </h1>
-            <p className="font-Lora leading-[26px] text-gray font-normal text-base">
+            <p className="font-Lora leading-[26px] text-gray dark:text-lightGray font-normal text-base">
               Proactively morph optimal infomediaries rather than accurate
               expertise. Intrinsicly progressive resources rather than
               resource-leveling
@@ -88,11 +88,11 @@ const Rooms = () => {
                           Luxury Room
                         </h4>
                         <Link to="#">
-                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
+                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                             Double Suite Rooms
                           </h2>
                         </Link>
-                        <p className="text-sm font-normal text-gray font-Lora">
+                        <p className="text-sm font-normal text-gray  dark:text-lightGray font-Lora">
                           1500 SQ.FT/Rooms
                         </p>
                       </div>
@@ -160,11 +160,11 @@ const Rooms = () => {
                           Luxury Room
                         </h4>
                         <Link to="#">
-                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
+                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                             Double Suite Rooms
                           </h2>
                         </Link>
-                        <p className="text-sm font-normal text-gray font-Lora">
+                        <p className="text-sm font-normal text-gray  dark:text-lightGray font-Lora">
                           1500 SQ.FT/Rooms
                         </p>
                       </div>
@@ -232,11 +232,11 @@ const Rooms = () => {
                           Luxury Room
                         </h4>
                         <Link to="#">
-                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
+                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                             Double Suite Rooms
                           </h2>
                         </Link>
-                        <p className="text-sm font-normal text-gray font-Lora">
+                        <p className="text-sm font-normal text-gray  dark:text-lightGray font-Lora">
                           1500 SQ.FT/Rooms
                         </p>
                       </div>
@@ -304,11 +304,11 @@ const Rooms = () => {
                           Luxury Room
                         </h4>
                         <Link to="#">
-                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
+                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                             Double Suite Rooms
                           </h2>
                         </Link>
-                        <p className="text-sm font-normal text-gray font-Lora">
+                        <p className="text-sm font-normal text-gray dark:text-lightGray font-Lora">
                           1500 SQ.FT/Rooms
                         </p>
                       </div>
@@ -376,11 +376,11 @@ const Rooms = () => {
                           Luxury Room
                         </h4>
                         <Link to="#">
-                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
+                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                             Double Suite Rooms
                           </h2>
                         </Link>
-                        <p className="text-sm font-normal text-gray font-Lora">
+                        <p className="text-sm font-normal text-gray dark:text-lightGray  font-Lora">
                           1500 SQ.FT/Rooms
                         </p>
                       </div>
@@ -448,11 +448,11 @@ const Rooms = () => {
                           Luxury Room
                         </h4>
                         <Link to="#">
-                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack py-4">
+                          <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                             Double Suite Rooms
                           </h2>
                         </Link>
-                        <p className="text-sm font-normal text-gray font-Lora">
+                        <p className="text-sm font-normal text-gray dark:text-lightGray  font-Lora">
                           1500 SQ.FT/Rooms
                         </p>
                       </div>

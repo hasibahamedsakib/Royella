@@ -5,6 +5,8 @@ export default {
     extend: {
       colors: {
         Black: "#161616",
+        mediumBlack: "#212121",
+        normalBlack: "#272727",
         lightBlack: " #1e1e1e",
         slateGray: "",
         gray: "#616161",
