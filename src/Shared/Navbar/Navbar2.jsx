@@ -6,7 +6,7 @@ import { BiChevronDown, BiSun } from "react-icons/bi";
 import { IoMoonSharp } from "react-icons/io5";
 import { useEffect, useState } from "react";
 
-const Navbar = () => {
+const Navbar2 = () => {
   // modal openar
   const [isOpen, setIsOpen] = useState(false);
   // dark mode toggle bar
@@ -17,7 +17,7 @@ const Navbar = () => {
   const scrollPosition = useScrollPosition();
   // background color add and remover
   const navbarBgColor =
-    scrollPosition > 100 ? "lg:bg-lightBlack" : "lg:bg-transparent";
+    scrollPosition > 100 ? "lg:bg-sky-500" : "lg:bg-transparent";
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={` w-full lg:fixed font-Lora z-10  lg:px-5 lg:py-2  transition-all duration-300 ${navbarBgColor} `}
+      className={` w-full lg:fixed font-Lora z-10  lg:px-5 lg:py-2  transition-all duration-300 ${navbarBgColor} border-b border-white`}
     >
       <div className="lg:px-10">
         <div className="flex flex-col lg:flex-row items-center justify-between">
@@ -47,19 +47,19 @@ const Navbar = () => {
           <div className=" w-48 lg:w-40   lg:p-4 ">
             <Link to="/">
               <img
-                src="/images/home-1/logo-1.png"
+                src="/images/home-2/logo.png"
                 className="hidden lg:block"
                 alt="website_logo"
               />
             </Link>
           </div>
           {/* small screen size */}
-          <div className="px-3 w-full lg:hidden flex justify-between text-white bg-khaki p-3">
+          <div className="px-3 w-full lg:hidden flex justify-between text-white bg-sky-500 p-3">
             <Link to="/">
               <div className=" w-28  ">
                 <Link to="/">
                   <img
-                    src="/images/home-1/brand-1.png"
+                    src="/images/home-2/logo.png"
                     className="block lg:hidden "
                     alt="Royella_website_logo"
                   />
@@ -282,4 +282,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar2;

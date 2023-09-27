@@ -177,7 +177,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="p-3">
-          <p className="text-sm text-lightGray">Check In</p>
+          <p className="text-sm text-lightGray">Check Out</p>
           <div className="flex items-center pt-[18px] ">
             <input
               type="text"

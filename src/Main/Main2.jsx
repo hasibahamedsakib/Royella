@@ -1,9 +1,12 @@
 import { Outlet } from "react-router-dom";
+import Navbar2 from "../Shared/Navbar/Navbar2";
+import ScrollToTop from "../ScrollToTop";
 
 const Main2 = () => {
   return (
     <>
-      <h1 className="text-2xl ">Navbar</h1>
+      <ScrollToTop />
+      <Navbar2 />
       <div>
         <Outlet />
       </div>

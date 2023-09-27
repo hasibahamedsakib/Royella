@@ -18,6 +18,7 @@ export default {
         Lora: ["Lora", "serif"],
       },
       screens: {
+        xsm: "400px",
         sm: "576px",
         md: "768px",
         lg: "992px",
@@ -25,6 +26,7 @@ export default {
         "2xl": "1400px",
         "3xl": "1600px ",
       },
+      lineHeight: {},
     },
   },
   plugins: [require("flowbite/plugin")],
