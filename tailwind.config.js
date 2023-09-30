@@ -12,6 +12,7 @@ export default {
         gray: "#616161",
         lightGray: "#acacac",
         khaki: "#c19d68",
+        whiteSmoke: "#f8f6f3",
       },
       fontFamily: {
         Garamond: ["Cormorant Garamond", "serif"],
