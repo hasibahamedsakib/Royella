@@ -23,10 +23,10 @@ const Facilities = () => {
           </p>
         </div>
         {/* section content*/}
-        <div className="grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[55px] ">
+        <div className="grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-14 ">
           <div className="px-[30px]  text-center  relative z-[1] before:absolute before:w-0 before:h-full before:left-1/2 before:top-0 before:bg-white dark:before:bg-lightBlack before:z-[-1] before:transition-all before:duration-500 before:hover:w-full before:hover:left-0">
             <div className=" text-center font-Garamond group pt-[15px]">
-              <div className="mx-auto w-[55px] h-[55px] rounded-[50%] bg-white group-hover:bg-whiteSmoke dark:bg-lightBlack dark:group-hover:bg-normalBlack transition-all duration-500 relative">
+              <div className="mx-auto w-[55px] h-[55px] rounded-[50%] bg-white group-hover:bg-whiteSmoke dark:bg-lightBlack dark:group-hover:bg-normalBlack transition-all duration-300 relative">
                 <TbAirConditioning className="w-[43px] h-[45px] absolute top-[20px] right-[5px] text-lightBlack dark:text-white group-hover:text-khaki" />
               </div>
 
@@ -49,7 +49,7 @@ const Facilities = () => {
           {/* Swimming Pool */}
           <div className="px-[30px]  text-center  relative z-[1] before:absolute before:w-0 before:h-full before:left-1/2 before:top-0 before:bg-white dark:before:bg-lightBlack before:z-[-1] before:transition-all before:duration-500 before:hover:w-full before:hover:left-0">
             <div className=" text-center font-Garamond group pt-[15px]">
-              <div className="mx-auto w-[55px] h-[55px] rounded-[50%] bg-white group-hover:bg-whiteSmoke dark:bg-lightBlack dark:group-hover:bg-normalBlack transition-all duration-500 relative">
+              <div className="mx-auto w-[55px] h-[55px] rounded-[50%] bg-white group-hover:bg-whiteSmoke dark:bg-lightBlack dark:group-hover:bg-normalBlack transition-all duration-300 relative">
                 <LiaSwimmingPoolSolid className="w-[43px] h-[45px] absolute top-[20px] right-[5px] text-lightBlack dark:text-white group-hover:text-khaki" />
               </div>
 
@@ -72,7 +72,7 @@ const Facilities = () => {
           {/* Comfortable rooms */}
           <div className="px-[30px]  text-center  relative z-[1] before:absolute before:w-0 before:h-full before:left-1/2 before:top-0 before:bg-white dark:before:bg-lightBlack before:z-[-1] before:transition-all before:duration-500 before:hover:w-full before:hover:left-0">
             <div className=" text-center font-Garamond group pt-[15px]">
-              <div className="mx-auto w-[55px] h-[55px] rounded-[50%] bg-white group-hover:bg-whiteSmoke dark:bg-lightBlack dark:group-hover:bg-normalBlack transition-all duration-500 relative">
+              <div className="mx-auto w-[55px] h-[55px] rounded-[50%] bg-white group-hover:bg-whiteSmoke dark:bg-lightBlack dark:group-hover:bg-normalBlack transition-all duration-300 relative">
                 <IoBedOutline
                   alt=""
                   className="w-[43px] h-[45px] absolute top-[20px] right-[5px] text-lightBlack dark:text-white group-hover:text-khaki"
