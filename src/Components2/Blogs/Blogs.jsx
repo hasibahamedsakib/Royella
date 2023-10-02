@@ -144,7 +144,7 @@ const Blogs = () => {
       </section>
       {/* Subscribe Content */}
       <div className="dark:bg-lightBlack">
-        <section className="md:Container bg-[url('/images/home-2/subscribe-bg.jpg')] bg-no-repeat bg-center bg-cover flex flex-col md:flex-row items-center justify-center md:justify-between py-5 md:py-10 lg:py-12 xl:py-14 2xl:py-16 3xl:py-[72px] px-5 md:px-8 lg:px-10 2xl:px-20 lg:absolute lg:-bottom-[100px] left-0 right-0">
+        <section className="subContainer bg-[url('/images/home-2/subscribe-bg.jpg')] bg-no-repeat bg-center bg-cover flex flex-col md:flex-row items-center justify-center md:justify-between py-5 md:py-10 lg:py-12 xl:py-14 2xl:py-16 3xl:py-[72px] px-5 md:px-8 lg:px-10 2xl:px-20 lg:absolute lg:-bottom-[100px] left-0 right-0">
           <div className="font-Garamond text-center md:text-left ">
             <h5 className="text-base sm:text-lg font-bold leading-7 md:leading-9 lg:leading-[46px] text-white ">
               SUBSCRIBE

@@ -1,5 +1,5 @@
 import { Pagination } from "swiper/modules";
-
+import "./rooms.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,7 +13,7 @@ const Rooms = () => {
       spaceBetween: 30,
     },
 
-    620: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 30,
     },
@@ -50,7 +50,7 @@ const Rooms = () => {
               clickable: true,
             }}
             modules={[Pagination]}
-            className="mySwiper mySwiper3"
+            className="mySwiper mySwiper3 mySwiper5"
           >
             {/* Rome one */}
             <SwiperSlide>
@@ -94,7 +94,7 @@ const Rooms = () => {
             </SwiperSlide>
             {/* Rome two */}
             <SwiperSlide>
-              <div className="relative  pt-10">
+              <div className="lg:relative  pt-10 xsm:pb-12 sm:pb-16 md:pb-0">
                 <img
                   src="/images/home-2/box-shape.png"
                   alt=""
@@ -136,7 +136,7 @@ const Rooms = () => {
             </SwiperSlide>
             {/* Rome three */}
             <SwiperSlide>
-              <div className="relative  pt-10">
+              <div className="lg:relative  pt-10 xsm:pb-12 sm:pb-16 md:pb-0">
                 <img
                   src="/images/home-2/box-shape.png"
                   alt=""
@@ -176,7 +176,7 @@ const Rooms = () => {
             </SwiperSlide>
             {/* Rome four */}
             <SwiperSlide>
-              <div className="relative  pt-10">
+              <div className="lg:relative  pt-10 xsm:pb-12 sm:pb-16 md:pb-0">
                 <img
                   src="/images/home-2/box-shape.png"
                   alt=""
@@ -216,7 +216,7 @@ const Rooms = () => {
             </SwiperSlide>
             {/* Rome five */}
             <SwiperSlide>
-              <div className="relative  pt-10">
+              <div className="lg:relative  pt-10 xsm:pb-12 sm:pb-16 md:pb-0">
                 <img
                   src="/images/home-2/box-shape.png"
                   alt=""

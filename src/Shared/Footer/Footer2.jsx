@@ -23,7 +23,7 @@ const Footer2 = () => {
           </div>
           {/* contact info */}
           <div className="px-5">
-            <h4 className="text-lg leading-[46px] font-Garamond font-bold text pb-9 text-lightBlack dark:text-white">
+            <h4 className="text-lg leading-[46px] font-Garamond font-bold text pb-4 md:pb-6 lg:pb-9 text-lightBlack dark:text-white">
               CONTACT US
             </h4>
             <ul className="">
@@ -41,7 +41,7 @@ const Footer2 = () => {
           </div>
           {/* information*/}
           <div className="px-5">
-            <h4 className="text-lg leading-[46px] font-Garamond font-bold text pb-9 text-lightBlack dark:text-white">
+            <h4 className="text-lg leading-[46px] font-Garamond font-bold text pb-4 md:pb-6 lg:pb-9 text-lightBlack dark:text-white">
               INFORMATION
             </h4>
             <ul className="">
@@ -61,7 +61,7 @@ const Footer2 = () => {
           </div>
           {/* gallery*/}
           <div className="px-5">
-            <h4 className="text-lg leading-[46px] font-Garamond font-bold text pb-9 text-lightBlack dark:text-white">
+            <h4 className="text-lg leading-[46px] font-Garamond font-bold text pb-4 md:pb-6 lg:pb-9 text-lightBlack dark:text-white">
               INSTAGRAM
             </h4>
             <div className="grid grid-cols-3 gap-x-[10px] gap-y-[10px] py-[30px] content-center w-[250px]">

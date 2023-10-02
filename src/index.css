@@ -10,6 +10,9 @@
 .Container {
   @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1330px]  px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;
 }
+.subContainer {
+  @apply w-full  md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1330px]  px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;
+}
 .Container-Hero {
   @apply w-full sm:w-[540px] md:w-[720px] xl:w-[960px] 2xl:w-[1100px]  3xl:w-[1250px]  px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;
 }

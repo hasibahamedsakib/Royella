@@ -100,7 +100,7 @@ const Navbar2 = () => {
           <ul
             className={`${
               isOpen ? "block" : "hidden"
-            } text-left w-full lg:w-fit  ease-in-out lg:flex space-y-2 lg:space-y-0 lg:text-center  lg:space-x-3 space-x-0 flex flex-col lg:flex-row text-sm text-lightBlack uppercase font-normal bg-normalBlack lg:bg-transparent py-3 lg:py-0 `}
+            } text-left w-full lg:w-fit  ease-in-out lg:flex space-y-2 lg:space-y-0 lg:text-center  lg:space-x-3 space-x-0 flex flex-col lg:flex-row text-sm text-lightBlack  lg:text-white uppercase font-normal bg-whiteSmoke dark:bg-normalBlack lg:bg-transparent dark:lg:bg-transparent py-3 lg:py-0 `}
           >
             <NavLink
               className={`${({ isActive, isPending }) =>
@@ -108,7 +108,7 @@ const Navbar2 = () => {
                   ? "pending"
                   : isActive
                   ? "active"
-                  : ""} text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300 group relative`}
+                  : ""} text-lightBlack lg:text-white dark:text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300 group relative`}
               to="/"
             >
               <span className="flex items-center">
@@ -147,7 +147,7 @@ const Navbar2 = () => {
                   ? "pending"
                   : isActive
                   ? "active"
-                  : ""} text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
+                  : ""} text-lightBlack lg:text-white dark:text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
               to="/about"
             >
               About
@@ -158,7 +158,7 @@ const Navbar2 = () => {
                   ? "pending"
                   : isActive
                   ? "active"
-                  : ""} text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
+                  : ""} text-lightBlack lg:text-white dark:text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
               to="/services"
             >
               Rooms
@@ -170,7 +170,7 @@ const Navbar2 = () => {
                   ? "pending"
                   : isActive
                   ? "active"
-                  : ""} text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300 group relative `}
+                  : ""} text-lightBlack lg:text-white dark:text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300 group relative `}
               to="#"
             >
               <span className="flex items-center">
@@ -214,7 +214,7 @@ const Navbar2 = () => {
                   ? "pending"
                   : isActive
                   ? "active"
-                  : ""} text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300 group relative `}
+                  : ""} text-lightBlack lg:text-white dark:text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300 group relative `}
               to="#"
             >
               <span className="flex items-center">
@@ -247,7 +247,7 @@ const Navbar2 = () => {
                   ? "pending"
                   : isActive
                   ? "active"
-                  : ""} text-white lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
+                  : ""} text-lightBlack lg:text-white dark:text-white lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
               to="/contact"
             >
               Contact
