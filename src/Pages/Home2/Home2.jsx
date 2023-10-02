@@ -1,4 +1,5 @@
 import Agency from "../../Components2/Agency/Agency";
+import Blogs from "../../Components2/Blogs/Blogs";
 import Facilities from "../../Components2/Facilities/Facilities";
 import HeroSection from "../../Components2/HeroSection/HeroSection";
 import Places from "../../Components2/Places/Places";
@@ -14,6 +15,7 @@ const Home2 = () => {
       <Places />
       <Rooms />
       <Testimonials />
+      <Blogs />
     </>
   );
 };

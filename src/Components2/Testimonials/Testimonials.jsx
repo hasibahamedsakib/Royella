@@ -121,7 +121,7 @@ const Testimonials = () => {
 
                       <div className="ml-4 lg:ml-6">
                         <h5 className="text-lg md:text-xl lg:text-2xl leading-[46px] text-lightBlack dark:text-white font-bold font-Garamond">
-                          Al-Amin Hossain
+                          Viktoria Freeman
                         </h5>
                         <p className="text-sm sm:text-base leading-[46px] text-gray dark:text-lightGray font-medium font-Lora">
                           Trip Advisor
@@ -223,7 +223,7 @@ const Testimonials = () => {
 
                       <div className="ml-4 lg:ml-6">
                         <h5 className="text-lg md:text-xl lg:text-2xl leading-[46px] text-lightBlack dark:text-white font-bold font-Garamond">
-                          Al-Amin Hossain
+                          Viktoria Freeman
                         </h5>
                         <p className="text-sm sm:text-base leading-[46px] text-gray dark:text-lightGray font-medium font-Lora">
                           Trip Advisor
