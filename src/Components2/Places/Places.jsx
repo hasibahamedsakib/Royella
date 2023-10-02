@@ -1,4 +1,8 @@
+import { useState } from "react";
+import FsLightbox from "fslightbox-react";
+
 const Places = () => {
+  const [toggler, setToggler] = useState(false);
   return (
     <section className="py-20 2xl:py-[120px] dark:bg-lightBlack">
       <div className="Container">
@@ -14,8 +18,37 @@ const Places = () => {
           </p>
           <button className="btn-primary">MORE OUR PLACES</button>
         </div>
-        {/* section Content */}
-        <div className="mt-14"></div>
+      </div>
+      {/* section Content */}
+      <div className="mt-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          <img
+            src="/images/home-2/places-1.png"
+            onClick={() => setToggler(!toggler)}
+            alt=""
+          />
+
+          <img
+            src="/images/home-2/places-2.png"
+            onClick={() => setToggler(!toggler)}
+            alt=""
+          ></img>
+          <img
+            src="/images/home-2/places-3.png"
+            onClick={() => setToggler(!toggler)}
+            alt=""
+          ></img>
+
+          {/* FsLight-box all images. */}
+          <FsLightbox
+            toggler={toggler}
+            sources={[
+              "/images/home-2/places-1.png",
+              "/images/home-2/places-2.png",
+              "/images/home-2/places-3.png",
+            ]}
+          />
+        </div>
       </div>
     </section>
   );
