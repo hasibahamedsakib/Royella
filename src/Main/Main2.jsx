@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar2 from "../Shared/Navbar/Navbar2";
 import ScrollToTop from "../ScrollToTop";
+import Footer2 from "../Shared/Footer/Footer2";
 
 const Main2 = () => {
   return (
@@ -10,7 +11,7 @@ const Main2 = () => {
       <div>
         <Outlet />
       </div>
-      <h1 className="text-2xl text-black text-right">Footer</h1>
+      <Footer2 />
     </>
   );
 };

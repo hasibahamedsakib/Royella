@@ -19,7 +19,7 @@ const Agency = () => {
               heart.
             </p>
           </div>
-          <div className="lg:mt-14">
+          <div className="mt-8 lg:mt-14">
             <img src="/images/home-2/offer1.png" alt="" />
           </div>
         </div>
@@ -28,7 +28,7 @@ const Agency = () => {
           <div className="">
             <img src="/images/home-2/offer2.png" alt="" />
           </div>
-          <div className="lg:mt-[68px]">
+          <div className="mt-8 lg:mt-[68px]">
             <p className=" text-sm sm:text-bas font-Lora leading-[26px] text-gray dark:text-lightGray font-normal">
               A wonderful serenity has taken possession of my entire soul, like
               these royella dolor amet, consectetur adipiscing elit dos eiusmod

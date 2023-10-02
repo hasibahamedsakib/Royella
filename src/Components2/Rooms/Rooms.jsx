@@ -42,7 +42,7 @@ const Rooms = () => {
           </p>
         </div>
         {/* section content */}
-        <div className="mt-14">
+        <div className="mt-14 ">
           <Swiper
             breakpoints={breakpoints}
             spaceBetween={40}
@@ -58,7 +58,7 @@ const Rooms = () => {
                 <img
                   src="/images/home-2/box-shape.png"
                   alt=""
-                  className="sm:h-[600px] h-[550px] md:h-[580px] xl:h-[600px] 2xl:h-[655px] "
+                  className="sm:h-[520px] h-[550px] md:h-[580px] xl:h-[600px] 2xl:h-[655px] "
                 />
                 <div className=" 3xl:w-[410px] group absolute top-[10px] md:right-[-10px]">
                   <div className="relative ">
@@ -98,7 +98,7 @@ const Rooms = () => {
                 <img
                   src="/images/home-2/box-shape.png"
                   alt=""
-                  className="z-[-1]  sm:h-[600px] h-[550px] md:h-[580px] xl:h-[600px] 2xl:h-[655px] "
+                  className="z-[-1]  sm:h-[520px] h-[550px] md:h-[580px] xl:h-[600px] 2xl:h-[655px] "
                 />
                 <div className=" 3xl:w-[410px] group absolute top-[10px] md:right-[-10px]">
                   <div className="relative ">
@@ -140,7 +140,7 @@ const Rooms = () => {
                 <img
                   src="/images/home-2/box-shape.png"
                   alt=""
-                  className="z-[-1] sm:h-[600px] h-[550px] md:h-[580px] xl:h-[600px] 2xl:h-[655px] "
+                  className="z-[-1] sm:h-[520px] h-[550px] md:h-[580px] xl:h-[600px] 2xl:h-[655px] "
                 />
                 <div className=" 3xl:w-[410px] group absolute top-[10px] md:right-[-10px]">
                   <div className="relative ">
@@ -180,7 +180,7 @@ const Rooms = () => {
                 <img
                   src="/images/home-2/box-shape.png"
                   alt=""
-                  className="z-[-1] sm:h-[600px] h-[550px] md:h-[580px] xl:h-[600px] 2xl:h-[655px] "
+                  className="z-[-1] sm:h-[520px] h-[550px] md:h-[580px] xl:h-[600px] 2xl:h-[655px] "
                 />
                 <div className=" 3xl:w-[410px] group absolute top-[10px] md:right-[-10px]">
                   <div className="relative ">
@@ -220,7 +220,7 @@ const Rooms = () => {
                 <img
                   src="/images/home-2/box-shape.png"
                   alt=""
-                  className="z-[-1] sm:h-[600px] h-[550px] md:h-[580px] xl:h-[600px] 2xl:h-[655px] "
+                  className="z-[-1] sm:h-[520px] h-[550px] md:h-[580px] xl:h-[600px] 2xl:h-[655px] "
                 />
                 <div className=" 3xl:w-[410px] group absolute top-[10px] md:right-[-10px]">
                   <div className="relative ">
