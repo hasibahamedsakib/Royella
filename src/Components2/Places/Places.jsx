@@ -1,6 +1,6 @@
 import { useState } from "react";
 import FsLightbox from "fslightbox-react";
-
+import { BiLink } from "react-icons/bi";
 const Places = () => {
   const [toggler, setToggler] = useState(false);
   return (
@@ -21,23 +21,58 @@ const Places = () => {
       </div>
       {/* section Content */}
       <div className="mt-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
-          <img
-            src="/images/home-2/places-1.png"
-            onClick={() => setToggler(!toggler)}
-            alt=""
-          />
-
-          <img
-            src="/images/home-2/places-2.png"
-            onClick={() => setToggler(!toggler)}
-            alt=""
-          ></img>
-          <img
-            src="/images/home-2/places-3.png"
-            onClick={() => setToggler(!toggler)}
-            alt=""
-          ></img>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] px-5 ">
+          {/* place-1 */}
+          <div className="overflow-hidden relative group cursor-grab">
+            <span className="bg-khaki text-white text-sm font-medium font-Garamond px-[20px] py-[6px] uppercase absolute top-[29px] right-[27px]">
+              East terrace
+            </span>
+            <img
+              src="/images/home-2/places-1.png"
+              className="transition-all duration-500 hover:scale-[1.08]"
+              alt=""
+            />
+            <span
+              className="w-[55px] h-[55px] rounded-full bg-white absolute top-1/2 group-hover:top-[45%] transition-all duration-300 right-[43%] grid items-center justify-center opacity-0 group-hover:opacity-100 cursor-pointer"
+              onClick={() => setToggler(!toggler)}
+            >
+              <BiLink className="text-khaki" size={24} />
+            </span>
+          </div>
+          {/* place-2 */}
+          <div className="overflow-hidden relative group cursor-grab">
+            <span className="bg-khaki text-white text-sm font-medium font-Garamond px-[20px] py-[6px] uppercase absolute top-[29px] right-[27px]">
+              East terrace
+            </span>
+            <img
+              src="/images/home-2/places-2.png"
+              className="transition-all duration-500 hover:scale-[1.08]"
+              alt=""
+            />
+            <span
+              className="w-[55px] h-[55px] rounded-full bg-white absolute top-1/2 group-hover:top-[45%] transition-all duration-300 right-[43%] grid items-center justify-center opacity-0 group-hover:opacity-100 cursor-pointer"
+              onClick={() => setToggler(!toggler)}
+            >
+              <BiLink className="text-khaki" size={24} />
+            </span>
+          </div>
+          {/* place-3 */}
+          <div className="overflow-hidden relative group cursor-grab">
+            <span className="bg-khaki text-white text-sm font-medium font-Garamond px-[20px] py-[6px] uppercase absolute top-[29px] right-[27px]">
+              East terrace
+            </span>
+            <img
+              src="/images/home-2/places-3.png"
+              className="transition-all duration-500 hover:scale-[1.08]"
+              alt=""
+            />
+            <span
+              className="w-[55px] h-[55px] rounded-full bg-white absolute top-1/2 group-hover:top-[45%] transition-all duration-300 right-[43%] grid items-center justify-center opacity-0 group-hover:opacity-100 cursor-pointer"
+              onClick={() => setToggler(!toggler)}
+            >
+              <BiLink className="text-khaki" size={24} />
+            </span>
+          </div>
 
           {/* FsLight-box all images. */}
           <FsLightbox
