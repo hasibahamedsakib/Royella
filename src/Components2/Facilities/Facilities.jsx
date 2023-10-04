@@ -39,7 +39,7 @@ const Facilities = () => {
               </p>
               <Link
                 to="#"
-                className="group-hover:opacity-100 flex items-center justify-center text-khaki transition-all duration-300 text-sm sm:text-[15px] leading-[38px] font-Lora font-normal uppercase opacity-0 pb-10"
+                className="group-hover:opacity-100 flex items-center justify-center text-khaki transition-all duration-300 text-sm sm:text-[15px] leading-[38px] font-Lora font-normal uppercase opacity-0 pb-[20px]"
               >
                 {" "}
                 See more tour <HiOutlineArrowNarrowRight className="ml-2" />{" "}
@@ -62,7 +62,7 @@ const Facilities = () => {
               </p>
               <Link
                 to="#"
-                className="group-hover:opacity-100 flex items-center justify-center text-khaki transition-all duration-300 text-sm sm:text-[15px] leading-[38px] font-Lora font-normal uppercase opacity-0 pb-10"
+                className="group-hover:opacity-100 flex items-center justify-center text-khaki transition-all duration-300 text-sm sm:text-[15px] leading-[38px] font-Lora font-normal uppercase opacity-0 pb-[20px]"
               >
                 {" "}
                 See more tour <HiOutlineArrowNarrowRight className="ml-2" />{" "}
@@ -88,7 +88,7 @@ const Facilities = () => {
               </p>
               <Link
                 to="#"
-                className="group-hover:opacity-100 flex items-center justify-center text-khaki transition-all duration-300 text-sm sm:text-[15px] leading-[38px] font-Lora font-normal uppercase opacity-0 pb-10"
+                className="group-hover:opacity-100 flex items-center justify-center text-khaki transition-all duration-300 text-sm sm:text-[15px] leading-[38px] font-Lora font-normal uppercase opacity-0 pb-[20px]"
               >
                 {" "}
                 See more tour <HiOutlineArrowNarrowRight className="ml-2" />{" "}
