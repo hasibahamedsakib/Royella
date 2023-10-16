@@ -32,7 +32,7 @@ const Offers = () => {
               Double Room - 20%
             </h3>
             <div className="bg-white dark:bg-lightBlack px-[25px] py-10 absolute bottom-[-340px] group-hover:bottom-0 left-[18px] right-[18px] my-[18px] transition-all duration-500">
-              <h3 className="text-2xl md:text-3xl lg:text-[34px] leading-5 md:leading-8 lg:leading-[42px] text-lightBlack dark:text-white font-Garamond font-semibold">
+              <h3 className="text-2xl md:text-[26px] lg:text-[34px] leading-5 md:leading-[26px] lg:leading-[42px] text-lightBlack dark:text-white font-Garamond font-semibold">
                 Honeymoon Package
               </h3>
               <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] font-Lora font-normal text-ellipsis text-gray dark:text-lightGray mt-[19px] mb-[30px]">
@@ -64,7 +64,7 @@ const Offers = () => {
               Double Room - 20%
             </h3>
             <div className="bg-white dark:bg-lightBlack px-[25px] py-10 absolute bottom-[-340px] group-hover:bottom-0 left-[18px] right-[18px] my-[18px] transition-all duration-500">
-              <h3 className="text-2xl md:text-3xl lg:text-[34px] leading-5 md:leading-8 lg:leading-[42px] text-lightBlack dark:text-white font-Garamond font-semibold">
+              <h3 className="text-2xl md:text-[26px] lg:text-[34px] leading-5 md:leading-[26px] lg:leading-[42px] text-lightBlack dark:text-white font-Garamond font-semibold">
                 Honeymoon Package
               </h3>
               <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] font-Lora font-normal text-ellipsis text-gray dark:text-lightGray mt-[19px] mb-[30px]">
@@ -96,7 +96,7 @@ const Offers = () => {
               Double Room - 20%
             </h3>
             <div className="bg-white dark:bg-lightBlack px-[25px] py-10 absolute bottom-[-340px] group-hover:bottom-0 left-[18px] right-[18px] my-[18px] transition-all duration-500">
-              <h3 className="text-2xl md:text-3xl lg:text-[34px] leading-5 md:leading-8 lg:leading-[42px] text-lightBlack dark:text-white font-Garamond font-semibold">
+              <h3 className="text-2xl md:text-[26px] lg:text-[34px] leading-5 md:leading-[26px] lg:leading-[42px] text-lightBlack dark:text-white font-Garamond font-semibold">
                 Honeymoon Package
               </h3>
               <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] font-Lora font-normal text-ellipsis text-gray dark:text-lightGray mt-[19px] mb-[30px]">
