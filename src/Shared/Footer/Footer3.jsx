@@ -15,7 +15,7 @@ const Footer3 = () => {
         <div className="grid items-center justify-center py-20 2xl:py-[120]">
           <img src="/images/home-3/logo.png" className="mx-auto" />
           {/* footer contact */}
-          <div className="mt-10 flex items-center justify-center space-x-[68px] ">
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-x-[68px] gap-y-5">
             <div className="flex items-center group">
               <span
                 className="grid items-center justify-center w-[50px] h-[50px] border-[1px] border-gray
@@ -61,23 +61,23 @@ const Footer3 = () => {
             <ul className="flex space-x-3">
               <li className="hover:bg-khaki group transition-all duration-300 p-3 rounded-full border border-white hover:border-khaki cursor-pointer">
                 <Link to="#" className="">
-                  <FaFacebookF className="text-white group-hover:text-slateBlue-0 h-5 w-5" />
+                  <FaFacebookF className="text-white group-hover:text-slateBlue-0 w-4 h-4" />
                 </Link>
               </li>
 
               <li className="hover:bg-khaki group transition-all duration-300 p-3 rounded-full border border-white hover:border-khaki cursor-pointer">
                 <Link to="#">
-                  <FaTwitter className="text-white group-hover:text-slateBlue-0 h-5 w-5" />
+                  <FaTwitter className="text-white group-hover:text-slateBlue-0 w-4 h-4" />
                 </Link>
               </li>
               <li className="hover:bg-khaki group transition-all duration-300 p-3 rounded-full border border-white hover:border-khaki cursor-pointer">
                 <Link to="#">
-                  <BiLogoLinkedin className="text-white group-hover:text-slateBlue-0 h-5 w-5" />
+                  <BiLogoLinkedin className="text-white group-hover:text-slateBlue-0 w-4 h-4" />
                 </Link>
               </li>
               <li className="hover:bg-khaki group transition-all duration-300 p-3 rounded-full border border-white hover:border-khaki cursor-pointer">
                 <Link to="#">
-                  <FaPinterestP className="text-white group-hover:text-slateBlue-0 h-5 w-5" />
+                  <FaPinterestP className="text-white group-hover:text-slateBlue-0 w-4 h-4" />
                 </Link>
               </li>
             </ul>
