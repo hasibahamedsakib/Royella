@@ -1,7 +1,9 @@
+import HeroSection from "../../Components4/HeroSection/HeroSection";
+
 const Home4 = () => {
   return (
     <>
-      <h1 className="text3xl">Home 4</h1>
+      <HeroSection />
     </>
   );
 };

@@ -39,9 +39,9 @@ const Navbar4 = () => {
 
   return (
     <nav
-      className={` w-full lg:fixed font-Lora z-10 transition-all duration-300 bg-white dark:bg-lightBlack h-[100px]  grid items-center`}
+      className={` w-full lg:fixed font-Lora z-10 transition-all duration-300 bg-white dark:bg-lightBlack h-[100px]  grid items-center `}
     >
-      <div className="Container3">
+      <div className="Container3 ">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* website Logo */}
           <div className=" w-48 lg:w-40   lg:p-4 hidden lg:block">
