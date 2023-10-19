@@ -5,6 +5,8 @@ import Main2 from "../Main/Main2";
 import Home2 from "../Pages/Home2/Home2";
 import Main3 from "../Main/Main3";
 import Home3 from "../Pages/Home3/Home3";
+import Main4 from "../Main/Main4";
+import Home4 from "../Pages/Home4/Home4";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,7 @@ const router = createBrowserRouter([
       },
     ],
   },
+  // second homepage
   {
     path: "/home2",
     element: <Main2 />,
@@ -29,6 +32,7 @@ const router = createBrowserRouter([
       },
     ],
   },
+  // Third home router
   {
     path: "/home3",
     element: <Main3 />,
@@ -37,6 +41,18 @@ const router = createBrowserRouter([
       {
         path: "/home3",
         element: <Home3 />,
+      },
+    ],
+  },
+  // forth home router
+  {
+    path: "/home4",
+    element: <Main4 />,
+    errorElement: <h1>Error Page</h1>,
+    children: [
+      {
+        path: "/home4",
+        element: <Home4 />,
       },
     ],
   },

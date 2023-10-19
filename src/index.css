@@ -11,7 +11,7 @@
   @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1330px]  px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;
 }
 .Container3 {
-  @apply w-full  xl:w-[1140px] 2xl:w-[1330px]   md:px-3 lg:px-4 xl:px-5 mx-auto;
+  @apply w-full xl:w-[1140px] 2xl:w-[1330px]    mx-auto;
 }
 .subContainer {
   @apply w-full  md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1330px]  px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;

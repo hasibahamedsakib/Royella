@@ -1,4 +1,32 @@
-.mySwiperHome3 SwiperSlide {
-  width: 800px !important;
-  height: 500px !important;
+.navigation-wrapper {
+  position: relative;
+  top: 50%;
+}
+
+.dots {
+  display: flex;
+  margin-top: 180px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dot {
+  display: inline-block;
+  border: none;
+  width: 5px !important;
+  height: 50px;
+  background: #f8f6f3;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #c19d68;
+}
+
+@media screen {
 }

@@ -14,7 +14,7 @@ const Home3 = () => {
       <Player />
       <Offers />
       <Events />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <Newsletter />
     </>
   );

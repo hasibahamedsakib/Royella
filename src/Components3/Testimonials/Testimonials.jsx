@@ -1,16 +1,31 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "./styls.css";
-import "swiper/css/pagination";
-
 import { FaStar } from "react-icons/fa";
-// import required modules
-import { Mousewheel, Pagination } from "swiper/modules";
+
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
+import { useState } from "react";
+import "./styls.css";
 
 const Testimonials = () => {
+  // keen config code...
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+  const [sliderRef, instanceRef] = useKeenSlider({
+    loop: true,
+    slides: {
+      origin: "center",
+      perView: 1,
+      spacing: 40,
+    },
+    vertical: true,
+    initial: 0,
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+    created() {
+      setLoaded(true);
+    },
+  });
+
   return (
     <section className="py-20 2xl:py-[120px] bg-whiteSmoke dark:bg-normalBlack relative">
       <div className="Container">
@@ -49,103 +64,140 @@ const Testimonials = () => {
             know the room you are interested and let’s make it happen.
           </p>
         </div>
-        {/* section testimonials content */}
-        <div className="mt-14 relative">
-          <div className="flex flex-col md:flex-row items-center">
-            <img
-              src="/images/home-3/testi-thumb.png"
-              className="w-full h-full"
-              alt=""
-            />
 
-            <div className="md:ml-[50px] lg:ml-[60px] 2xl:ml-[77px] ">
-              <div className="">
-                <Swiper
-                  direction={"vertical"}
-                  slidesPerView={1}
-                  spaceBetween={30}
-                  mousewheel={true}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  modules={[Mousewheel, Pagination]}
-                  className="mySwiperHome3"
-                >
-                  <div className="w-full h-full">
-                    <SwiperSlide>
-                      {" "}
-                      <div className="font-Garamond">
-                        <h1 className="text-2xl md:text-3xl 2xl:text-[34px] leading-[26px] text-lightBlack dark:text-white mb-[12px]  font-semibold">
-                          What Our Guests Say
-                        </h1>
-                        <p className="font-Lora text-[15px] leading-[26px] text-khaki font-medium uppercase ">
-                          Graphic Designer
-                        </p>
-                        <p className="font-Lora text-sm sm:text-base leading-[26px] text-gray dark:text-lightGray font-normal  my-[25px] lg:mt-[38px] lg:mb-[35px]">
-                          multimedia based technologies. Dramatically e-enable
-                          superior schemas rather backward compatible human
-                          capital. Efficiently network world-class customer
-                          service and wireless alignments. Quickly exploit
-                          functionalized niche markets without e-business
-                          collaborations and idea-sharing. Completely fashion
-                          open-source manufactured products wcooperativer
-                          channels. Efficiently iterate intuitive solutions
-                          without customized materials. Seamlesslyti architect
-                          market-driven technologies and resource sucking ideas.
-                          Uniquely orchestrattop line initiatives for
-                          technically sound strategic theme areas.
-                          Synergistically synthesize orthogonal imperatives
-                          vis-a-vis value.
-                        </p>
-                        <span className="flex items-center space-x-[5px] md:space-x-2 xl:space-x-3">
-                          <FaStar className="text-khaki" size={18} />
-                          <FaStar className="text-khaki" size={18} />
-                          <FaStar className="text-khaki" size={18} />
-                          <FaStar className="text-khaki" size={18} />
-                          <FaStar className="text-khaki" size={18} />
-                        </span>
-                      </div>
-                    </SwiperSlide>
-                  </div>
-                  <div className="w-full h-full">
-                    <SwiperSlide>
-                      {" "}
-                      <div className="font-Garamond">
-                        <h1 className="text-2xl md:text-3xl 2xl:text-[34px] leading-[26px] text-lightBlack dark:text-white mb-[12px]  font-semibold">
-                          What Our Guests Say
-                        </h1>
-                        <p className="font-Lora text-[15px] leading-[26px] text-khaki font-medium uppercase ">
-                          Graphic Designer
-                        </p>
-                        <p className="font-Lora text-sm sm:text-base leading-[26px] text-gray dark:text-lightGray font-normal  my-[25px] lg:mt-[38px] lg:mb-[35px]">
-                          multimedia based technologies. Dramatically e-enable
-                          superior schemas rather backward compatible human
-                          capital. Efficiently network world-class customer
-                          service and wireless alignments. Quickly exploit
-                          functionalized niche markets without e-business
-                          collaborations and idea-sharing. Completely fashion
-                          open-source manufactured products wcooperativer
-                          channels. Efficiently iterate intuitive solutions
-                          without customized materials. Seamlesslyti architect
-                          market-driven technologies and resource sucking ideas.
-                          Uniquely orchestrattop line initiatives for
-                          technically sound strategic theme areas.
-                          Synergistically synthesize orthogonal imperatives
-                          vis-a-vis value.
-                        </p>
-                        <span className="flex items-center space-x-[5px] md:space-x-2 xl:space-x-3">
-                          <FaStar className="text-khaki" size={18} />
-                          <FaStar className="text-khaki" size={18} />
-                          <FaStar className="text-khaki" size={18} />
-                          <FaStar className="text-khaki" size={18} />
-                          <FaStar className="text-khaki" size={18} />
-                        </span>
-                      </div>
-                    </SwiperSlide>
-                  </div>
-                </Swiper>
+        {/* section testimonials content */}
+        <div className="mt-14 flex bg-white dark:bg-lightBlack">
+          {/* keen slider */}
+          <div ref={sliderRef} className="keen-slider h-[600px] xl:h-[500px]">
+            {/* slide one... */}
+            <div className="keen-slider__slide number-slide1 flex flex-col md:flex-row">
+              <img
+                src="/images/home-3/testi-thumb.png"
+                className="w-full h-1/2 lg:h-full"
+                alt=""
+              />
+              <div className="grid items-center  ">
+                <div className="px-10 md:px-[50px] lg:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] ">
+                  <h1 className="text-2xl md:text-3xl 2xl:text-[34px] leading-[26px] text-lightBlack dark:text-white mb-2 lg:mb-[12px]  font-semibold">
+                    Farjana Islam
+                  </h1>
+                  <p className="font-Lora text-[15px] leading-[26px] text-khaki font-medium uppercase ">
+                    Graphic Designer
+                  </p>
+                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-4 md:my-[20px] lg:mt-[38px] lg:mb-[35px] ">
+                    multimedia based technologies. Dramatically e-enable
+                    superior schemas rather backward compatible human capital.
+                    Efficiently network world-class customer service and
+                    wireless alignments. Quickly exploit functionalized niche
+                    markets without e-business collaborations and idea-sharing.
+                    Completely fashion open-source manufactured products
+                    wcooperativer channels. Efficiently iterate intuitive
+                    solutions without customized materials.
+                  </p>
+                  <span className="flex items-center space-x-[5px] md:space-x-2 xl:space-x-3">
+                    <FaStar className="text-khaki" size={18} />
+                    <FaStar className="text-khaki" size={18} />
+                    <FaStar className="text-khaki" size={18} />
+                    <FaStar className="text-khaki" size={18} />
+                    <FaStar className="text-khaki" size={18} />
+                  </span>
+                </div>
               </div>
             </div>
+            {/* slide two... */}
+            <div className="keen-slider__slide number-slide1 flex flex-col md:flex-row">
+              <img
+                src="/images/home-3/testi-thumb.png"
+                className="w-full h-1/2 lg:h-full"
+                alt=""
+              />
+              <div className="grid items-center  ">
+                <div className="px-10 md:px-[50px] lg:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] ">
+                  <h1 className="text-2xl md:text-3xl 2xl:text-[34px] leading-[26px] text-lightBlack dark:text-white mb-2 lg:mb-[12px]  font-semibold">
+                    Farjana Islam
+                  </h1>
+                  <p className="font-Lora text-[15px] leading-[26px] text-khaki font-medium uppercase ">
+                    Graphic Designer
+                  </p>
+                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-4 md:my-[20px] lg:mt-[38px] lg:mb-[35px] ">
+                    multimedia based technologies. Dramatically e-enable
+                    superior schemas rather backward compatible human capital.
+                    Efficiently network world-class customer service and
+                    wireless alignments. Quickly exploit functionalized niche
+                    markets without e-business collaborations and idea-sharing.
+                    Completely fashion open-source manufactured products
+                    wcooperativer channels. Efficiently iterate intuitive
+                    solutions without customized materials.
+                  </p>
+                  <span className="flex items-center space-x-[5px] md:space-x-2 xl:space-x-3">
+                    <FaStar className="text-khaki" size={18} />
+                    <FaStar className="text-khaki" size={18} />
+                    <FaStar className="text-khaki" size={18} />
+                    <FaStar className="text-khaki" size={18} />
+                    <FaStar className="text-khaki" size={18} />
+                  </span>
+                </div>
+              </div>
+            </div>
+            {/* slide three */}
+            <div className="keen-slider__slide number-slide1 flex flex-col md:flex-row">
+              <img
+                src="/images/home-3/testi-thumb.png"
+                className="w-full h-1/2 lg:h-full"
+                alt=""
+              />
+              <div className="grid items-center  ">
+                <div className="px-10 md:px-[50px] lg:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] ">
+                  <h1 className="text-2xl md:text-3xl 2xl:text-[34px] leading-[26px] text-lightBlack dark:text-white mb-2 lg:mb-[12px]  font-semibold">
+                    Farjana Islam
+                  </h1>
+                  <p className="font-Lora text-[15px] leading-[26px] text-khaki font-medium uppercase ">
+                    Graphic Designer
+                  </p>
+                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-4 md:my-[20px] lg:mt-[38px] lg:mb-[35px] ">
+                    multimedia based technologies. Dramatically e-enable
+                    superior schemas rather backward compatible human capital.
+                    Efficiently network world-class customer service and
+                    wireless alignments. Quickly exploit functionalized niche
+                    markets without e-business collaborations and idea-sharing.
+                    Completely fashion open-source manufactured products
+                    wcooperativer channels. Efficiently iterate intuitive
+                    solutions without customized materials.
+                  </p>
+                  <span className="flex items-center space-x-[5px] md:space-x-2 xl:space-x-3">
+                    <FaStar className="text-khaki" size={18} />
+                    <FaStar className="text-khaki" size={18} />
+                    <FaStar className="text-khaki" size={18} />
+                    <FaStar className="text-khaki" size={18} />
+                    <FaStar className="text-khaki" size={18} />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* navigation */}
+          <div className="pr-10  md:pr-[50px] lg:pr-[60px] 2xl:pr-[77px] pl-5  md:pl-6 lg:pl-7 2xl:pl-8 hidden md:block">
+            {loaded && instanceRef.current && (
+              <div className="dots">
+                {[
+                  ...Array(
+                    instanceRef.current.track.details.slides.length
+                  ).keys(),
+                ].map((idx) => {
+                  return (
+                    <button
+                      key={idx}
+                      onClick={() => {
+                        instanceRef.current?.moveToIdx(idx);
+                      }}
+                      className={
+                        "dot" + (currentSlide === idx ? " active" : "")
+                      }
+                    ></button>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </div>
       </div>
