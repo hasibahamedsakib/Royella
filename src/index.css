@@ -22,7 +22,7 @@
 
 /* primary button */
 .btn-primary {
-  @apply h-[56px] w-[145px] 2xl:w-[165px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16 text-white uppercase text-base font-medium  font-Garamond;
+  @apply h-[40px] lg:h-[56px] w-[145px] 2xl:w-[165px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16 text-white uppercase text-base font-medium  font-Garamond;
 }
 
 .btn-secondary {

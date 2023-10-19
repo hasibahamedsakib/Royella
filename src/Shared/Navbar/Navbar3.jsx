@@ -112,7 +112,7 @@ const Navbar3 = () => {
                   : isActive
                   ? "active"
                   : ""} text-lightBlack lg:text-white dark:text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300 group relative`}
-              to="/"
+              to="/home3"
             >
               <span className="flex items-center">
                 Home
@@ -122,14 +122,15 @@ const Navbar3 = () => {
                 <ul className="shadow-lg hidden group-hover:block rounded-sm bg-white text-black w-60 text-left transition-all duration-500 text-sm py-4 ">
                   <div className="py-2 px-5 group">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/home2">Home 2</NavLink>
+                      <NavLink to="/">Home 1</NavLink>
                     </li>
                   </div>
                   <div className="py-2 px-5 group">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/home3">Home 3</NavLink>
+                      <NavLink to="/home2">Home 2</NavLink>
                     </li>
                   </div>
+
                   <div className="py-2 px-5 group">
                     <li className="hover:ml-3 duration-300  ">
                       <NavLink to="/home4">home4</NavLink>
