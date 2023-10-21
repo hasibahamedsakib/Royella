@@ -17,7 +17,8 @@ const WelcomeSection = () => {
           />
           <div className="absolute top-[55px] right-[53px] lg:top-[110px] md:right-[60px] sm:right-[105px] xl:right-[70px]  2xl:right-[105px]">
             <div
-              className="w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] border-2  border-khaki grid items-center justify-center"
+              className="w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] border-2  border-khaki grid items-center justify-center cursor-pointer"
+              title="click me and see details"
               onClick={() => setToggler(!toggler)}
             >
               <span className="w-[40px] h-[40px] lg:w-[80px] lg:h-[80px] bg-khaki grid items-center justify-center">

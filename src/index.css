@@ -22,11 +22,11 @@
 
 /* primary button */
 .btn-primary {
-  @apply h-[40px] lg:h-[56px] w-[145px] 2xl:w-[165px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16 text-white uppercase text-base font-medium  font-Garamond;
+  @apply h-[40px] lg:h-[56px] w-[145px] 2xl:w-[165px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16 text-white uppercase text-sm lg:text-base font-medium  font-Garamond;
 }
 
 .btn-secondary {
-  @apply border border-white w-[145px] sm:w-[155px] lg:w-[170px] 2xl:w-[185px] 3xl:w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-white before:absolute before:left-0 before:top-14 text-white uppercase text-base font-medium font-Garamond;
+  @apply border border-white w-[145px] sm:w-[155px] lg:w-[170px] 2xl:w-[185px] 3xl:w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-white before:absolute before:left-0 before:top-14 text-white uppercase text-sm lg:text-base font-medium font-Garamond;
 }
 .btn-items {
   @apply border border-lightBlack dark:border-white  w-[145px] sm:w-[155px] lg:w-[170px] 2xl:w-[185px] 3xl:w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-lightBlack dark:before:bg-white before:absolute before:left-0 before:top-14 text-lightBlack dark:text-white uppercase text-base font-medium font-Garamond;
@@ -75,4 +75,14 @@
 /* Home three some code */
 .boxShadow:hover {
   box-shadow: 0px 5px 15px #cccccc40;
+}
+
+/* home-2 => offers*/
+.offers {
+  @apply bg-white dark:bg-lightBlack px-[25px] py-10 absolute bottom-[-340px] lg:bottom-[-430px] 3xl:bottom-[-340px] group-hover:bottom-0 left-[18px] right-[18px] my-[18px] transition-all duration-500;
+}
+
+/* home-4 */
+.extra-service {
+  @apply px-[30px]  text-center  relative z-[1] before:absolute before:w-0 before:h-full before:left-1/2 before:top-0 before:bg-lightBlack before:bg-opacity-[0.7] dark:before:bg-opacity-[0.7] before:z-[-1] before:transition-all before:duration-500 before:hover:w-full before:hover:left-0 overflow-hidden bg-center bg-cover;
 }
