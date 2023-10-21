@@ -37,7 +37,7 @@ const Blogs = () => {
                     <span className="w-9 h-9 rounded-full bg-whiteSmoke dark:bg-normalBlack grid items-center justify-center">
                       <FiUser size={14} className="text-khaki " />
                     </span>
-                    <p className="ml-3 text-sm sm:text-base leading-[38px] text-gray dark:text-lightGray font-medium font-Lora">
+                    <p className="ml-3 text-sm  leading-[38px] text-gray dark:text-lightGray font-medium font-Lora">
                       Hana Evans
                     </p>
                   </div>
@@ -45,8 +45,8 @@ const Blogs = () => {
                     <span className="w-9 h-9 rounded-full bg-whiteSmoke dark:bg-normalBlack grid items-center justify-center">
                       <BsCalendar4 size={14} className="text-khaki" />
                     </span>
-                    <p className="ml-3 text-sm sm:text-base leading-[38px] text-gray dark:text-lightGray font-medium font-Lora">
-                      Hana Evans
+                    <p className="ml-3 text-sm  leading-[38px] text-gray dark:text-lightGray font-medium font-Lora">
+                      Sep 21-2023
                     </p>
                   </div>
                 </div>
@@ -76,7 +76,7 @@ const Blogs = () => {
                     <span className="w-9 h-9 rounded-full bg-whiteSmoke dark:bg-normalBlack grid items-center justify-center">
                       <FiUser size={14} className="text-khaki " />
                     </span>
-                    <p className="ml-3 text-sm sm:text-base leading-[38px] text-gray dark:text-lightGray font-medium font-Lora">
+                    <p className="ml-3 text-sm  leading-[38px] text-gray dark:text-lightGray font-medium font-Lora">
                       Hana Evans
                     </p>
                   </div>
@@ -84,8 +84,8 @@ const Blogs = () => {
                     <span className="w-9 h-9 rounded-full bg-whiteSmoke dark:bg-normalBlack grid items-center justify-center">
                       <BsCalendar4 size={14} className="text-khaki" />
                     </span>
-                    <p className="ml-3 text-sm sm:text-base leading-[38px] text-gray dark:text-lightGray font-medium font-Lora">
-                      Hana Evans
+                    <p className="ml-3 text-sm  leading-[38px] text-gray dark:text-lightGray font-medium font-Lora">
+                      Sep 21-2023
                     </p>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ const Blogs = () => {
                     <span className="w-9 h-9 rounded-full bg-whiteSmoke dark:bg-normalBlack grid items-center justify-center">
                       <FiUser size={14} className="text-khaki " />
                     </span>
-                    <p className="ml-3 text-sm sm:text-base leading-[38px] text-gray dark:text-lightGray font-medium font-Lora">
+                    <p className="ml-3 text-sm  leading-[38px] text-gray dark:text-lightGray font-medium font-Lora">
                       Hana Evans
                     </p>
                   </div>
@@ -123,8 +123,8 @@ const Blogs = () => {
                     <span className="w-9 h-9 rounded-full bg-whiteSmoke dark:bg-normalBlack grid items-center justify-center">
                       <BsCalendar4 size={14} className="text-khaki" />
                     </span>
-                    <p className="ml-3 text-sm sm:text-base leading-[38px] text-gray dark:text-lightGray font-medium font-Lora">
-                      Hana Evans
+                    <p className="ml-3 text-sm  leading-[38px] text-gray dark:text-lightGray font-medium font-Lora">
+                      Sep 21-2023
                     </p>
                   </div>
                 </div>
