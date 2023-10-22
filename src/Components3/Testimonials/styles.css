@@ -3,14 +3,14 @@
   top: 50%;
 }
 
-.dots {
+.dots1 {
   display: flex;
   margin-top: 180px;
   justify-content: center;
   flex-direction: column;
 }
 
-.dot {
+.dot1 {
   display: inline-block;
   border: none;
   width: 5px !important;
@@ -20,13 +20,10 @@
   cursor: pointer;
 }
 
-.dot:focus {
+.dot1:focus {
   outline: none;
 }
 
-.dot.active {
+.dot1.active {
   background: #c19d68;
-}
-
-@media screen {
 }

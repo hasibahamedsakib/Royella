@@ -32,7 +32,8 @@ const BookingVideo = () => {
           </p>
           <div className="grid items-center justify-center mt-5 lg:mt-[30px]">
             <div
-              className=" w-[50px] h-[50px] xl:w-[80px] xl:h-[80px] rounded-full border-2 border-white grid items-center justify-center"
+              className=" w-[50px] h-[50px] xl:w-[80px] xl:h-[80px] rounded-full border-2 border-white grid items-center justify-center cursor-pointer"
+              title="click me and see details"
               onClick={() => setToggler(!toggler)}
             >
               <TbPlayerPlayFilled className="w-8 h-8 text-white" />

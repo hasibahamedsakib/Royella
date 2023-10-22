@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { useState } from "react";
-import "./styls.css";
+import "./styles.css";
 
 const Testimonials = () => {
   // keen config code...
@@ -178,7 +178,7 @@ const Testimonials = () => {
           {/* navigation */}
           <div className="pr-10  md:pr-[50px] lg:pr-[60px] 2xl:pr-[77px] pl-5  md:pl-6 lg:pl-7 2xl:pl-8 hidden md:block">
             {loaded && instanceRef.current && (
-              <div className="dots">
+              <div className="dots1">
                 {[
                   ...Array(
                     instanceRef.current.track.details.slides.length
@@ -191,7 +191,7 @@ const Testimonials = () => {
                         instanceRef.current?.moveToIdx(idx);
                       }}
                       className={
-                        "dot" + (currentSlide === idx ? " active" : "")
+                        "dot1" + (currentSlide === idx ? " active" : "")
                       }
                     ></button>
                   );
