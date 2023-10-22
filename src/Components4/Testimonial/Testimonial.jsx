@@ -10,7 +10,7 @@ const Testimonial = () => {
 
   const [sliderRef, instanceRef] = useKeenSlider({
     breakpoints: {
-      "(min-width: 576px)": {
+      "(min-width: 600px)": {
         slides: { perView: 2, spacing: 20 },
       },
       "(min-width:1000px)": {

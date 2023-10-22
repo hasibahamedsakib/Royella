@@ -22,12 +22,13 @@
 
 /* primary button */
 .btn-primary {
-  @apply h-[40px] lg:h-[56px] w-[145px] 2xl:w-[165px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16 text-white uppercase text-sm lg:text-base font-medium  font-Garamond;
+  @apply h-[40px] lg:h-[56px] w-[145px] 2xl:w-[165px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-[48px]  lg:before:top-[65px] xl:before:top-16 text-white uppercase text-sm lg:text-base font-medium  font-Garamond;
 }
 
 .btn-secondary {
   @apply border border-white w-[145px] sm:w-[155px] lg:w-[170px] 2xl:w-[185px] 3xl:w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-white before:absolute before:left-0 before:top-14 text-white uppercase text-sm lg:text-base font-medium font-Garamond;
 }
+
 .btn-items {
   @apply border border-lightBlack dark:border-white  w-[145px] sm:w-[155px] lg:w-[170px] 2xl:w-[185px] 3xl:w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-lightBlack dark:before:bg-white before:absolute before:left-0 before:top-14 text-lightBlack dark:text-white uppercase text-base font-medium font-Garamond;
 }
