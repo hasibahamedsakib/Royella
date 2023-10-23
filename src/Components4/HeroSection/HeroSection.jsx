@@ -8,7 +8,7 @@ const HeroSection = () => {
           alt=""
           className="mx-auto"
         />
-        <p className="text-white text-sm sm:text-base leading-8 md:leading-10 lg:leading-[55px] xl:leading-[79px] font-normal font-Lora">
+        <p className="text-white text-sm sm:text-base leading-8 md:leading-10 lg:leading-[55px] xl:leading-[79px] font-normal font-Lora my-2 sm:py-3 md:py-1">
           Unique Place And Luxury Hotel
         </p>
         <div className="mb-6 md:mb-[30px]">

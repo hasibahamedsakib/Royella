@@ -39,7 +39,7 @@ const Navbar4 = () => {
 
   return (
     <nav
-      className={` w-full lg:fixed font-Lora z-10 transition-all duration-300 bg-white dark:bg-lightBlack h-[100px]  grid items-center `}
+      className={` w-full lg:fixed font-Lora z-10 transition-all duration-300 bg-white dark:bg-lightBlack h-20 md:h-[100px]  grid items-center `}
     >
       <div className="Container3 ">
         <div className="flex flex-col lg:flex-row items-center justify-between">
@@ -60,7 +60,7 @@ const Navbar4 = () => {
           </div>
 
           {/* small screen size */}
-          <div className="px-3 w-full lg:hidden flex justify-between items-center text-white bg-white dark:bg-lightBlack h-[100px] p-3">
+          <div className="px-3 w-full lg:hidden flex justify-between items-center text-white bg-white dark:bg-lightBlack h-[80px] p-3">
             <div className=" w-28  ">
               <Link to="/">
                 <img

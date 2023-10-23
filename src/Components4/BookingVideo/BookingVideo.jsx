@@ -14,7 +14,7 @@ const BookingVideo = () => {
             className="mx-auto"
           />
 
-          <div className="mt-3 mb-2">
+          <div className="mt-2 lg:mt-3 mb-2">
             <h1
               className="text-white text-[23px] sm:text-3xl md:text-4xl lg:text-[40px] 2xl:text-[45px] leading-7 md:leading-10 lg:leading-[40px] 2xl:leading-[50px]
            font-semibold font-Garamond sm:px-[60px] lg:px-[135px] xl:px-[235px] 2xl:px-[335px] 3xl:px-[535px]"
@@ -24,9 +24,9 @@ const BookingVideo = () => {
           </div>
           <div className="grid items-center justify-center">
             {" "}
-            <hr className="w-[60px] h-[3px] bg-khaki mt-5 mb-5" />
+            <hr className="w-[60px] h-[3px] bg-khaki my-3 md:my-4 lg:my-5" />
           </div>
-          <p className="text-white text-sm sm:text-base leading-8 md:leading-10 2xl:leading-[50px] font-normal font-Lora">
+          <p className="text-white text-sm sm:text-base leading-7 md:leading-10 2xl:leading-[50px] font-normal font-Lora sm:px-[60px] lg:px-[135px] xl:px-[235px] 2xl:px-[335px] 3xl:px-[535px]">
             This house is one of the favorite houses of our clients, leave
             reviews.
           </p>

@@ -30,7 +30,7 @@
 }
 
 .btn-items {
-  @apply border border-lightBlack dark:border-white  w-[145px] sm:w-[155px] lg:w-[170px] 2xl:w-[185px] 3xl:w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-lightBlack dark:before:bg-white before:absolute before:left-0 before:top-14 text-lightBlack dark:text-white uppercase text-base font-medium font-Garamond;
+  @apply border border-lightBlack dark:border-white  w-[145px] sm:w-[155px] lg:w-[170px] 2xl:w-[185px] 3xl:w-[192px] h-[48px] relative before:w-8 before:h-[1px] before:bg-lightBlack dark:before:bg-white before:absolute before:left-0 before:top-14 text-lightBlack dark:text-white uppercase text-sm sm:text-base font-medium font-Garamond;
 }
 .btn-subscribe {
   @apply h-[56px] bg-khaki w-full text-white uppercase text-base font-medium  font-Garamond;

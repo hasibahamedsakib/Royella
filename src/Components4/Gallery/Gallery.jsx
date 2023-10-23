@@ -29,7 +29,7 @@ const Gallery = () => {
       <div className="">
         {/* section title */}
         <div className="text-center px-5">
-          <p className="text-base leading-7 md:leading-10 lg:leading-[40px] 3xl:leading-[66px] text-khaki font-normal font-Lora">
+          <p className="text-base leading-7 md:leading-10 lg:leading-[40px] 3xl:leading-[66px] text-khaki mb-1 font-normal font-Lora">
             Photos Gallery
           </p>
           <h3
@@ -51,7 +51,7 @@ const Gallery = () => {
                   className="w-full h-full opacity-0"
                 />
                 <div className="px-[25px] py-10 absolute bottom-[-300px] lg:bottom-[-330px] 3xl:bottom-[-300px] group-hover:bottom-[25%] sm:group-hover:bottom-[20%]  lg:group-hover:bottom-[20%] left-[18px] right-[18px] my-[18px] transition-all z-20 duration-500 scale-50 group-hover:scale-100 text-center">
-                  <h3 className="text-2xl md:text-[26px]  leading-5 md:leading-[26px] 2xl:text-3xl 3xl:text-4xl xl:leading-[42px] text-white  font-Garamond font-semibold ">
+                  <h3 className="text-2xl md:text-[26px]  leading-5 md:leading-[26px] xl:text-[25px] 2xl:text-3xl 3xl:text-4xl 2xl:leading-[42px] text-white  font-Garamond font-semibold ">
                     Bed Female Dorm
                   </h3>
                   <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] xl:leading-[38px] font-Lora font-normal text-white mt-2 ">
@@ -68,7 +68,7 @@ const Gallery = () => {
                   className="w-full h-full opacity-0"
                 />
                 <div className="px-[25px] py-10 absolute bottom-[-300px] lg:bottom-[-330px] 3xl:bottom-[-300px] group-hover:bottom-[25%] sm:group-hover:bottom-[20%]  lg:group-hover:bottom-[20%] left-[18px] right-[18px] my-[18px] transition-all z-20 duration-500 scale-50 group-hover:scale-100 text-center">
-                  <h3 className="text-2xl md:text-[26px]  leading-5 md:leading-[26px] 2xl:text-3xl 3xl:text-4xl xl:leading-[42px] text-white  font-Garamond font-semibold ">
+                  <h3 className="text-2xl md:text-[26px]  leading-5 md:leading-[26px] xl:text-[25px] 2xl:text-3xl 3xl:text-4xl 2xl:leading-[42px] text-white  font-Garamond font-semibold ">
                     Bed Female Dorm
                   </h3>
                   <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] xl:leading-[38px] font-Lora font-normal text-white mt-2 ">
@@ -85,7 +85,7 @@ const Gallery = () => {
                   className="w-full h-full opacity-0"
                 />
                 <div className="px-[25px] py-10 absolute bottom-[-300px] lg:bottom-[-330px] 3xl:bottom-[-300px] group-hover:bottom-[25%] sm:group-hover:bottom-[20%]  lg:group-hover:bottom-[20%] left-[18px] right-[18px] my-[18px] transition-all z-20 duration-500 scale-50 group-hover:scale-100 text-center">
-                  <h3 className="text-2xl md:text-[26px]  leading-5 md:leading-[26px] 2xl:text-3xl 3xl:text-4xl xl:leading-[42px] text-white  font-Garamond font-semibold ">
+                  <h3 className="text-2xl md:text-[26px]  leading-5 md:leading-[26px] xl:text-[25px] 2xl:text-3xl 3xl:text-4xl 2xl:leading-[42px] text-white  font-Garamond font-semibold ">
                     Bed Female Dorm
                   </h3>
                   <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] xl:leading-[38px] font-Lora font-normal text-white mt-2 ">
@@ -102,7 +102,7 @@ const Gallery = () => {
                   className="w-full h-full opacity-0"
                 />
                 <div className="px-[25px] py-10 absolute bottom-[-300px] lg:bottom-[-330px] 3xl:bottom-[-300px] group-hover:bottom-[25%] sm:group-hover:bottom-[20%]  lg:group-hover:bottom-[20%] left-[18px] right-[18px] my-[18px] transition-all z-20 duration-500 scale-50 group-hover:scale-100 text-center">
-                  <h3 className="text-2xl md:text-[26px]  leading-5 md:leading-[26px] 2xl:text-3xl 3xl:text-4xl xl:leading-[42px] text-white  font-Garamond font-semibold ">
+                  <h3 className="text-2xl md:text-[26px]  leading-5 md:leading-[26px] xl:text-[25px] 2xl:text-3xl 3xl:text-4xl 2xl:leading-[42px] text-white  font-Garamond font-semibold ">
                     Bed Female Dorm
                   </h3>
                   <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] xl:leading-[38px] font-Lora font-normal text-white mt-2 ">
@@ -119,7 +119,7 @@ const Gallery = () => {
                   className="w-full h-full opacity-0"
                 />
                 <div className="px-[25px] py-10 absolute bottom-[-300px] lg:bottom-[-330px] 3xl:bottom-[-300px] group-hover:bottom-[25%] sm:group-hover:bottom-[20%]  lg:group-hover:bottom-[20%] left-[18px] right-[18px] my-[18px] transition-all z-20 duration-500 scale-50 group-hover:scale-100 text-center">
-                  <h3 className="text-2xl md:text-[26px]  leading-5 md:leading-[26px] 2xl:text-3xl 3xl:text-4xl xl:leading-[42px] text-white  font-Garamond font-semibold ">
+                  <h3 className="text-2xl md:text-[26px]  leading-5 md:leading-[26px] xl:text-[25px] 2xl:text-3xl 3xl:text-4xl 2xl:leading-[42px] text-white  font-Garamond font-semibold ">
                     Bed Female Dorm
                   </h3>
                   <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] xl:leading-[38px] font-Lora font-normal text-white mt-2 ">

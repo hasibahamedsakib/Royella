@@ -3,9 +3,9 @@ const ExtraService = () => {
     <section className="bg-whiteSmoke dark:bg-normalBlack py-20 2xl:py-[120px]">
       <div className="Container">
         {/* section header */}
-        <div className="flex md:flex-row flex-col items-center justify-between">
+        <div className="flex md:flex-row flex-col items-center justify-between space-y-1 md:space-y-0">
           <div>
-            <p className="text-base leading-7 md:leading-10 lg:leading-[40px] 3xl:leading-[66px] text-khaki font-normal font-Lora">
+            <p className="text-base leading-7 md:leading-10 lg:leading-[40px] 3xl:leading-[66px] mb-1 text-khaki font-normal font-Lora text-center md:text-left">
               Best Prices
             </p>
             <h3
@@ -16,7 +16,7 @@ const ExtraService = () => {
             </h3>
           </div>
           <div>
-            <p className="text-sm md:text-base leading-[26px] text-gray dark:text-lightGray font-normal font-Lora text-center w-full md:w-[250px] lg:w-[350px] xl:w-[465px] 2xl:w-[560px] p-5 md:p-0">
+            <p className="text-[13px] md:text-base leading-[26px] text-gray dark:text-white font-normal font-Lora text-center w-full md:w-[250px] lg:w-[350px] xl:w-[465px] 2xl:w-[560px] p-5 md:p-0">
               Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami
               readymade swag. Selfies iPhone Kickstarter, drinking vinegar
             </p>
@@ -40,7 +40,7 @@ const ExtraService = () => {
                 <h3 className="text-2xl md:text-[26px] lg:text-[30] xl:text-[34px] leading-5 md:leading-[26px] xl:leading-[42px] text-white font-Garamond font-semibold text-left">
                   Laundry service
                 </h3>
-                <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] font-Lora font-normal text-ellipsis text-lightGray mt-[19px] mb-[30px] text-left">
+                <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] font-Lora font-normal text-ellipsis text-white mt-[19px] mb-6 lg:mb-[30px] text-left">
                   Avoid the hassle of airport transfers and take take advantage
                   of our complimentary shuttle serves local beers service.
                 </p>
@@ -60,7 +60,7 @@ const ExtraService = () => {
                 <h3 className="text-2xl md:text-[26px] lg:text-[30] xl:text-[34px] leading-5 md:leading-[26px] xl:leading-[42px] text-white font-Garamond font-semibold text-left">
                   Laundry service
                 </h3>
-                <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] font-Lora font-normal text-ellipsis text-lightGray mt-[19px] mb-[30px] text-left">
+                <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] font-Lora font-normal text-ellipsis text-white mt-[19px] mb-6 lg:mb-[30px] text-left">
                   Avoid the hassle of airport transfers and take take advantage
                   of our complimentary shuttle serves local beers service.
                 </p>
@@ -80,7 +80,7 @@ const ExtraService = () => {
                 <h3 className="text-2xl md:text-[26px] lg:text-[30] xl:text-[34px] leading-5 md:leading-[26px] xl:leading-[42px] text-white font-Garamond font-semibold text-left">
                   Laundry service
                 </h3>
-                <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] font-Lora font-normal text-ellipsis text-lightGray mt-[19px] mb-[30px] text-left">
+                <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] font-Lora font-normal text-ellipsis text-white mt-[19px] mb-6 lg:mb-[30px] text-left">
                   Avoid the hassle of airport transfers and take take advantage
                   of our complimentary shuttle serves local beers service.
                 </p>
@@ -103,7 +103,7 @@ const ExtraService = () => {
                 <h3 className="text-2xl md:text-[26px] lg:text-[30] xl:text-[34px] leading-5 md:leading-[26px] xl:leading-[42px] text-white font-Garamond font-semibold text-left">
                   Laundry service
                 </h3>
-                <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] font-Lora font-normal text-ellipsis text-lightGray mt-[19px] mb-[30px] text-left">
+                <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] font-Lora font-normal text-ellipsis text-white mt-[19px] mb-6 lg:mb-[30px] text-left">
                   Avoid the hassle of airport transfers and take take advantage
                   of our complimentary shuttle serves local beers service.
                 </p>
@@ -123,7 +123,7 @@ const ExtraService = () => {
                 <h3 className="text-2xl md:text-[26px] lg:text-[30] xl:text-[34px] leading-5 md:leading-[26px] xl:leading-[42px] text-white font-Garamond font-semibold text-left">
                   Laundry service
                 </h3>
-                <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] font-Lora font-normal text-ellipsis text-lightGray mt-[19px] mb-[30px] text-left">
+                <p className="text-sm sm:text-base leading-[22px] lg:leading-[26px] font-Lora font-normal text-ellipsis text-white mt-[19px] mb-6 lg:mb-[30px] text-left">
                   Avoid the hassle of airport transfers and take take advantage
                   of our complimentary shuttle serves local beers service.
                 </p>

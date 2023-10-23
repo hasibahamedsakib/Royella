@@ -32,7 +32,7 @@ const Testimonial = () => {
       <div className="Container">
         {/* section title */}
         <div className="text-center px-5">
-          <p className="text-base leading-7 md:leading-10 lg:leading-[40px] 3xl:leading-[66px] text-khaki font-normal font-Lora">
+          <p className="text-base leading-7 md:leading-10 lg:leading-[40px] 3xl:leading-[66px] text-khaki mb-1 font-normal font-Lora ">
             Testimonial
           </p>
           <h3
