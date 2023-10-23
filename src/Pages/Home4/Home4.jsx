@@ -1,6 +1,7 @@
 import BookingVideo from "../../Components4/BookingVideo/BookingVideo";
 import CheckingForm from "../../Components4/CheckingForm/CheckingForm";
 import ExtraService from "../../Components4/ExtraService/ExtraService";
+import Gallery from "../../Components4/Gallery/Gallery";
 import HeroSection from "../../Components4/HeroSection/HeroSection";
 import LatestNews from "../../Components4/LatestNews/LatestNews";
 import Testimonial from "../../Components4/Testimonial/Testimonial";
@@ -16,6 +17,7 @@ const Home4 = () => {
       <BookingVideo />
       <Testimonial />
       <LatestNews />
+      <Gallery />
     </>
   );
 };

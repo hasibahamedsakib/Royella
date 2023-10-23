@@ -87,3 +87,8 @@
 .extra-service {
   @apply px-[30px]  text-center  relative z-[1] before:absolute before:w-0 before:h-full before:left-1/2 before:top-0 before:bg-lightBlack before:bg-opacity-[0.7] dark:before:bg-opacity-[0.7] before:z-[-1] before:transition-all before:duration-500 before:hover:w-full before:hover:left-0 overflow-hidden bg-center bg-cover;
 }
+
+/* gallery code */
+.gallery-effect {
+  @apply relative  before:absolute before:w-0 before:h-full before:left-1/2 before:top-0 before:bg-lightBlack before:bg-opacity-[0.9] dark:before:bg-opacity-[0.9] before:z-[1] before:transition-all before:duration-500 before:hover:w-full before:hover:left-0 bg-no-repeat bg-center bg-cover;
+}
