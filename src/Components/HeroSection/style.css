@@ -57,8 +57,8 @@
   }
   .swiper-button-prev,
   .swiper-button-next {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     text-align: center;
     margin-bottom: 5px;
   }
@@ -75,6 +75,11 @@
     left: 93%;
   }
 }
+@media (min-width: 1700px) {
+  .swiper-button-next {
+    margin-right: 0px;
+  }
+}
 @media (min-width: 1992px) {
   .swiper-button-prev,
   .swiper-rtl .swiper-button-prev {
@@ -84,6 +89,12 @@
   .swiper-rtl .swiper-button-next {
     margin-right: 30px;
   }
+  .swiper-button-next {
+    margin-right: 20px;
+  }
+}
+.swiper-pagination {
+  display: none;
 }
 
 /* Button */

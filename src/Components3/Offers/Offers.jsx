@@ -16,7 +16,7 @@ const Offers = () => {
         </div>
 
         {/* section content */}
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+        <div className="mt-14 2xl:mt-[60px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
           <div className="h-[491px] w-full relative bg-gradient-to-t from-[#1d1d1dd0] to-[#1d1d1d00] group overflow-hidden ">
             <img
               src="/images/home-3/offer-1.png"

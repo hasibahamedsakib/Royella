@@ -9,7 +9,7 @@ const Action = () => {
             <h5 className="text-base text-khaki leading-[26px] font-medium">
               MANAGER
             </h5>
-            <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold">
+            <h1 className="text-[22px] sm:text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold">
               LUXURY BEST HOTEL IN CITY CALIFORNIA, USA
             </h1>
             <p className="text-sm sm:text-base font-Lora text-gray dark:text-lightGray font-normal leading-[26px]">

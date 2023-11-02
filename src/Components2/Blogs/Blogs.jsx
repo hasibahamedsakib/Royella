@@ -21,7 +21,7 @@ const Blogs = () => {
             </p>
           </div>
           {/* section Content */}
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-[30px]">
+          <div className="mt-14 2xl:mt-[60px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-[30px]">
             {/* Blog - 1  */}
             <div className="group z-[2]">
               <div className="overflow-hidden">

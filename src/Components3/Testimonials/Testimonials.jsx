@@ -66,7 +66,7 @@ const Testimonials = () => {
         </div>
 
         {/* section testimonials content */}
-        <div className="mt-14 flex bg-white dark:bg-lightBlack">
+        <div className="mt-14 2xl:mt-[60px] flex bg-white dark:bg-lightBlack">
           {/* keen slider */}
           <div ref={sliderRef} className="keen-slider h-[600px] xl:h-[500px]">
             {/* slide one... */}

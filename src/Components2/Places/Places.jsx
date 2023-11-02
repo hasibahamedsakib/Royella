@@ -20,7 +20,7 @@ const Places = () => {
         </div>
       </div>
       {/* section Content */}
-      <div className="mt-14">
+      <div className="mt-14 2xl:mt-[60px]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] px-5 ">
           {/* place-1 */}
           <div className="overflow-hidden relative group cursor-grab">

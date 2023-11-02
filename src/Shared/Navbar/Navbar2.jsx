@@ -138,6 +138,11 @@ const Navbar2 = () => {
                       <NavLink to="/home5">Home 5</NavLink>
                     </li>
                   </div>
+                  <div className="py-2 px-5 group">
+                    <li className="hover:ml-3 duration-300  ">
+                      <NavLink to="/home6">Home 6</NavLink>
+                    </li>
+                  </div>
                 </ul>
               </div>
             </NavLink>
@@ -148,7 +153,7 @@ const Navbar2 = () => {
                   : isActive
                   ? "active"
                   : ""} text-lightBlack lg:text-white dark:text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
-              to="/about"
+              to="/home2/about"
             >
               About
             </NavLink>
@@ -159,7 +164,7 @@ const Navbar2 = () => {
                   : isActive
                   ? "active"
                   : ""} text-lightBlack lg:text-white dark:text-white border-b-2 lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
-              to="/services"
+              to="/home2/services"
             >
               Rooms
               {/* pages menu and submenu link */}

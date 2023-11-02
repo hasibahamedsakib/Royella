@@ -1,3 +1,11 @@
+/* 
+    Project Name: Royella.
+    Project Author: Dream It Solution.
+    Developer Name: Hasib Ahamed Sakib.
+    Start Date: 00-08-2023
+    Version:0.0.1
+    &copy: Dream It web Solution.
+*/
 /* Google Fonts Link */
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
 
@@ -23,6 +31,9 @@
 /* primary button */
 .btn-primary {
   @apply h-[40px] lg:h-[56px] w-[145px] 2xl:w-[165px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-[48px]  lg:before:top-[65px] xl:before:top-16 text-white uppercase text-sm lg:text-base font-medium  font-Garamond;
+}
+.btn-primary1 {
+  @apply h-[40px] lg:h-[50px] w-[145px] 2xl:w-[165px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-[48px]  lg:before:top-[60px] xl:before:top-14 text-white uppercase text-sm lg:text-base font-medium  font-Garamond;
 }
 
 .btn-secondary {
@@ -62,6 +73,10 @@
   animation: MOVE-BG 3s infinite ease alternate;
 }
 
+/* input icon color */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: brightness(24.3) invert(15);
+}
 /* slider responsive */
 
 @keyframes MOVE-BG {
@@ -91,4 +106,28 @@
 /* gallery code */
 .gallery-effect {
   @apply relative  before:absolute before:w-0 before:h-full before:left-1/2 before:top-0 before:bg-lightBlack before:bg-opacity-[0.9] dark:before:bg-opacity-[0.9] before:z-[1] before:transition-all before:duration-500 before:hover:w-full before:hover:left-0 bg-no-repeat bg-center bg-cover;
+}
+
+/* home-5 */
+.apartment-effect {
+  @apply before:transition-all before:duration-500 relative before:absolute before:h-full bg-white dark:bg-lightBlack  before:bg-[url('/images/home-5/appartment-bg.png')] before:content-[''] before:w-0 hover:before:w-full px-10 py-[50px] hover:shadow bg-cover bg-center before:top-0 before:right-0 before:hover:left-0 z-[1] before:z-[-1] before:bg-no-repeat before:bg-cover before:bg-center;
+}
+
+/* animation move */
+.animation-move {
+  animation: MOVE-BG 3s infinite ease alternate;
+}
+@keyframes MOVE-BG {
+  from {
+    transform: translateX(-2px);
+  }
+  to {
+    transform: translateX(35px);
+  }
+}
+
+/* Inner page */
+
+.member {
+  @apply p-[30px] border border-lightGray px-[30px]  text-center  relative z-[1] before:absolute before:w-0 before:h-full before:left-1/2 before:top-0 before:bg-khaki before:z-[-1] before:transition-all before:duration-500 before:hover:w-full before:hover:left-0 overflow-hidden bg-center bg-cover;
 }

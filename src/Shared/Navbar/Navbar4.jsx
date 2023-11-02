@@ -150,6 +150,11 @@ const Navbar4 = () => {
                       <NavLink to="/home5">Home 5</NavLink>
                     </li>
                   </div>
+                  <div className="py-2 px-5 group">
+                    <li className="hover:ml-3 duration-300  ">
+                      <NavLink to="/home6">Home 6</NavLink>
+                    </li>
+                  </div>
                 </ul>
               </div>
             </NavLink>

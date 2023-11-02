@@ -28,6 +28,9 @@ export default {
         "3xl": "1600px ",
       },
       lineHeight: {},
+      boxShadow: {
+        custom: "0px 5px 15px rgba(204, 204, 204, 0.25)",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

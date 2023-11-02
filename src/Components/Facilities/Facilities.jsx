@@ -10,7 +10,7 @@ const Facilities = () => {
             <h5 className="text-base text-khaki leading-[26px] font-medium">
               FACILITIES
             </h5>
-            <h1 className="text-xl sm:text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px]  text-lightBlack dark:text-white font-semibold">
+            <h1 className="text-[22px] sm:text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px]  text-lightBlack dark:text-white font-semibold">
               ENJOY COMPLETE & BEST QUALITY FACILITIES
             </h1>
           </div>
@@ -48,7 +48,10 @@ const Facilities = () => {
                 after model. Appropriately create interactive infrastructures
                 after are Holisticly facilitate stand-alone
               </p>
-              <HiArrowLongRight size={30} />
+              <HiArrowLongRight
+                size={30}
+                className="text-gray dark:text-khaki"
+              />
             </div>
           </div>
 
@@ -68,7 +71,10 @@ const Facilities = () => {
                 after model. Appropriately create interactive infrastructures
                 after are Holisticly facilitate stand-alone
               </p>
-              <HiArrowLongRight size={30} />
+              <HiArrowLongRight
+                className="text-gray dark:text-khaki"
+                size={30}
+              />
             </div>
 
             <div className="w-full h-[100%] md:pl-[30px] relative mt-5 md:mt-0">
@@ -112,7 +118,10 @@ const Facilities = () => {
                 after model. Appropriately create interactive infrastructures
                 after are Holisticly facilitate stand-alone
               </p>
-              <HiArrowLongRight size={30} />
+              <HiArrowLongRight
+                className="text-gray dark:text-khaki"
+                size={30}
+              />
             </div>
           </div>
 
@@ -132,7 +141,10 @@ const Facilities = () => {
                 after model. Appropriately create interactive infrastructures
                 after are Holisticly facilitate stand-alone
               </p>
-              <HiArrowLongRight size={30} />
+              <HiArrowLongRight
+                className="text-gray dark:text-khaki"
+                size={30}
+              />
             </div>
 
             <div className="w-full h-[100%]  relative md:pl-[30px] mt-5 md:mt-0">

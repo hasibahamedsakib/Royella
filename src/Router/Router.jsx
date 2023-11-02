@@ -7,6 +7,13 @@ import Main3 from "../Main/Main3";
 import Home3 from "../Pages/Home3/Home3";
 import Main4 from "../Main/Main4";
 import Home4 from "../Pages/Home4/Home4";
+import Home5 from "../Pages/Home5/Home5";
+import Main5 from "../Main/Main5";
+import Main6 from "../Main/Main6";
+import Home6 from "../Pages/Home6/Home6";
+import About from "../Pages/InnerPage/About";
+import Room from "../Pages/InnerPage/Room";
+import FindRoom from "../Pages/InnerPage/FindRoom";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +24,18 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home1 />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/room",
+        element: <Room />,
+      },
+      {
+        path: "/find_room",
+        element: <FindRoom />,
       },
     ],
   },
@@ -29,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: "/home2",
         element: <Home2 />,
+      },
+      {
+        path: "/home2/about",
+        element: <About />,
       },
     ],
   },
@@ -53,6 +76,30 @@ const router = createBrowserRouter([
       {
         path: "/home4",
         element: <Home4 />,
+      },
+    ],
+  },
+  // five home router
+  {
+    path: "/home5",
+    element: <Main5 />,
+    errorElement: <h1>Error Page</h1>,
+    children: [
+      {
+        path: "/home5",
+        element: <Home5 />,
+      },
+    ],
+  },
+  // six home router
+  {
+    path: "/home6",
+    element: <Main6 />,
+    errorElement: <h1>Error Page</h1>,
+    children: [
+      {
+        path: "/home6",
+        element: <Home6 />,
       },
     ],
   },

@@ -36,7 +36,7 @@ const Testimonials = () => {
           </p>
         </div>
         {/* section Content */}
-        <div className="mt-14">
+        <div className="mt-14 2xl:mt-[60px]">
           <Swiper
             breakpoints={breakpoints}
             spaceBetween={60}

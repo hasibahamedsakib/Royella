@@ -11,7 +11,7 @@ const Footer = () => {
       <footer className="">
         {/* footer content */}
         <div className="bg-lightBlack   ">
-          <div className="Container  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 gap-[30px] py-14 lg:py-[100px]">
+          <div className="Container  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 ga-5 md:gap-[30px] py-14 lg:py-[100px]">
             {/* Footer Content one. */}
             <div className="2xl:mt-[-195px] 2xl:col-span-2">
               <div className="bg-[#272727] py-4 md:py-7 lg:py-[50px] px-10 2xl:mr-10   ">
@@ -49,23 +49,23 @@ const Footer = () => {
                   <ul className="flex space-x-3">
                     <li className="hover:bg-khaki group transition-all duration-300 p-3 rounded-full border border-white hover:border-khaki cursor-pointer">
                       <Link to="#" className="">
-                        <FaFacebookF className="text-white group-hover:text-slateBlue-0 h-5 w-5" />
+                        <FaFacebookF className="text-white group-hover:text-slateBlue-0 w-4 h-4 md:h-5 md:w-5" />
                       </Link>
                     </li>
 
                     <li className="hover:bg-khaki group transition-all duration-300 p-3 rounded-full border border-white hover:border-khaki cursor-pointer">
                       <Link to="#">
-                        <FaTwitter className="text-white group-hover:text-slateBlue-0 h-5 w-5" />
+                        <FaTwitter className="text-white group-hover:text-slateBlue-0 w-4 h-4 md:h-5 md:w-5" />
                       </Link>
                     </li>
                     <li className="hover:bg-khaki group transition-all duration-300 p-3 rounded-full border border-white hover:border-khaki cursor-pointer">
                       <Link to="#">
-                        <BiLogoLinkedin className="text-white group-hover:text-slateBlue-0 h-5 w-5" />
+                        <BiLogoLinkedin className="text-white group-hover:text-slateBlue-0 w-4 h-4 md:h-5 md:w-5" />
                       </Link>
                     </li>
                     <li className="hover:bg-khaki group transition-all duration-300 p-3 rounded-full border border-white hover:border-khaki cursor-pointer">
                       <Link to="#">
-                        <FaPinterestP className="text-white group-hover:text-slateBlue-0 h-5 w-5" />
+                        <FaPinterestP className="text-white group-hover:text-slateBlue-0 w-4 h-4 md:h-5 md:w-5" />
                       </Link>
                     </li>
                   </ul>
@@ -75,7 +75,7 @@ const Footer = () => {
             {/* footer content-2 */}
 
             <div className="py-4 md:py-7 lg:py-[50px] overflow-x-hidden ">
-              <h1 className="text-[22px] text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10 uppercase ">
+              <h1 className=" text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10 uppercase ">
                 UseFul Links
               </h1>
               <div className=" py-[30px]">
@@ -104,7 +104,7 @@ const Footer = () => {
             {/* footer content-3 */}
 
             <div className="py-4 md:py-7 lg:py-[50px]">
-              <h1 className="text-[22px] text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10 uppercase ">
+              <h1 className="text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10 uppercase ">
                 GALLERY
               </h1>
               <div className="grid grid-cols-3 gap-x-[10px] gap-y-[10px] py-[30px] content-center w-[250px]">
@@ -119,7 +119,7 @@ const Footer = () => {
             {/* footer content-4 */}
 
             <div className="py-4 md:py-7 lg:py-[50px] overflow-x-hidden ">
-              <h1 className="text-[22px] text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10 uppercase ">
+              <h1 className="text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10 uppercase ">
                 NEWSLETTER
               </h1>
               <div className="space-y-4 py-[30px]">

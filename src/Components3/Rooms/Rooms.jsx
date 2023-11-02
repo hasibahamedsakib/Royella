@@ -4,7 +4,7 @@ import { useState } from "react";
 const Rooms = () => {
   const [rooms, setRooms] = useState(false);
   return (
-    <section className="bg-whiteSmoke dark:bg-lightBlack pt-[200px] pb-20 2xl:py-[120px] lg:pt-[250px] 2xl:pt-[300px]">
+    <section className="bg-whiteSmoke dark:bg-lightBlack pb-20 2xl:py-[120px]">
       <div className="Container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] items-center">
           {rooms ? (

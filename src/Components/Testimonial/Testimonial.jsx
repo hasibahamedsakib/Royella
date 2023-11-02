@@ -165,6 +165,63 @@ const Testimonial = () => {
                 </div>
               </div>
             </SwiperSlide>
+            {/* testimonials - 2 */}
+            <SwiperSlide>
+              <div className="py-[10px] pt-10 ">
+                <div className="bg-white dark:bg-normalBlack p-10 relative before:absolute before:w-[85%] before:h-[10px] before:bg-khaki before:mx-auto before:-top-[10px] before:left-0 before:right-0 after:absolute after:w-[85%] after:h-[10px] after:bg-khaki after:mx-auto after:-bottom-[10px] after:left-0 after:right-0 ">
+                  {/* quote icon */}
+                  <img
+                    src="/images/home-1/testi-quote.png"
+                    alt=""
+                    className="absolute right-3 xl:right-10 -top-8"
+                  />
+
+                  {/* rating icon */}
+                  <ul className="flex items-center text-khaki space-x-[4px]">
+                    <li>
+                      <FaStar size={"16px"} />
+                    </li>
+                    <li>
+                      <FaStar size={"16px"} />
+                    </li>
+                    <li>
+                      <FaStar size={"16px"} />
+                    </li>
+                    <li>
+                      <FaStar size={"16px"} />
+                    </li>
+                    <li>
+                      <FaStar size={"16px"} />
+                    </li>
+                  </ul>
+                  <p className="font-Lora leading-[26px] text-lightGray font-normal text-lg mt-[30px] italic mb-[45px] before:absolute before:h-[30px] before:left-0 before:bottom-[-36px] before:bg-khaki before:w-[1px] relative">
+                    “Professionally repurpose flexible testing procedures via
+                    molla in customer service. Dynamically reconceptualize
+                    value-added the systems before manufactured products.
+                    Enthusiastically envisioneer emerging best”
+                  </p>
+                  <span className="w-[1px] h-[25px] bg-[#ddd]"></span>
+
+                  <div className="flex items-center space-x-6 ">
+                    <img
+                      src="/images/home-1/call-do-action-img.png"
+                      className="w-[65px] h-[65px]"
+                      alt=""
+                    />
+
+                    <div className="">
+                      <h4 className="text-[22px] leading-[26px] text-lightBlack dark:text-white font-semibold font-Garamond">
+                        John D. Alexon
+                      </h4>
+                      <p className="pt-1 text-base leading-[26px] font-normal text-gray dark:text-lightGray flex items-center">
+                        <span className="w-5 h-[1px] inline-block text-khaki bg-khaki mr-2"></span>
+                        Manger
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>

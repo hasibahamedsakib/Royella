@@ -44,7 +44,7 @@ const Testimonial = () => {
         </div>
         {/* section content */}
         <div className="relative">
-          <div className="mt-14 keen-slider p-6 " ref={sliderRef}>
+          <div className="mt-14 2xl:mt-[60px] keen-slider " ref={sliderRef}>
             {/* slide - 1 */}
             <div className="keen-slider__slide number-slide1 ">
               <div className="bg-whiteSmoke dark:bg-normalBlack p-[30px] relative before:absolute before:w-6 before:h-6 before:bg-whiteSmoke dark:before:bg-normalBlack before:rotate-45 before:left-[37px] before:-bottom-[13px]">

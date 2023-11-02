@@ -1,18 +1,17 @@
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-
 import "./style.css";
 
 // import required modules
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FaStar, FaCalendarPlus } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import { BiPhoneCall } from "react-icons/bi";
 
 const HeroSection = () => {
   return (
-    <div className="relative">
+    <div className="">
       <Swiper
         centeredSlides={true}
         navigation={true}
@@ -28,10 +27,7 @@ const HeroSection = () => {
       >
         {/* slider 1 */}
         <SwiperSlide>
-          <div
-            className="bg-[url('/images/home-1/hero-bg.jpg')] w-full h-screen xl:h-[
-            850px] 3xl:h-[950px]  bg-[rgba(30,30,30,0.4)] bg-opacity-40 grid items-center justify-center text-white relative pb-[150px] lg:pb-16 xl:pb-0 "
-          >
+          <div className="bg-[url('/images/home-1/hero-bg.jpg')] w-full h-screen sm:h-[700px] md:h-[800px] xl:h-[850px] 3xl:h-[950px]  bg-[rgba(30,30,30,0.4)] bg-opacity-40 grid items-center bg-cover justify-center text-white relative pb-[150px] lg:pb-16 xl:pb-0 ">
             <div className="font-Garamond space-y-2 sm:space-y-4 md:space-y-6 3xl:space-y-10 2xl:w-[720px] text-center">
               <div className="flex space-x-2 items-center justify-center">
                 <FaStar className="w-[14px] h-[14px] text-khaki" />
@@ -49,7 +45,7 @@ const HeroSection = () => {
                   IN CALIFORNIA
                 </h1>
               </div>
-              <button className="w-[185px] h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16">
+              <button className="w-[185px] h-[48px] lg:h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16">
                 Discover More
               </button>
               {/* contact info */}
@@ -62,10 +58,7 @@ const HeroSection = () => {
         </SwiperSlide>
         {/* slider 2 */}
         <SwiperSlide>
-          <div
-            className="bg-[url('/images/home-1/hero-bg2.jpg')] w-full h-screen xl:h-[
-            850px] 3xl:h-[950px]  bg-[rgba(30,30,30,0.4)] bg-opacity-40 grid items-center justify-center text-white relative pb-[150px] lg:pb-20 xl:pb-0"
-          >
+          <div className="bg-[url('/images/home-1/hero-bg2.jpg')] w-full h-screen sm:h-[700px] md:h-[800px] xl:h-[850px] 3xl:h-[950px]  bg-[rgba(30,30,30,0.4)] bg-opacity-40 grid items-center bg-cover justify-center text-white relative pb-[150px] lg:pb-20 xl:pb-0">
             <div className="font-Garamond space-y-2 sm:space-y-4 md:space-y-6 2xl:space-y-10 2xl:w-[720px] text-center">
               <div className="flex space-x-2 items-center justify-center">
                 <FaStar className="w-[14px] h-[14px] text-khaki" />
@@ -83,7 +76,7 @@ const HeroSection = () => {
                   IN CALIFORNIA
                 </h1>
               </div>
-              <button className="w-[185px] h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16">
+              <button className="w-[185px] h-[48px] lg:h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16">
                 Discover More
               </button>
               {/* contact info */}
@@ -96,10 +89,7 @@ const HeroSection = () => {
         </SwiperSlide>
         {/* slider 3 */}
         <SwiperSlide>
-          <div
-            className="bg-[url('/images/home-1/hero-bg.jpg')] w-full h-screen xl:h-[
-            850px] 3xl:h-[950px]  bg-[rgba(30,30,30,0.4)] bg-opacity-40 grid items-center justify-center text-white relative pb-[150px] lg:pb-20 xl:pb-0"
-          >
+          <div className="bg-[url('/images/home-1/hero-bg.jpg')] w-full h-screen sm:h-[700px] md:h-[800px] xl:h-[850px] 3xl:h-[950px]  bg-[rgba(30,30,30,0.4)] bg-opacity-40 grid items-center bg-cover justify-center text-white relative pb-[150px] lg:pb-20 xl:pb-0">
             <div className="font-Garamond space-y-2 sm:space-y-4 md:space-y-6 2xl:space-y-10 2xl:w-[720px] text-center">
               <div className="flex space-x-2 items-center justify-center">
                 <FaStar className="w-[14px] h-[14px] text-khaki" />
@@ -117,7 +107,7 @@ const HeroSection = () => {
                   IN CALIFORNIA
                 </h1>
               </div>
-              <button className="w-[185px] h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16">
+              <button className="w-[185px] h-[48px] lg:h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16">
                 Discover More
               </button>
               {/* contact info */}
@@ -130,10 +120,7 @@ const HeroSection = () => {
         </SwiperSlide>
         {/* slider 4 */}
         <SwiperSlide>
-          <div
-            className="bg-[url('/images/home-1/hero-bg2.jpg')] w-full h-screen xl:h-[
-            850px] 3xl:h-[950px]  bg-[rgba(30,30,30,0.4)] bg-opacity-40 grid items-center justify-center text-white relative pb-[150px] lg:pb-20 xl:pb-0"
-          >
+          <div className="bg-[url('/images/home-1/hero-bg2.jpg')] w-full h-screen sm:h-[700px] md:h-[800px] xl:h-[850px] 3xl:h-[950px]  bg-[rgba(30,30,30,0.4)] bg-opacity-40 grid items-center bg-cover justify-center text-white relative pb-[150px] lg:pb-20 xl:pb-0">
             <div className="font-Garamond space-y-2 sm:space-y-4 md:space-y-6 2xl:space-y-10 2xl:w-[720px] text-center">
               <div className="flex space-x-2 items-center justify-center">
                 <FaStar className="w-[14px] h-[14px] text-khaki" />
@@ -151,7 +138,7 @@ const HeroSection = () => {
                   IN CALIFORNIA
                 </h1>
               </div>
-              <button className="w-[185px] h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16">
+              <button className="w-[185px] h-[48px] lg:h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16">
                 Discover More
               </button>
               {/* contact info */}
@@ -163,80 +150,6 @@ const HeroSection = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      {/* booking area start */}
-      <section className="Container-Hero bg-lightBlack dark:bg-normalBlack  grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 items-center justify-center font-Lora py-3 lg:py-4 xl:py-5 2xl:py-6 border-t-[3px] border-t-khaki absolute left-0 right-0 -bottom-16 lg:-bottom-14 3xl:-bottom-12 z-[1]">
-        <div className="p-3">
-          <p className="text-sm text-lightGray">Check In</p>
-          <div className="flex items-center pt-[18px] ">
-            <input
-              type="text"
-              className="border-none bg-transparent focus:outline-transparent focus:border-transparent text-white focus:border-none outline-0 w-[140px] sm:w-[160px] text-sm lg:text-base focus:ring-transparent"
-              defaultValue="26 August, 2023"
-            />
-            <FaCalendarPlus className="w-4 h-4 text-khaki ml-20" />
-          </div>
-        </div>
-        <div className="p-3">
-          <p className="text-sm text-lightGray">Check Out</p>
-          <div className="flex items-center pt-[18px] ">
-            <input
-              type="text"
-              className="border-none bg-transparent focus:outline-transparent focus:border-transparent text-white focus:border-none outline-0 w-[140px] sm:w-[160px] text-sm lg:text-base focus:ring-transparent"
-              defaultValue="26 August, 2023"
-            />
-            <FaCalendarPlus className="w-4 h-4 text-khaki ml-20" />
-          </div>
-        </div>
-        <div className="p-3">
-          <p className="text-sm text-lightGray">Rooms</p>
-          <div className="flex items-center pt-[18px]">
-            <select className="w-[140px] sm:w-[200px] bg-transparent border-0 outline-0 text-sm lg:text-base text-white focus:border-khaki focus:outline-none focus:border-none focus:ring-transparent">
-              <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 ">
-                01 Rooms
-              </option>
-              <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 ">
-                02 Rooms
-              </option>
-              <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 ">
-                03 Rooms
-              </option>
-              <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 ">
-                04 Rooms
-              </option>
-              <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 ">
-                05 Rooms
-              </option>
-            </select>
-          </div>
-        </div>
-
-        <div className="p-3">
-          <p className="text-sm text-lightGray">Guests</p>
-          <div className="flex items-center pt-[18px]">
-            <select className="border-0 w-[145px] sm:w-[200px] bg-transparent  outline-0 text-sm lg:text-base focus:outline-none focus:border-none focus:ring-transparent text-white">
-              <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 text-white">
-                01 Adult, 0 Child
-              </option>
-              <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 text-white">
-                02 Adult, 0 Child
-              </option>
-              <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 text-white">
-                02 Adult, 1 Child
-              </option>
-              <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 text-white">
-                02 Adult, 2 Child
-              </option>
-              <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 text-white">
-                05 Adult, 0 Child
-              </option>
-            </select>
-          </div>
-        </div>
-        <button className="w-[142px] h-[50px] text-[15px] bg-khaki font-Garamond text-white">
-          Checkout Now
-        </button>
-      </section>
-      {/* booking area end */}
     </div>
   );
 };

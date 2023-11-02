@@ -12,11 +12,12 @@
   border: none;
   width: 10px;
   height: 10px;
-  background: #f8f6f3;
+  background: #fff;
   border-radius: 50%;
   margin: 0 5px;
   padding: 5px;
   cursor: pointer;
+  border: 1px solid #c19d68;
 }
 
 .dot:focus {

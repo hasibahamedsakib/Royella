@@ -20,7 +20,7 @@ const LatestNews = () => {
         </div>
 
         {/* Section content */}
-        <div className="mt-14">
+        <div className="mt-14 2xl:mt-[60px]">
           <div className="grid grid-cols-6 2xl:grid-rows-4 2xl:grid-flow-col  gap-6">
             {/* card - 1 */}
             <div className=" bg-white dark:bg-lightBlack  h-full col-span-6 md:col-span-3 2xl:row-span-4 2xl:col-start-1 2xl:col-end-4 group overflow-hidden">
