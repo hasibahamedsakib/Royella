@@ -40,6 +40,7 @@ const Rooms = () => {
     <div className="bg-whiteSmoke dark:bg-lightBlack">
       <div className="relative z-[1]">
         {/* Date and rome info */}
+
         <div className="Container-Hero bg-lightBlack dark:bg-normalBlack  grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 items-center justify-center font-Lora py-3 lg:py-4 xl:py-5 2xl:py-6 border-t-[3px] border-t-khaki mt-[-75px]  left-0 right-0 z-[1]">
           <div className="p-3">
             <p className="text-sm text-lightGray ml-3">Check In</p>
@@ -47,6 +48,7 @@ const Rooms = () => {
               <input
                 type="date"
                 className="border-none bg-transparent focus:outline-transparent focus:border-transparent text-white focus:border-none outline-0  text-sm lg:text-base focus:ring-transparent"
+                required
               />
             </div>
           </div>
@@ -57,6 +59,7 @@ const Rooms = () => {
                 type="date"
                 className="border-none bg-transparent focus:outline-transparent focus:border-transparent text-white focus:border-none outline-0  text-sm lg:text-base focus:ring-transparent"
                 defaultValue="26 August, 2023"
+                required
               />
             </div>
           </div>
@@ -174,11 +177,14 @@ const Rooms = () => {
               </div>
             </div>
           </div>
-          <button className="w-[142px] h-10 lg:h-[50px] text-[15px] bg-khaki font-Garamond text-white mx-auto col-span-2  md:col-span-1 lg:col-span-1">
-            Checkout Now
-          </button>
+          <Link to="/room">
+            <button className="w-[142px] h-10 lg:h-[50px] text-[15px] bg-khaki font-Garamond text-white mx-auto col-span-2  md:col-span-1 lg:col-span-1">
+              Checkout Now
+            </button>
+          </Link>
         </div>
       </div>
+      {/* Rooms section heading */}
       <div className=" py-20 2xl:py-[120px] w-full pt-[50px]">
         <div className="Container ">
           {/* section heading */}
@@ -231,7 +237,7 @@ const Rooms = () => {
                         <h4 className="text-sm leading-[26px] text-khaki">
                           Luxury Room
                         </h4>
-                        <Link to="#">
+                        <Link to="/room">
                           <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                             Double Suite Rooms
                           </h2>
@@ -307,9 +313,9 @@ const Rooms = () => {
                         <h4 className="text-sm leading-[26px] text-khaki">
                           Luxury Room
                         </h4>
-                        <Link to="#">
+                        <Link to="/room">
                           <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
-                            Double Suite Rooms
+                            Delux Family Rooms
                           </h2>
                         </Link>
                         <p className="text-sm font-normal text-gray  dark:text-lightGray font-Lora">
@@ -383,9 +389,9 @@ const Rooms = () => {
                         <h4 className="text-sm leading-[26px] text-khaki">
                           Luxury Room
                         </h4>
-                        <Link to="#">
+                        <Link to="/room">
                           <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
-                            Double Suite Rooms
+                            Suprior Bed Rooms
                           </h2>
                         </Link>
                         <p className="text-sm font-normal text-gray  dark:text-lightGray font-Lora">

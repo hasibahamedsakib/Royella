@@ -2,7 +2,15 @@ import { BsArrowLeft, BsArrowRight, BsCheck2 } from "react-icons/bs";
 import BreadCrumb from "../../BreadCrumb/BreadCrumb";
 import { useState } from "react";
 import { FiLogOut } from "react-icons/fi";
+import { useLocation, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+
 const RoomDetails = () => {
+  // const { data } = props?.location?.state;
+  const location = useLocation();
+  const bookingsData = location.state && location.state;
+
+  const navigate = useNavigate();
   const images = [
     "/images/inner/room-details-1.jpg",
     "/images/inner/room-details-2.jpg",
@@ -16,6 +24,33 @@ const RoomDetails = () => {
   };
   const nextBtn = () => {
     setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  // booking alert message
+  const setAlert = () => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You booking this rooms?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#008000",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, i want!",
+      color: "#fff",
+      background: "#c19d68",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Congratulation!",
+          text: "Booking Successful!",
+          icon: "success",
+          background: "#c19d68",
+          color: "#fff",
+          confirmButtonColor: "#008000",
+        });
+        navigate("/");
+      }
+    });
   };
   return (
     <section className="">
@@ -57,7 +92,9 @@ const RoomDetails = () => {
             <div className="pt-5 lg:pt-[35px]  pr-3">
               <p className="text-base font-Lora text-khaki">LUXURY ROOM</p>
               <h2 className="py-2 sm:py-3 md:py-4 lg:py-[19px] 2xl:py-[25px] font-Garamond text-[22px] sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-[38px] 3xl:text-[40px] leading-6 lg:leading-[26px]  text-lightBlack dark:text-white font-semibold">
-                Delux Family Rooms
+                {bookingsData && bookingsData.title
+                  ? bookingsData.title
+                  : "Delux Family Rooms"}
               </h2>
               <p className="text-sm lg:text-base leading-6 text-gray dark:text-lightGray font-normal font-Lora">
                 Rapidiously myocardinate cross-platform intellectual capital
@@ -186,32 +223,78 @@ const RoomDetails = () => {
           {/*  */}
           <div className="col-span-6 md:col-span-3 lg:col-span-2">
             {/* booking details sidebar */}
-            <div className=" bg-whiteSmoke dark:bg-normalBlack px-7 py-8 md:px-8 md:py-10 lg:px-9 lg:py-11 2xl:px-10 2xl:py-[45px] grid-flow-row-dense">
-              <h4 className="font-Garamond text-xl sm:text-[22px] md:text-2xl xl:text-3xl leading-7 md:leading-8 lg:leading-10 xl:leading-[50px] 2xl:leading-[60px] 3xl:leading-[70px] text-lightBlack dark:text-white font-semibold mb-6">
-                Booking
-              </h4>
-              <div className="grid items-center gap-[25px] pb-7">
-                <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6 ">
-                  <p className="text-sm md:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
-                    Check In - <span className="text-khaki"> 04 Oct, 2023</span>{" "}
-                  </p>
+            <div>
+              <div className=" bg-whiteSmoke dark:bg-normalBlack px-7 py-8 md:px-8 md:py-10 lg:px-9 lg:py-11 2xl:px-10 2xl:pt-[45px] 2xl:pb-[30px] grid-flow-row-dense">
+                <h4 className="font-Garamond text-xl sm:text-[22px] md:text-2xl xl:text-3xl leading-7 md:leading-8 lg:leading-10 xl:leading-[50px] 2xl:leading-[60px] 3xl:leading-[70px] text-lightBlack dark:text-white font-semibold mb-4">
+                  Booking
+                </h4>
+                <div className="grid items-center gap-[18px] ">
+                  <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6 ">
+                    <p className="text-sm md:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
+                      Check In -{" "}
+                      <span className="text-khaki">
+                        {bookingsData && bookingsData.selectedInDate
+                          ? new Date(bookingsData.selectedInDate)
+                              .toDateString()
+                              .slice(4)
+                          : "04 Oct, 2023"}
+                      </span>
+                    </p>
+                  </div>
+                  <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6">
+                    <p className="text-sm md:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
+                      Check Out -{" "}
+                      <span className="text-khaki">
+                        {bookingsData && bookingsData.selectedOutDate
+                          ? new Date(bookingsData.selectedOutDate)
+                              .toDateString()
+                              .slice(4)
+                          : "10 Oct, 2023"}
+                      </span>{" "}
+                    </p>
+                  </div>
+                  <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6">
+                    <p className="text-sm md:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
+                      Adult -{" "}
+                      <span className="text-khaki">
+                        0
+                        {bookingsData && bookingsData.adult
+                          ? bookingsData.adult
+                          : "2"}
+                      </span>{" "}
+                    </p>
+                  </div>
+                  <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6">
+                    <p className="text-sm md:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
+                      Children -{" "}
+                      <span className="text-khaki">
+                        0
+                        {bookingsData && bookingsData.children
+                          ? bookingsData.children
+                          : "1"}
+                      </span>{" "}
+                    </p>
+                  </div>
+                  <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6">
+                    <p className="text-sm md:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
+                      Rooms -{" "}
+                      <span className="text-khaki">
+                        0
+                        {bookingsData && bookingsData.room
+                          ? bookingsData.room
+                          : "2"}
+                      </span>{" "}
+                    </p>
+                  </div>
                 </div>
-                <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6">
-                  <p className="text-sm md:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
-                    Check Out -{" "}
-                    <span className="text-khaki"> 04 Oct, 2023</span>{" "}
-                  </p>
-                </div>
-                <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6">
-                  <p className="text-sm md:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
-                    Adult - <span className="text-khaki">02</span>{" "}
-                  </p>
-                </div>
-                <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6">
-                  <p className="text-sm md:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
-                    Children - <span className="text-khaki">04</span>{" "}
-                  </p>
-                </div>
+              </div>
+              <div className="py-5">
+                <button
+                  className="bg-khaki w-full h-10 2xl:h-[50px] text-white font-Lora font-semibold px-5"
+                  onClick={() => setAlert()}
+                >
+                  Confirm Booking
+                </button>
               </div>
             </div>
 

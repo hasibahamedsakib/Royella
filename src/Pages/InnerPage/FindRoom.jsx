@@ -2,24 +2,39 @@ import { BiChevronDown } from "react-icons/bi";
 import BreadCrumb from "../../BreadCrumb/BreadCrumb";
 import { useState } from "react";
 import { FaStar } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import { MdEmail, MdOutlineShareLocation } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 
 const FindRoom = () => {
+  //  room info
+  const location = useLocation();
+  const roomsData = location.state && location.state;
   const [open, setOpen] = useState(false);
   const [guestOpen, setGuestOpen] = useState(false);
   const [room, setRoom] = useState(1);
   const [adult, setAdult] = useState(1);
   const [children, setChildren] = useState(0);
-  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedInDate, setSelectedInDate] = useState("");
+  const [selectedOutDate, setSelectedOutDate] = useState("");
 
-  const handleDate = (e) => {
+  const handleCheckInDate = (e) => {
     let newDate = e.target.value;
-    setSelectedDate(newDate);
+    setSelectedInDate(newDate);
   };
-  console.log(selectedDate);
+  const handleCheckOutDate = (e) => {
+    let newDate = e.target.value;
+    setSelectedOutDate(newDate);
+  };
+  const bookingInfo = {
+    ...roomsData,
+    selectedInDate,
+    selectedOutDate,
+    room,
+    adult,
+    children,
+  };
 
   return (
     <section>
@@ -36,9 +51,10 @@ const FindRoom = () => {
             <div className="flex items-center pt-[18px] ">
               <input
                 type="date"
+                required
                 className="border-none bg-transparent focus:outline-transparent focus:border-transparent text-lightBlack dark:text-white focus:border-none outline-0  text-sm lg:text-base focus:ring-transparent"
-                value={selectedDate}
-                onChange={handleDate}
+                value={selectedInDate}
+                onChange={handleCheckInDate}
               />
             </div>
           </div>
@@ -47,8 +63,10 @@ const FindRoom = () => {
             <div className="flex items-center pt-[18px] ">
               <input
                 type="date"
+                required
                 className="border-none bg-transparent focus:outline-transparent focus:border-transparent text-lightBlack dark:text-white focus:border-none outline-0  text-sm lg:text-base focus:ring-transparent"
-                defaultValue="26 August, 2023"
+                value={selectedOutDate}
+                onChange={handleCheckOutDate}
               />
             </div>
           </div>
@@ -165,9 +183,11 @@ const FindRoom = () => {
               </div>
             </div>
           </div>
-          <button className="w-[142px] h-[50px] text-[15px] bg-khaki font-Garamond text-white">
-            Checkout Now
-          </button>
+          <Link to="/room_details" state={bookingInfo ? bookingInfo : ""}>
+            <button className="w-[142px] h-[50px] text-[15px] bg-khaki font-Garamond text-white">
+              Checkout Now
+            </button>
+          </Link>
         </div>
         {/* Room Details */}
         <div className="mt-14 2xl:mt-[60px] grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-[30px] Container">

@@ -75,7 +75,7 @@ const Room = () => {
                   />
                 </div>
                 <div className="px-5 3xl:px-6 py-2 inline-flex bg-khaki text-sm  items-center justify-center text-white  absolute top-[10px] right-[10px] ">
-                  <span className="">$560</span>
+                  <span className="">$450</span>
                   <span className="mx-2">|</span>
                   <span>Night</span>
                 </div>
@@ -93,7 +93,10 @@ const Room = () => {
                     <h4 className="text-sm leading-[26px] text-khaki">
                       Luxury Room
                     </h4>
-                    <Link to="#">
+                    <Link
+                      to="/find_room"
+                      state={{ price: "450", title: "Delux Family Rooms" }}
+                    >
                       <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                         Delux Family Rooms
                       </h2>
@@ -150,7 +153,7 @@ const Room = () => {
                   />
                 </div>
                 <div className="px-5 3xl:px-6 py-2 inline-flex bg-khaki text-sm  items-center justify-center text-white  absolute top-[10px] right-[10px] ">
-                  <span className="">$560</span>
+                  <span className="">$550</span>
                   <span className="mx-2">|</span>
                   <span>Night</span>
                 </div>
@@ -167,7 +170,10 @@ const Room = () => {
                     <h4 className="text-sm leading-[26px] text-khaki">
                       Luxury Room
                     </h4>
-                    <Link to="#">
+                    <Link
+                      to="/find_room"
+                      state={{ price: "550", title: "Double Suite Rooms" }}
+                    >
                       <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                         Double Suite Rooms
                       </h2>
@@ -241,9 +247,12 @@ const Room = () => {
                     <h4 className="text-sm leading-[26px] text-khaki">
                       Luxury Room
                     </h4>
-                    <Link to="#">
+                    <Link
+                      to="/find_room"
+                      state={{ price: "560", title: "Suprior Bed Rooms" }}
+                    >
                       <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
-                        Double Suite Rooms
+                        Suprior Bed Rooms
                       </h2>
                     </Link>
                     <p className="text-sm font-normal text-gray  dark:text-lightGray font-Lora">
@@ -298,7 +307,7 @@ const Room = () => {
                   />
                 </div>
                 <div className="px-5 3xl:px-6 py-2 inline-flex bg-khaki text-sm  items-center justify-center text-white  absolute top-[10px] right-[10px] ">
-                  <span className="">$560</span>
+                  <span className="">$480</span>
                   <span className="mx-2">|</span>
                   <span>Night</span>
                 </div>
@@ -315,7 +324,10 @@ const Room = () => {
                     <h4 className="text-sm leading-[26px] text-khaki">
                       Luxury Room
                     </h4>
-                    <Link to="#">
+                    <Link
+                      to="/find_room"
+                      state={{ price: "480", title: "Junior Suite Room" }}
+                    >
                       <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                         Junior Suite Room
                       </h2>
@@ -372,7 +384,7 @@ const Room = () => {
                   />
                 </div>
                 <div className="px-5 3xl:px-6 py-2 inline-flex bg-khaki text-sm  items-center justify-center text-white  absolute top-[10px] right-[10px] ">
-                  <span className="">$560</span>
+                  <span className="">$520</span>
                   <span className="mx-2">|</span>
                   <span>Night</span>
                 </div>
@@ -389,7 +401,10 @@ const Room = () => {
                     <h4 className="text-sm leading-[26px] text-khaki">
                       Luxury Room
                     </h4>
-                    <Link to="#">
+                    <Link
+                      to="/find_room"
+                      state={{ price: "520", title: "Family Suite Room" }}
+                    >
                       <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                         Family Suite Room
                       </h2>
@@ -446,7 +461,7 @@ const Room = () => {
                   />
                 </div>
                 <div className="px-5 3xl:px-6 py-2 inline-flex bg-khaki text-sm  items-center justify-center text-white  absolute top-[10px] right-[10px] ">
-                  <span className="">$560</span>
+                  <span className="">$500</span>
                   <span className="mx-2">|</span>
                   <span>Night</span>
                 </div>
@@ -463,9 +478,12 @@ const Room = () => {
                     <h4 className="text-sm leading-[26px] text-khaki">
                       Luxury Room
                     </h4>
-                    <Link to="#">
+                    <Link
+                      to="/find_room"
+                      state={{ price: "500", title: "Beautiful Family Rooms" }}
+                    >
                       <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
-                        Delux Family Rooms
+                        Beautiful Family Rooms
                       </h2>
                     </Link>
                     <p className="text-sm font-normal text-gray  dark:text-lightGray font-Lora">
