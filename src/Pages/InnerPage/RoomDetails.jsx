@@ -6,7 +6,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const RoomDetails = () => {
-  // const { data } = props?.location?.state;
+  const [imageIndex, setImageIndex] = useState(0);
   const location = useLocation();
   const bookingsData = location.state && location.state;
 
@@ -16,7 +16,6 @@ const RoomDetails = () => {
     "/images/inner/room-details-2.jpg",
   ];
 
-  const [imageIndex, setImageIndex] = useState(0);
   const prevBtn = () => {
     setImageIndex(
       (prevIndex) => (prevIndex - 1 + images.length) % images.length
@@ -237,7 +236,7 @@ const RoomDetails = () => {
                           ? new Date(bookingsData.selectedInDate)
                               .toDateString()
                               .slice(4)
-                          : "04 Oct, 2023"}
+                          : "04 dec, 2023"}
                       </span>
                     </p>
                   </div>
@@ -249,7 +248,7 @@ const RoomDetails = () => {
                           ? new Date(bookingsData.selectedOutDate)
                               .toDateString()
                               .slice(4)
-                          : "10 Oct, 2023"}
+                          : "10 dec, 2023"}
                       </span>{" "}
                     </p>
                   </div>
@@ -288,6 +287,7 @@ const RoomDetails = () => {
                   </div>
                 </div>
               </div>
+
               <div className="py-5">
                 <button
                   className="bg-khaki w-full h-10 2xl:h-[50px] text-white font-Lora font-semibold px-5"
@@ -299,7 +299,7 @@ const RoomDetails = () => {
             </div>
 
             {/* Amenities */}
-            <div className="mt-5 sm:mt-[30px] md:mt-10 lg:mt-[50px]">
+            <div className="mt-3 sm:mt-4 md:mt-5 lg:mt-6">
               <h4 className="font-Garamond text-xl sm:text-[22px] md:text-2xl xl:text-3xl leading-7 md:leading-8 lg:leading-10 xl:leading-[50px] 2xl:leading-[60px] 3xl:leading-[70px] text-lightBlack dark:text-white font-semibold mb-6">
                 Amenities
               </h4>

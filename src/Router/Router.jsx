@@ -15,6 +15,8 @@ import About from "../Pages/InnerPage/About";
 import Room from "../Pages/InnerPage/Room";
 import FindRoom from "../Pages/InnerPage/FindRoom";
 import RoomDetails from "../Pages/InnerPage/RoomDetails";
+import Services from "../Pages/InnerPage/Services";
+import ServiceDetails from "../Pages/InnerPage/ServiceDetails";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,14 @@ const router = createBrowserRouter([
       {
         path: "/room_details",
         element: <RoomDetails />,
+      },
+      {
+        path: "/services",
+        element: <Services />,
+      },
+      {
+        path: "/service_details",
+        element: <ServiceDetails />,
       },
     ],
   },

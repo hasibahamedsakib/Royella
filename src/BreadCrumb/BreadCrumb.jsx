@@ -10,13 +10,13 @@ const BreadCrumb = ({ title, home }) => {
         <div className="flex items-center justify-center">
           <Link
             to={`${home ? home : "/"}`}
-            className="text-sm sm:text-base leading-10 2xl:leading-[70px] text-khaki font-medium font-Garamond flex items-center"
+            className="text-base leading-10 2xl:leading-[70px] text-khaki font-semibold font-Garamond flex items-center"
           >
             Home <span className="mx-2 text-white">/</span>
           </Link>
           <Link
             to={`#`}
-            className="text-sm sm:text-base leading-10 2xl:leading-[70px] text-white font-medium font-Garamond capitalize"
+            className="text-base leading-10 2xl:leading-[70px] text-white font-semibold font-Garamond capitalize"
           >
             {title}
           </Link>

@@ -237,22 +237,22 @@ const Navbar = () => {
                   </div>
                   <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/team" className="block">
-                        TEAM MEMBER
+                      <NavLink to="/service_details" className="block">
+                        SERVICE DETAILS
                       </NavLink>
                     </li>
                   </div>
                   <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/contact" className="block">
-                        CONTACT
+                      <NavLink to="/our_team" className="block">
+                        OUR TEAM
                       </NavLink>
                     </li>
                   </div>
                   <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/faq" className="block">
-                        FAQ
+                      <NavLink to="/pricing" className="block">
+                        PRICING
                       </NavLink>
                     </li>
                   </div>
