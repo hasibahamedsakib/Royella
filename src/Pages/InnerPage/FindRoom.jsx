@@ -13,6 +13,13 @@ const FindRoom = () => {
   const [room, setRoom] = useState(1);
   const [adult, setAdult] = useState(1);
   const [children, setChildren] = useState(0);
+  const [selectedDate, setSelectedDate] = useState("");
+
+  const handleDate = (e) => {
+    let newDate = e.target.value;
+    setSelectedDate(newDate);
+  };
+  console.log(selectedDate);
 
   return (
     <section>
@@ -30,6 +37,8 @@ const FindRoom = () => {
               <input
                 type="date"
                 className="border-none bg-transparent focus:outline-transparent focus:border-transparent text-lightBlack dark:text-white focus:border-none outline-0  text-sm lg:text-base focus:ring-transparent"
+                value={selectedDate}
+                onChange={handleDate}
               />
             </div>
           </div>

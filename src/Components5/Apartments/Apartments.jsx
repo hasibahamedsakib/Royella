@@ -4,7 +4,7 @@ const Apartments = () => {
     <section className="dark:bg-lightBlack">
       {/* facilities part */}
       <div className="Container bg-whiteSmoke dark:bg-normalBlack px-5 md:px-9 2xl:px-[43px] py-8 md:py-12 2xl:py-[65px] relative mt-[-135px] z-[1]">
-        <div className="grid items-center grid-cols-1 xsm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-[30px] ">
+        <div className="grid items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-[30px] ">
           <div className="apartment-effect group">
             <img
               src="/images/home-5/Apartment1.png"

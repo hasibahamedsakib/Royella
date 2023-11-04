@@ -16,7 +16,7 @@ const BreadCrumb = ({ title, home }) => {
           </Link>
           <Link
             to={`#`}
-            className="text-sm sm:text-base leading-10 2xl:leading-[70px] text-white font-medium font-Garamond"
+            className="text-sm sm:text-base leading-10 2xl:leading-[70px] text-white font-medium font-Garamond capitalize"
           >
             {title}
           </Link>

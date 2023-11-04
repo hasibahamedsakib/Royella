@@ -27,7 +27,15 @@
 .Container-Hero {
   @apply w-full sm:w-[540px] md:w-[720px] xl:w-[960px] 2xl:w-[1100px]  3xl:w-[1250px]  px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;
 }
+/* test btn */
 
+/* 
+
+<a href="#_" class="relative rounded px-5 py-2.5 overflow-hidden group bg-green-500 relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
+<span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+<span class="relative">Button Text</span>
+</a>
+*/
 /* primary button */
 .btn-primary {
   @apply h-[40px] lg:h-[56px] w-[145px] 2xl:w-[165px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-[48px]  lg:before:top-[65px] xl:before:top-16 text-white uppercase text-sm lg:text-base font-medium  font-Garamond;

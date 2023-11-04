@@ -19,9 +19,6 @@ const LatestBlog = () => {
     slideChanged(slider) {
       setCurrentSlide(slider.track.details.rel);
     },
-    created() {
-      setLoaded(true);
-    },
   });
   return (
     <div className="dark:bg-normalBlack">

@@ -14,6 +14,7 @@ import Home6 from "../Pages/Home6/Home6";
 import About from "../Pages/InnerPage/About";
 import Room from "../Pages/InnerPage/Room";
 import FindRoom from "../Pages/InnerPage/FindRoom";
+import RoomDetails from "../Pages/InnerPage/RoomDetails";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/find_room",
         element: <FindRoom />,
+      },
+      {
+        path: "/room_details",
+        element: <RoomDetails />,
       },
     ],
   },
