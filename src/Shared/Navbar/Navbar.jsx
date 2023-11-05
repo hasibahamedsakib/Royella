@@ -314,16 +314,16 @@ const Navbar = () => {
 
           {/* large device visible button and search icon */}
           <div className="hidden lg:flex items-center">
-            <span onClick={handleClick} className="mr-2 cursor-pointer">
+            <span onClick={handleClick} className="mr-2 cursor-pointer group ">
               {isDarkMode ? (
                 <BiSun
-                  className="text-white"
+                  className="text-white group-hover:rotate-180 rotate transition-all duration-300"
                   title="Apply Light Mode"
                   size={35}
                 />
               ) : (
                 <IoMoonSharp
-                  className="text-white"
+                  className="text-white group-hover:rotate-[360deg] transition-all duration-300"
                   title="Apply Dark Mode"
                   size={35}
                 />

@@ -190,7 +190,7 @@ const ServiceDetails = () => {
             {/* Tab Control Button */}
             <div className="grid grid-cols-2 sm:grid-cols-4 sm:flex items-center justify-center gap-3">
               <button
-                className="px-5 lg:px-[26px] py-2 lg:py-[15px] bg-white dark:bg-normalBlack text-lightBlack dark:text-white rounded focus:bg-khaki focus:text-white dark:focus:bg-khaki dark:focus:text-white hover:ring-2 ring-khaki ring-offset-2 dark:ring-offset-lightBlack text-sm sm:text-[15px] font-Garamond font-medium leading-7 lg:leading-[38px]"
+                className="px-5 lg:px-[26px] py-2 lg:py-[10px] bg-white dark:bg-normalBlack text-lightBlack dark:text-white rounded focus:bg-khaki focus:text-white dark:focus:bg-khaki dark:focus:text-white hover:ring-2 ring-khaki ring-offset-2 dark:ring-offset-lightBlack text-sm sm:text-[15px] font-Garamond font-medium leading-7 lg:leading-[38px]"
                 onClick={() => {
                   let items = menu.filter(
                     (element) => element.category === "breakfast"
@@ -201,7 +201,7 @@ const ServiceDetails = () => {
                 BREAKFAST
               </button>
               <button
-                className="px-5 lg:px-[26px] py-2 lg:py-[15px] bg-white dark:bg-normalBlack text-lightBlack dark:text-white rounded focus:bg-khaki focus:text-white dark:focus:bg-khaki dark:focus:text-white hover:ring-2 ring-khaki ring-offset-2 text-sm sm:text-[15px] font-Garamond font-medium leading-7 lg:leading-[38px] dark:ring-offset-lightBlack"
+                className="px-5 lg:px-[26px] py-2 lg:py-[10px] bg-white dark:bg-normalBlack text-lightBlack dark:text-white rounded focus:bg-khaki focus:text-white dark:focus:bg-khaki dark:focus:text-white hover:ring-2 ring-khaki ring-offset-2 text-sm sm:text-[15px] font-Garamond font-medium leading-7 lg:leading-[38px] dark:ring-offset-lightBlack"
                 onClick={() => {
                   let items = menu.filter(
                     (element) => element.category === "lunch"
@@ -212,7 +212,7 @@ const ServiceDetails = () => {
                 LUNCH
               </button>
               <button
-                className="px-5 lg:px-[26px] py-2 lg:py-[15px] bg-white dark:bg-normalBlack text-lightBlack dark:text-white rounded focus:bg-khaki focus:text-white dark:focus:bg-khaki dark:focus:text-white hover:ring-2 ring-khaki ring-offset-2 text-sm sm:text-[15px] font-Garamond font-medium leading-7 lg:leading-[38px] dark:ring-offset-lightBlack"
+                className="px-5 lg:px-[26px] py-2 lg:py-[10px] bg-white dark:bg-normalBlack text-lightBlack dark:text-white rounded focus:bg-khaki focus:text-white dark:focus:bg-khaki dark:focus:text-white hover:ring-2 ring-khaki ring-offset-2 text-sm sm:text-[15px] font-Garamond font-medium leading-7 lg:leading-[38px] dark:ring-offset-lightBlack"
                 onClick={() => {
                   let items = menu.filter(
                     (element) => element.category === "supper"
@@ -223,7 +223,7 @@ const ServiceDetails = () => {
                 SUPPER
               </button>
               <button
-                className="px-5 lg:px-[26px] py-2 lg:py-[15px] bg-white dark:bg-normalBlack text-lightBlack dark:text-white rounded focus:bg-khaki focus:text-white dark:focus:bg-khaki dark:focus:text-white hover:ring-2 ring-khaki ring-offset-2 text-sm sm:text-[15px] font-Garamond font-medium leading-7 lg:leading-[38px] dark:ring-offset-lightBlack"
+                className="px-5 lg:px-[26px] py-2 lg:py-[10px] bg-white dark:bg-normalBlack text-lightBlack dark:text-white rounded focus:bg-khaki focus:text-white dark:focus:bg-khaki dark:focus:text-white hover:ring-2 ring-khaki ring-offset-2 text-sm sm:text-[15px] font-Garamond font-medium leading-7 lg:leading-[38px] dark:ring-offset-lightBlack"
                 onClick={() => {
                   let items = menu.filter(
                     (element) => element.category === "dinner"
