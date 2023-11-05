@@ -117,38 +117,38 @@ const Navbar = () => {
               </span>
               <div className="absolute pt-5 lg:pt-8 z-20">
                 <ul className="shadow-2xl hidden group-hover:block rounded-sm bg-white text-black w-60 text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm py-4 ">
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/home2" className="block">
+                      <NavLink to="/home2" className="py-2 block">
                         Resort
                       </NavLink>
                     </li>
                   </div>
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/home3" className="block">
+                      <NavLink to="/home3" className="py-2 block">
                         Hostel
                       </NavLink>
                     </li>
                   </div>
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/home4" className="block">
+                      <NavLink to="/home4" className="py-2 block">
                         City Hotel
                       </NavLink>
                     </li>
                   </div>
 
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/home5" className="block">
+                      <NavLink to="/home5" className="py-2 block">
                         Apartment
                       </NavLink>
                     </li>
                   </div>
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/home6" className="block">
+                      <NavLink to="/home6" className="py-2 block">
                         Tourist
                       </NavLink>
                     </li>
@@ -182,23 +182,23 @@ const Navbar = () => {
               </span>
               <div className="absolute pt-5 lg:pt-8 z-20">
                 <ul className="shadow-2xl hidden group-hover:block rounded-sm bg-white text-black w-60 text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm py-4 ">
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/room" className="block">
+                      <NavLink to="/room" className="block py-2">
                         Room
                       </NavLink>
                     </li>
                   </div>
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/find_room" className="block">
+                      <NavLink to="/find_room" className="block py-2">
                         Find Room
                       </NavLink>
                     </li>
                   </div>
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/room_details" className="block">
+                      <NavLink to="/room_details" className="block py-2">
                         Room Details
                       </NavLink>
                     </li>
@@ -221,37 +221,37 @@ const Navbar = () => {
               </span>
               <div className="absolute pt-5 lg:pt-8 z-20">
                 <ul className="shadow-2xl hidden group-hover:block rounded-sm bg-white text-black w-60 text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm py-4 ">
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/about" className="block">
+                      <NavLink to="/about" className="py-2 block">
                         ABOUT US
                       </NavLink>
                     </li>
                   </div>
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/services" className="block">
+                      <NavLink to="/services" className="py-2 block">
                         SERVICE
                       </NavLink>
                     </li>
                   </div>
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/service_details" className="block">
+                      <NavLink to="/service_details" className="py-2 block">
                         SERVICE DETAILS
                       </NavLink>
                     </li>
                   </div>
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/our_team" className="block">
+                      <NavLink to="/our_team" className="py-2 block">
                         OUR TEAM
                       </NavLink>
                     </li>
                   </div>
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/pricing" className="block">
+                      <NavLink to="/pricing" className="py-2 block">
                         PRICING
                       </NavLink>
                     </li>
