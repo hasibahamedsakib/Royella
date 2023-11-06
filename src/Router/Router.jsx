@@ -19,6 +19,9 @@ import Services from "../Pages/InnerPage/Services";
 import ServiceDetails from "../Pages/InnerPage/ServiceDetails";
 import Team from "../Pages/InnerPage/Team";
 import Pricing from "../Pages/InnerPage/Pricing";
+import Blog from "../Pages/InnerPage/Blog";
+import BlogDetails from "../Pages/InnerPage/BlogDetails";
+import Contact from "../Pages/InnerPage/Contact";
 
 const router = createBrowserRouter([
   {
@@ -61,6 +64,18 @@ const router = createBrowserRouter([
       {
         path: "/pricing",
         element: <Pricing />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/blog_details",
+        element: <BlogDetails />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

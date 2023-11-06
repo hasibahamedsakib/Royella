@@ -270,28 +270,21 @@ const Navbar = () => {
               to="#"
             >
               <span className="flex items-center">
-                Hotel
+                BLOG
                 <BiChevronDown className="ml-1" />
               </span>
               <div className="absolute pt-4 lg:pt-8 z-20">
                 <ul className="shadow-2xl hidden group-hover:block rounded-sm bg-white text-black w-60 text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm  py-4">
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300 ">
-                      <NavLink to="/blog_list" className="block">
-                        BLOG LIST
+                      <NavLink to="/blog" className="py-2 block">
+                        BLOG
                       </NavLink>
                     </li>
                   </div>
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300 ">
-                      <NavLink to="/blog_grid" className="block">
-                        BLOG GRID
-                      </NavLink>
-                    </li>
-                  </div>
-                  <div className="py-2 px-5 group hover:bg-khaki hover:text-white">
-                    <li className="hover:ml-3 duration-300 ">
-                      <NavLink to="/blog_details" className="block">
+                      <NavLink to="/blog_details" className="py-2 block">
                         BLOG DETAILS
                       </NavLink>
                     </li>

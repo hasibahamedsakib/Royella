@@ -5,7 +5,7 @@ import "../../Components4/Testimonial/testimonials.css";
 import "keen-slider/keen-slider.min.css";
 
 const LatestBlog = () => {
-  const [sliderRef, instanceRef] = useKeenSlider({
+  const [sliderRef] = useKeenSlider({
     breakpoints: {
       "(min-width: 600px)": {
         slides: { perView: 2, spacing: 20 },
@@ -16,9 +16,6 @@ const LatestBlog = () => {
     },
     loop: true,
     initial: 0,
-    slideChanged(slider) {
-      setCurrentSlide(slider.track.details.rel);
-    },
   });
   return (
     <div className="dark:bg-normalBlack">
@@ -63,13 +60,13 @@ const LatestBlog = () => {
                         Interior
                       </p>
                     </div>
-                    <Link to="#">
-                      <h2 className="text-xl lg:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-4 hover:underline underline-offset-2">
+                    <Link to="/blog">
+                      <h2 className="text-xl lg:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-2 sm:py-3 md:py-4 hover:underline underline-offset-2">
                         Luxury Hotel for Traveling Spot USA, California
                       </h2>
                     </Link>
                   </div>
-                  <div className="  border-t-[1px] border-[#ddd] dark:border-gray  py-5">
+                  <div className="  border-t-[1px] border-[#ddd] dark:border-gray  py-2 sm:py-3 md:py-4 lg:py-5">
                     <div className="px-[30px] flex items-center justify-between ">
                       <div className="">
                         <span className=" text-sm sm:text-base flex items-center ">
@@ -109,13 +106,13 @@ const LatestBlog = () => {
                         Interior
                       </p>
                     </div>
-                    <Link to="#">
-                      <h2 className="text-xl lg:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-4 hover:underline underline-offset-2">
+                    <Link to="/blog">
+                      <h2 className="text-xl lg:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-2 sm:py-3 md:py-4 hover:underline underline-offset-2">
                         Luxury Hotel for Traveling Spot USA, California
                       </h2>
                     </Link>
                   </div>
-                  <div className="  border-t-[1px] border-[#ddd] dark:border-gray  py-5">
+                  <div className="  border-t-[1px] border-[#ddd] dark:border-gray  py-2 sm:py-3 md:py-4 lg:py-5">
                     <div className="px-[30px] flex items-center justify-between ">
                       <div className="">
                         <span className=" text-sm sm:text-base flex items-center ">
@@ -155,13 +152,13 @@ const LatestBlog = () => {
                         Interior
                       </p>
                     </div>
-                    <Link to="#">
-                      <h2 className="text-xl lg:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-4 hover:underline underline-offset-2">
+                    <Link to="/blog">
+                      <h2 className="text-xl lg:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-2 sm:py-3 md:py-4 hover:underline underline-offset-2">
                         Luxury Hotel for Traveling Spot USA, California
                       </h2>
                     </Link>
                   </div>
-                  <div className="  border-t-[1px] border-[#ddd] dark:border-gray  py-5">
+                  <div className="  border-t-[1px] border-[#ddd] dark:border-gray  py-2 sm:py-3 md:py-4 lg:py-5">
                     <div className="px-[30px] flex items-center justify-between ">
                       <div className="">
                         <span className=" text-sm sm:text-base flex items-center ">

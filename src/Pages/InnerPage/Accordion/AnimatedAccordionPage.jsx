@@ -1,6 +1,7 @@
 import Accordion from "./Accordion";
 
 export default function AnimatedAccordionPage() {
+  //  All Faqs and  answers.
   const faqs = [
     {
       title: "How to Booking a Room?",
@@ -54,7 +55,7 @@ export default function AnimatedAccordionPage() {
   return (
     <main className="relative flex flex-col justify-center  overflow-hidden">
       <div className="w-full mx-auto px-4 md:px-6 ">
-        <div className=" grid items-center grid-cols-1 lg:grid-cols-2  gap-x-[30px]">
+        <div className=" grid items-end grid-cols-1 lg:grid-cols-2  gap-x-[30px]">
           {faqs.map((faq, index) => (
             <Accordion
               key={index}
