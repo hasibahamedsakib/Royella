@@ -1,93 +1,124 @@
+import { Link } from "react-router-dom";
+
 const HeroSection = () => {
   return (
-    <section className="bg-[url('/images/home-2/hero-bg.jpg')] bg-no-repeat bg-center w-full bg-cover h-screen 2xl:h-[960px] grid items-center justify-center bg-[rgba(30,30,30,0.4)] bg-opacity-30 ">
+    <section
+      className="bg-[url('/images/home-2/hero-bg.jpg')] bg-no-repeat bg-center w-full bg-cover h-[600px] md:h-[650px] lg:h-[700px] 2xl:h-[960px] grid items-center justify-center bg-[rgba(30,30,30,0.4)] bg-opacity-30 "
+      data-aos="fade-down"
+    >
       <div></div>
       <div className="px-5 font-Garamond text-center text-white">
         <h5 className="text-base lg:text-lg tracking-[3px] leading-7 font-medium">
           ROYELLA HOTEL RESORT
         </h5>
-        <h1 className="text-2xl sm:text-4xl md:text-5xl xl:text-6xl font-bold leading-[75px] mt-[30px] md:mt-[40px]  2xl:mt-[60px] relative before:absolute before:w-[1px] before:h-[30px] md:before:h-[40px] 2xl:before:h-[50px] before:-top-[18px] sm:before:-top-[28px] md:before:-top-[40px] 2xl:before:-top-[55px] before:left-1/2 before:bg-white">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl xl:text-6xl font-bold leading-[75px] mt-[30px] md:mt-[40px]   2xl:mt-[75px] relative before:absolute before:w-[1px] before:h-[30px] md:before:h-[40px] 2xl:before:h-[50px] before:-top-[18px] sm:before:-top-[28px] md:before:-top-[40px] 2xl:before:-top-[60px] before:left-1/2 before:bg-white">
           BOOK YOUR VACATION
         </h1>
       </div>
       <div className="items-end Container-Hero">
-        <div className="flex items-center justify-center xl:justify-between flex-wrap flex-shrink ">
-          <div className="p-3">
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-white">
-              Check In
+        <div className="grid items-center justify-center grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5 lg:gap-x-[30px]">
+          <div className="">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-medium font-Garamond text-white">
+              Check In...*
             </p>
             <div className="flex items-center pt-[18px] ">
               <input
                 type="text"
-                className=" bg-transparent focus:outline-transparent  text-white outline-0 w-[120px] xsm:w-[160px] sm:w-[210px] flex-initial text-sm lg:text-base focus:ring-transparent border-t-0 border-l-0 border-r-0 border-b-2 border-khaki focus:border-khaki text-left"
-                defaultValue="26 August, 2023"
+                className=" bg-transparent focus:outline-transparent  text-white placeholder:text-white outline-0  flex-initial text-sm lg:text-base focus:ring-transparent border-t-0 border-l-0 border-r-0 border-b-[1px] border-khaki focus:border-khaki text-left pl-0 w-[120px] sm:w-[160px] lg:w-[210px] xl:w-[160px] 2xl:w-[210px]"
+                placeholder="Check in Date "
               />
             </div>
           </div>
-          <div className="p-3">
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-white">
-              Check Out
+          <div className="">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-medium font-Garamond text-white">
+              Check Out...*
             </p>
             <div className="flex items-center pt-[18px] ">
               <input
                 type="text"
-                className=" bg-transparent focus:outline-transparent text-white  outline-0 w-[120px] xsm:w-[160px] sm:w-[210px] flex-initial text-sm lg:text-base focus:ring-transparent border-t-0 border-l-0 border-r-0 border-b-2 border-khaki focus:border-khaki text-left"
-                defaultValue="26 August, 2023"
+                className=" bg-transparent focus:outline-transparent text-white placeholder:text-white  outline-0   flex-initial text-sm lg:text-base focus:ring-transparent border-t-0 border-l-0 border-r-0 border-b-[1px] border-khaki focus:border-khaki text-left pl-0 w-[120px] sm:w-[160px] lg:w-[210px] xl:w-[160px] 2xl:w-[210px]"
+                placeholder="Check in Date"
               />
             </div>
           </div>
-          <div className="p-3">
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-white">
-              Rooms
+          <div className="">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-medium font-Garamond text-white">
+              Adults
             </p>
             <div className="flex items-center pt-[18px]">
-              <select className="w-[120px] xsm:w-[160px] sm:w-[210px] h-[46px] flex-initial bg-transparent  outline-0 text-sm lg:text-base text-white  focus:outline-none  focus:ring-transparent border border-khaki focus:border-khaki text-left ">
+              <select
+                className="w-[120px] sm:w-[160px] lg:w-[210px] xl:w-[160px] 2xl:w-[210px] h-[46px] flex-initial bg-transparent  outline-0 text-sm lg:text-base text-white  focus:outline-none  focus:ring-transparent border border-khaki focus:border-khaki text-left "
+                onFocus={(e) => {
+                  e.target.size = 6;
+                }}
+                onBlur={(e) => {
+                  e.target.size = 0;
+                }}
+                onChange={(e) => {
+                  e.target.size = 1;
+                  e.target.blur();
+                }}
+              >
                 <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 ">
-                  01 Rooms
+                  01
                 </option>
                 <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 ">
-                  02 Rooms
+                  02
                 </option>
                 <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 ">
-                  03 Rooms
+                  03
                 </option>
                 <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 ">
-                  04 Rooms
+                  04
                 </option>
                 <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 ">
-                  05 Rooms
+                  05
                 </option>
               </select>
             </div>
           </div>
 
-          <div className="p-3">
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-white">
-              Guests
+          <div className="">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-medium font-Garamond text-white">
+              Children
             </p>
             <div className="flex items-center pt-[18px]">
-              <select className="w-[120px] xsm:w-[160px] sm:w-[210px] h-[46px] flex-initial bg-transparent  outline-0 text-sm lg:text-base focus:outline-none  focus:ring-transparent text-white border border-khaki focus:border-khaki">
+              <select
+                className="w-[120px] sm:w-[160px] lg:w-[2 2xl: xl:w-[160px]w-[210px] h-[46px] flex-initial bg-transparent  outline-0 text-sm lg:text-base focus:outline-none  focus:ring-transparent text-white border border-khaki focus:border-khaki"
+                onFocus={(e) => {
+                  e.target.size = 6;
+                }}
+                onBlur={(e) => {
+                  e.target.size = 0;
+                }}
+                onChange={(e) => {
+                  e.target.size = 1;
+                  e.target.blur();
+                }}
+              >
                 <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 text-white">
-                  01 Adult, 0 Child
+                  01
                 </option>
                 <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 text-white">
-                  02 Adult, 0 Child
+                  02
                 </option>
                 <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 text-white">
-                  02 Adult, 1 Child
+                  03
                 </option>
                 <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 text-white">
-                  02 Adult, 2 Child
+                  04
                 </option>
                 <option className="bg-lightBlack text-sm lg:text-base px-3 py-1 text-white">
-                  05 Adult, 0 Child
+                  05
                 </option>
               </select>
             </div>
           </div>
-          <button className="w-[142px] h-[50px] text-[15px] bg-khaki font-Garamond text-white sm:mt-[47px]">
-            Checkout Now
-          </button>
+          <Link to="/home2/find_room">
+            <button className="w-[142px] h-[50px] text-[15px] bg-khaki font-Garamond text-white sm:mt-[47px]">
+              Checkout Now
+            </button>
+          </Link>
         </div>
       </div>
     </section>

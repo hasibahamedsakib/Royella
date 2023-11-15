@@ -14,7 +14,8 @@
 .swiper-button-next {
   position: absolute;
   top: var(--swiper-navigation-top-offset, 90%);
-  border: 2px solid white;
+  border: 1px solid #acacac;
+
   padding: 10px;
 
   color: white;
@@ -49,7 +50,7 @@
 @media (min-width: 992px) {
   .swiper-button-prev,
   .swiper-rtl .swiper-button-prev {
-    left: 90%;
+    left: 89%;
   }
   .mySwiper .swiper-button-prev,
   .mySwiper .swiper-button-next {
@@ -66,13 +67,13 @@
 @media (min-width: 1200px) {
   .swiper-button-prev,
   .swiper-rtl .swiper-button-prev {
-    left: 92%;
+    left: 91%;
   }
 }
 @media (min-width: 1400px) {
   .swiper-button-prev,
   .swiper-rtl .swiper-button-prev {
-    left: 93%;
+    left: 92%;
   }
 }
 @media (min-width: 1700px) {
@@ -80,10 +81,10 @@
     margin-right: 0px;
   }
 }
-@media (min-width: 1992px) {
+@media (min-width: 1920px) {
   .swiper-button-prev,
   .swiper-rtl .swiper-button-prev {
-    left: 95%;
+    left: 93%;
   }
   .swiper-button-next,
   .swiper-rtl .swiper-button-next {

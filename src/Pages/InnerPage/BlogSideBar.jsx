@@ -6,7 +6,11 @@ const BlogSideBar = () => {
     <>
       {/* blog search bar*/}
       <div className="bg-whiteSmoke dark:bg-normalBlack items-center w-full p-4 sm:p-8 2xl:p-10 focus:shadow-xl rounded-md">
-        <form className="flex items-center space-x-2 md:space-x-5 relative">
+        <form
+          className="flex items-center space-x-2 md:space-x-5 relative"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <input
             placeholder="Search Here"
             type="text"
@@ -28,7 +32,12 @@ const BlogSideBar = () => {
           Popular Post
         </h2>
         <div className="pt-10">
-          <Link to="/blog_details" className="flex items-center">
+          <Link
+            to="/blog_details"
+            className="flex items-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <img
               src="/images/inner/details-post-1.jpg"
               className=" mr-3 2xl:mr-5 "
@@ -46,6 +55,8 @@ const BlogSideBar = () => {
           <Link
             to="/blog_details"
             className="mt-5 md:mt-[30px] flex items-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           >
             <img
               src="/images/inner/details-post-2.jpg"
@@ -64,6 +75,8 @@ const BlogSideBar = () => {
           <Link
             to="/blog_details"
             className="mt-5 md:mt-[30px] flex items-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           >
             <img
               src="/images/inner/details-post-3.jpg"
@@ -88,7 +101,7 @@ const BlogSideBar = () => {
           Categories
         </h2>
         <div className="pt-10">
-          <ul className=" ">
+          <ul className=" " data-aos="fade-up" data-aos-duration="1000">
             <li className="flex items-center group transition-all duration-300 border-b-[1px] cursor-pointer border-lightGray dark:border-gray pb-3 ">
               <BiChevronsRight
                 size={16}
@@ -151,7 +164,7 @@ const BlogSideBar = () => {
         <h2 className="text-lg sm:text-xl md:text-[22px] lg:text-2xl leading-6 md:leading-7 lg:leading-[30px] text-lightBlack dark:text-white relative before:w-[50px] before:h-[1px] before:bg-lightBlack dark:before:bg-white before:absolute before:left-0 before:top-9 font-Garamond font-semibold">
           Tag
         </h2>
-        <div className="pt-10 ">
+        <div className="pt-10 " data-aos="fade-up" data-aos-duration="1000">
           <div className="grid items-center grid-cols-2 md:grid-cols-1 2xl:grid-cols-2 gap-3 sm:gap-5  ">
             <div className="px-2 sm:px-4 py-2 bg-white dark:bg-lightBlack hover:bg-khaki transition-all duration-300 group">
               <h1 className="text-sm sm:text-base leading-6 lg:leading-[30px] font-Garamond text-[#101010] dark:text-white font-medium  group-hover:text-white">

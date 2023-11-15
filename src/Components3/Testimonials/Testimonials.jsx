@@ -8,7 +8,7 @@ import "./styles.css";
 const Testimonials = () => {
   // keen config code...
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [loaded, setLoaded] = useState(false);
+  const [loaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
     slides: {
@@ -22,7 +22,7 @@ const Testimonials = () => {
       setCurrentSlide(slider.track.details.rel);
     },
     created() {
-      setLoaded(true);
+      // setLoaded(true);
     },
   });
 
@@ -30,8 +30,12 @@ const Testimonials = () => {
     <section className="py-20 2xl:py-[120px] bg-whiteSmoke dark:bg-normalBlack relative">
       <div className="Container">
         {/* section heading */}
-        <div className="text-center mx-auto px-5 sm:px-8 md:px-[80px] lg:px-[150px] xl:px-[280px] 2xl:px-[350px] font-Garamond">
-          <div className="flex items-center mb-[24px] justify-center">
+        <div
+          className="text-center mx-auto px-5 sm:px-8 md:px-[80px] lg:px-[150px] xl:px-[280px] 2xl:px-[350px] font-Garamond"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div className="flex items-center  justify-center">
             <img
               src="/images/home-3/shape.png"
               alt=""
@@ -56,7 +60,7 @@ const Testimonials = () => {
               className="hidden dark:block"
             />
           </div>
-          <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[46px] text-lightBlack dark:text-white mb-[12px] md:mb-6 font-bold">
+          <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[46px] text-lightBlack dark:text-white mt-1 mb-[15px]  font-bold">
             What Our Guests Say
           </h1>
           <p className="font-Lora leading-[22px] lg:leading-[26px] text-gray dark:text-lightGray font-normal text-sm sm:text-base ">
@@ -66,25 +70,32 @@ const Testimonials = () => {
         </div>
 
         {/* section testimonials content */}
-        <div className="mt-14 2xl:mt-[60px] flex bg-white dark:bg-lightBlack">
+        <div
+          className="mt-14 2xl:mt-[60px] flex bg-white dark:bg-lightBlack"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           {/* keen slider */}
-          <div ref={sliderRef} className="keen-slider h-[600px] xl:h-[500px]">
+          <div
+            className="keen-slider  h-[620px] sm:h-[660px] xl:h-[500px]"
+            ref={sliderRef}
+          >
             {/* slide one... */}
-            <div className="keen-slider__slide number-slide1 flex flex-col md:flex-row">
+            <div className="keen-slider__slide w-full number-slide1 flex flex-col md:flex-row">
               <img
                 src="/images/home-3/testi-thumb.png"
                 className="w-full h-1/2 lg:h-full"
                 alt=""
               />
               <div className="grid items-center  ">
-                <div className="px-10 md:px-[50px] lg:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] ">
+                <div className="px-5 sm:px-10 md:px-[50px] xl:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] relative">
                   <h1 className="text-2xl md:text-3xl 2xl:text-[34px] leading-[26px] text-lightBlack dark:text-white mb-2 lg:mb-[12px]  font-semibold">
-                    Farjana Islam
+                    Aqsaa Arafaa
                   </h1>
                   <p className="font-Lora text-[15px] leading-[26px] text-khaki font-medium uppercase ">
-                    Graphic Designer
+                    Web Developer
                   </p>
-                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-4 md:my-[20px] lg:mt-[38px] lg:mb-[35px] ">
+                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-3 sm:my-4 md:my-[20px] lg:mt-[25px] lg:mb-[30px] lg:text-justify 2xl:text-center">
                     multimedia based technologies. Dramatically e-enable
                     superior schemas rather backward compatible human capital.
                     Efficiently network world-class customer service and
@@ -101,25 +112,37 @@ const Testimonials = () => {
                     <FaStar className="text-khaki" size={18} />
                     <FaStar className="text-khaki" size={18} />
                   </span>
+                  <div className="hidden 2xl:block xl:absolute bottom-[80px] left-[50%]">
+                    <img
+                      src="/images/home-3/qute-light.png"
+                      className="dark:hidden"
+                      alt=""
+                    />
+                    <img
+                      src="/images/home-3/qute-dark.png"
+                      className="hidden dark:block"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
             {/* slide two... */}
-            <div className="keen-slider__slide number-slide1 flex flex-col md:flex-row">
+            <div className="keen-slider__slide w-full number-slide1 flex flex-col md:flex-row">
               <img
                 src="/images/home-3/testi-thumb.png"
                 className="w-full h-1/2 lg:h-full"
                 alt=""
               />
               <div className="grid items-center  ">
-                <div className="px-10 md:px-[50px] lg:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] ">
+                <div className="px-5 sm:px-10 md:px-[50px] xl:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] relative">
                   <h1 className="text-2xl md:text-3xl 2xl:text-[34px] leading-[26px] text-lightBlack dark:text-white mb-2 lg:mb-[12px]  font-semibold">
-                    Farjana Islam
+                    Memona Moeez
                   </h1>
                   <p className="font-Lora text-[15px] leading-[26px] text-khaki font-medium uppercase ">
-                    Graphic Designer
+                    Ui/Ux Designer
                   </p>
-                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-4 md:my-[20px] lg:mt-[38px] lg:mb-[35px] ">
+                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-3 sm:my-4 md:my-[20px] lg:mt-[25px] lg:mb-[30px] lg:text-justify 2xl:text-center">
                     multimedia based technologies. Dramatically e-enable
                     superior schemas rather backward compatible human capital.
                     Efficiently network world-class customer service and
@@ -136,25 +159,37 @@ const Testimonials = () => {
                     <FaStar className="text-khaki" size={18} />
                     <FaStar className="text-khaki" size={18} />
                   </span>
+                  <div className="hidden 2xl:block xl:absolute bottom-[80px] left-[50%]">
+                    <img
+                      src="/images/home-3/qute-light.png"
+                      className="dark:hidden"
+                      alt=""
+                    />
+                    <img
+                      src="/images/home-3/qute-dark.png"
+                      className="hidden dark:block"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
             {/* slide three */}
-            <div className="keen-slider__slide number-slide1 flex flex-col md:flex-row">
+            <div className="keen-slider__slide w-full number-slide1 flex flex-col md:flex-row">
               <img
                 src="/images/home-3/testi-thumb.png"
                 className="w-full h-1/2 lg:h-full"
                 alt=""
               />
               <div className="grid items-center  ">
-                <div className="px-10 md:px-[50px] lg:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] ">
+                <div className="px-5 sm:px-10 md:px-[50px] xl:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] relative">
                   <h1 className="text-2xl md:text-3xl 2xl:text-[34px] leading-[26px] text-lightBlack dark:text-white mb-2 lg:mb-[12px]  font-semibold">
                     Farjana Islam
                   </h1>
                   <p className="font-Lora text-[15px] leading-[26px] text-khaki font-medium uppercase ">
                     Graphic Designer
                   </p>
-                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-4 md:my-[20px] lg:mt-[38px] lg:mb-[35px] ">
+                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-3 sm:my-4 md:my-[20px] lg:mt-[25px] lg:mb-[30px] lg:text-justify 2xl:text-center">
                     multimedia based technologies. Dramatically e-enable
                     superior schemas rather backward compatible human capital.
                     Efficiently network world-class customer service and
@@ -171,6 +206,18 @@ const Testimonials = () => {
                     <FaStar className="text-khaki" size={18} />
                     <FaStar className="text-khaki" size={18} />
                   </span>
+                  <div className="hidden 2xl:block xl:absolute bottom-[80px] left-[50%]">
+                    <img
+                      src="/images/home-3/qute-light.png"
+                      className="dark:hidden"
+                      alt=""
+                    />
+                    <img
+                      src="/images/home-3/qute-dark.png"
+                      className="hidden dark:block"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>

@@ -57,7 +57,7 @@ const HeroSection = () => {
   return (
     <>
       <section ref={sliderRef} className="keen-slider">
-        <div className="keen-slider__slide number-slide1 bg-[url('/images/home-6/hero-bg-1.jpg')] h-[850px] grid items-center justify-start"></div>
+        <div className="keen-slider__slide number-slide1 bg-[url('/images/home-6/hero-bg-1.jpg')] h-[700px] md:h-[800px] xl:h-[850px] 3xl:h-[950px] grid items-center justify-start"></div>
 
         {/* <div className="keen-slider__slide number-slide2 bg-[url('/images/home-6/hero-bg-2.jpg')] h-[850px]"></div>
         <div className="keen-slider__slide number-slide3 bg-[url('/images/home-6/hero-bg-3.jpg')] h-[850px]"></div> */}

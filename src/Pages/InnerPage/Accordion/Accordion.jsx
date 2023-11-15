@@ -12,7 +12,7 @@ export default function Accordion({ children, title, id, active = false }) {
     <div className="py-2">
       <h2>
         <button
-          className="flex items-center justify-between w-full text-left font-semibold font-Garamond text-lg md:text-xl 2xl:text-[22px] hover:bg-khaki focus:bg-khaki p-5 group bg-normalBlack"
+          className="flex items-center justify-between w-full text-left font-semibold font-Garamond hover:bg-khaki focus:bg-khaki p-5 group bg-normalBlack"
           onClick={(e) => {
             e.preventDefault();
             setAccordionOpen(!accordionOpen);
@@ -20,7 +20,9 @@ export default function Accordion({ children, title, id, active = false }) {
           aria-expanded={accordionOpen}
           aria-controls={`accordion-text-${id}`}
         >
-          <span className="text-white ">{title}</span>
+          <span className="text-white text-base sm:text-lg md:text-xl 2xl:text-[22px] ">
+            {title}
+          </span>
           <svg
             className="fill-white  shrink-0 ml-8 "
             width="16"
@@ -59,7 +61,9 @@ export default function Accordion({ children, title, id, active = false }) {
         }`}
       >
         <div className="overflow-hidden">
-          <p className="py-4 ">{children}</p>
+          <p className="py-4 text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-[22px] ">
+            {children}
+          </p>
         </div>
       </div>
     </div>

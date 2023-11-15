@@ -93,6 +93,47 @@ const router = createBrowserRouter([
         path: "/home2/about",
         element: <About />,
       },
+
+      {
+        path: "/home2/room",
+        element: <Room />,
+      },
+      {
+        path: "/home2/find_room",
+        element: <FindRoom />,
+      },
+      {
+        path: "/home2/room_details",
+        element: <RoomDetails />,
+      },
+      {
+        path: "/home2/services",
+        element: <Services />,
+      },
+      {
+        path: "/home2/service_details",
+        element: <ServiceDetails />,
+      },
+      {
+        path: "/home2/our_team",
+        element: <Team />,
+      },
+      {
+        path: "/home2/pricing",
+        element: <Pricing />,
+      },
+      {
+        path: "/home2/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/home2/blog_details",
+        element: <BlogDetails />,
+      },
+      {
+        path: "/home2/contact",
+        element: <Contact />,
+      },
     ],
   },
   // Third home router
@@ -104,6 +145,50 @@ const router = createBrowserRouter([
       {
         path: "/home3",
         element: <Home3 />,
+      },
+      {
+        path: "/home3/about",
+        element: <About />,
+      },
+      {
+        path: "/home3/room",
+        element: <Room />,
+      },
+      {
+        path: "/home3/find_room",
+        element: <FindRoom />,
+      },
+      {
+        path: "/home3/room_details",
+        element: <RoomDetails />,
+      },
+      {
+        path: "/home3/services",
+        element: <Services />,
+      },
+      {
+        path: "/home3/service_details",
+        element: <ServiceDetails />,
+      },
+      {
+        path: "/home3/our_team",
+        element: <Team />,
+      },
+      {
+        path: "/home3/pricing",
+        element: <Pricing />,
+      },
+      {
+        path: "/home3/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/home3/blog_details",
+        element: <BlogDetails />,
+      },
+      {
+        path: "/home3/contact",
+        element: <Contact />,
       },
     ],
   },
@@ -117,6 +202,50 @@ const router = createBrowserRouter([
         path: "/home4",
         element: <Home4 />,
       },
+      {
+        path: "/home4/about",
+        element: <About />,
+      },
+      {
+        path: "/home4/room",
+        element: <Room />,
+      },
+      {
+        path: "/home4/find_room",
+        element: <FindRoom />,
+      },
+      {
+        path: "/home4/room_details",
+        element: <RoomDetails />,
+      },
+      {
+        path: "/home4/services",
+        element: <Services />,
+      },
+      {
+        path: "/home4/service_details",
+        element: <ServiceDetails />,
+      },
+      {
+        path: "/home4/our_team",
+        element: <Team />,
+      },
+      {
+        path: "/home4/pricing",
+        element: <Pricing />,
+      },
+      {
+        path: "/home4/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/home4/blog_details",
+        element: <BlogDetails />,
+      },
+      {
+        path: "/home4/contact",
+        element: <Contact />,
+      },
     ],
   },
   // five home router
@@ -128,6 +257,50 @@ const router = createBrowserRouter([
       {
         path: "/home5",
         element: <Home5 />,
+      },
+      {
+        path: "/home5/about",
+        element: <About />,
+      },
+      {
+        path: "/home5/room",
+        element: <Room />,
+      },
+      {
+        path: "/home5/find_room",
+        element: <FindRoom />,
+      },
+      {
+        path: "/home5/room_details",
+        element: <RoomDetails />,
+      },
+      {
+        path: "/home5/services",
+        element: <Services />,
+      },
+      {
+        path: "/home5/service_details",
+        element: <ServiceDetails />,
+      },
+      {
+        path: "/home5/our_team",
+        element: <Team />,
+      },
+      {
+        path: "/home5/pricing",
+        element: <Pricing />,
+      },
+      {
+        path: "/home5/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/home5/blog_details",
+        element: <BlogDetails />,
+      },
+      {
+        path: "/home5/contact",
+        element: <Contact />,
       },
     ],
   },

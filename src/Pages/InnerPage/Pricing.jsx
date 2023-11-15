@@ -9,7 +9,11 @@ const Pricing = () => {
       {/* Pricing  */}
       <div className="dark:bg-normalBlack py-20 2xl:py-[120px]">
         <div className="Container">
-          <div className="text-center sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px] mx-auto px-5 Container">
+          <div
+            className="text-center sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px] mx-auto px-5 Container"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             {/* Section logo */}
             <div className="flex items-center justify-center space-x-2">
               <hr className="w-[100px] h-[1px] bg-lightGray dark:bg-gray text-lightGray dark:text-gray" />
@@ -33,7 +37,11 @@ const Pricing = () => {
           <div className="mt-14 2xl:mt-[60px]">
             <div className="grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-[30px]">
               {/* Pricing one */}
-              <div className="border-[1px] border-lightGray dark:border-gray group hover:border-khaki dark:hover:border-khaki">
+              <div
+                className="border-[1px] border-lightGray dark:border-gray group hover:border-khaki dark:hover:border-khaki"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+              >
                 <img
                   src="/images/inner/pricing-1.jpg"
                   alt=""
@@ -88,8 +96,12 @@ const Pricing = () => {
                   </button>
                 </div>
               </div>
-              {/* Pricing one */}
-              <div className="border-[1px] border-lightGray dark:border-gray group hover:border-khaki dark:hover:border-khaki">
+              {/* Pricing two */}
+              <div
+                className="border-[1px] border-lightGray dark:border-gray group hover:border-khaki dark:hover:border-khaki"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+              >
                 <img
                   src="/images/inner/pricing-1.jpg"
                   alt=""
@@ -144,8 +156,12 @@ const Pricing = () => {
                   </button>
                 </div>
               </div>
-              {/* Pricing one */}
-              <div className="border-[1px] border-lightGray dark:border-gray group hover:border-khaki dark:hover:border-khaki">
+              {/* Pricing three */}
+              <div
+                className="border-[1px] border-lightGray dark:border-gray group hover:border-khaki dark:hover:border-khaki"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+              >
                 <img
                   src="/images/inner/pricing-1.jpg"
                   alt=""
@@ -207,7 +223,11 @@ const Pricing = () => {
       {/* Pricing  */}
       <div className="bg-whiteSmoke dark:bg-lightBlack py-20 2xl:py-[120px]">
         <div className="Container">
-          <div className="text-center sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px] mx-auto px-5 Container">
+          <div
+            className="text-center sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px] mx-auto px-5 Container"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             {/* Section logo */}
             <div className="flex items-center justify-center space-x-2">
               <hr className="w-[100px] h-[1px] bg-lightGray dark:bg-gray text-lightGray dark:text-gray" />

@@ -6,7 +6,7 @@ const ServiceDetails = () => {
   const [menu, setMenu] = useState([]);
   const [showItem, setShowItem] = useState([]);
   useEffect(() => {
-    fetch("food.menu.json")
+    fetch("/food.menu.json")
       .then((res) => res.json())
       .then((data) => {
         setMenu(data), setShowItem(data);
@@ -22,7 +22,11 @@ const ServiceDetails = () => {
         <div className="Container">
           {/* image and Food list */}
           <div className="grid items-center grid-cols-6 md:grid-cols-7 lg:grid-cols-6 gap-5 ">
-            <div className="col-span-6 md:col-span-4">
+            <div
+              className="col-span-6 md:col-span-4"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               <img src="/images/inner/service-details.jpg" alt="" />
             </div>
             <div className="col-span-6 md:col-span-3 lg:col-span-2">
@@ -30,7 +34,11 @@ const ServiceDetails = () => {
                 <h4 className="font-Garamond text-xl sm:text-[22px] md:text-2xl xl:text-3xl leading-7 md:leading-8 lg:leading-10 xl:leading-[50px] 2xl:leading-[60px] 3xl:leading-[70px] text-lightBlack dark:text-white font-semibold mb-7">
                   Hours
                 </h4>
-                <div className="grid items-center gap-[25px] ">
+                <div
+                  className="grid items-center gap-[25px] "
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1000"
+                >
                   <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6 ">
                     <p className="text-sm md:text-[13px] xl:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
                       Breakfast -
@@ -79,7 +87,11 @@ const ServiceDetails = () => {
             </p>
 
             {/* Restaurant Rules */}
-            <div className="py-10 lg:py-[60px]">
+            <div
+              className="py-10 lg:py-[60px]"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               <h2
                 className="pb-2 sm:pb-3 md:pb-4 lg:pb-[19px] 2xl:pb-6
                 font-Garamond text-[22px] sm:text-2xl md:text-3xl 2xl:text-[32px] leading-7 lg:leading-[26px] text-lightBlack dark:text-white font-semibold"
@@ -97,7 +109,11 @@ const ServiceDetails = () => {
               </p>
             </div>
             {/* Dress Code Rules */}
-            <div className="pb-10 lg:pb-[60px]">
+            <div
+              className="pb-10 lg:pb-[60px]"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               <h2
                 className="pb-2 sm:pb-3 md:pb-4 lg:pb-[19px] 2xl:pb-6
                 font-Garamond text-[22px] sm:text-2xl md:text-3xl 2xl:text-[32px] leading-7 lg:leading-[26px] text-lightBlack dark:text-white font-semibold"
@@ -130,7 +146,7 @@ const ServiceDetails = () => {
               </ul>
             </div>
             {/* Dress Code Rules */}
-            <div className="">
+            <div className="" data-aos="zoom-in-up" data-aos-duration="1000">
               <h2
                 className="pb-2 sm:pb-3 md:pb-4 lg:pb-[19px] 2xl:pb-6
                 font-Garamond text-[22px] sm:text-2xl md:text-3xl 2xl:text-[32px] leading-7 lg:leading-[26px] text-lightBlack dark:text-white font-semibold"
@@ -170,7 +186,11 @@ const ServiceDetails = () => {
       <div className="bg-whiteSmoke dark:bg-lightBlack py-20 2xl:py-[120px] ">
         <div className="Container">
           {/* food menu tab header */}
-          <div className="text-center">
+          <div
+            className="text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             {/* Section logo */}
             <div className="flex items-center justify-center space-x-2">
               <hr className="w-[100px] h-[1px] bg-lightGray dark:bg-gray text-lightGray dark:text-gray" />
@@ -188,7 +208,11 @@ const ServiceDetails = () => {
           {/* food menu tab  */}
           <div className="mt-14 2xl:mt-[60px]">
             {/* Tab Control Button */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 sm:flex items-center justify-center gap-3">
+            <div
+              className="grid grid-cols-2 sm:grid-cols-4 sm:flex items-center justify-center gap-3"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               <button
                 className="px-5 lg:px-[26px] py-2 lg:py-[10px] bg-white dark:bg-normalBlack text-lightBlack dark:text-white rounded focus:bg-khaki focus:text-white dark:focus:bg-khaki dark:focus:text-white hover:ring-2 ring-khaki ring-offset-2 dark:ring-offset-lightBlack text-sm sm:text-[15px] font-Garamond font-medium leading-7 lg:leading-[38px]"
                 onClick={() => {
@@ -235,7 +259,11 @@ const ServiceDetails = () => {
               </button>
             </div>
             {/* Tab Items. */}
-            <div className="grid items-center justify-between grid-cols-1 lg:grid-cols-2 gap-5 2xl:gap-[30px] mt-5 md:mt-7 lg:mt-10 xl:mt-[45px]">
+            <div
+              className="grid items-center justify-between grid-cols-1 lg:grid-cols-2 gap-5 2xl:gap-[30px] mt-5 md:mt-7 lg:mt-10 xl:mt-[45px]"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               {showItem.map((item, index) => {
                 return (
                   <div

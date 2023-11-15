@@ -44,28 +44,27 @@ const Navbar = () => {
       <div className="lg:px-10">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* website Logo */}
-          <div className=" w-48 lg:w-40   lg:p-4 ">
+          <div className=" w-48 lg:w-52 lg:p-4 ">
             <Link to="/">
               <img
-                src="/images/home-1/logo-1.png"
-                className="hidden lg:block"
+                src="/images/home-3/logo.png"
+                className="hidden lg:block w-full"
                 alt="website_logo"
               />
             </Link>
           </div>
           {/* small screen size */}
-          <div className="px-3 w-full lg:hidden flex justify-between text-lightBlack lg:text-white dark:text-white bg-khaki p-3">
-            <Link to="/">
-              <div className=" w-28  ">
-                <Link to="/">
-                  <img
-                    src="/images/home-1/brand-1.png"
-                    className="block lg:hidden "
-                    alt="Royella_website_logo"
-                  />
-                </Link>
-              </div>
-            </Link>
+          <div className="px-3 w-full lg:hidden flex justify-between text-lightBlack lg:text-white dark:text-white bg-khaki h-[70px]  items-center  p-3">
+            <div className=" w-28  ">
+              <Link to="/">
+                <img
+                  src="/images/home-1/brand-1.png"
+                  className="block lg:hidden "
+                  alt="Royella_website_logo"
+                />
+              </Link>
+            </div>
+
             {/* toggle bar and dark and light mode. */}
             <div className="flex items-center ">
               <span onClick={handleClick} className="mr-3 cursor-pointer">
@@ -100,7 +99,7 @@ const Navbar = () => {
           <ul
             className={`${
               isOpen ? "block" : "hidden"
-            } text-left w-full lg:w-fit  ease-in-out lg:flex space-y-2 lg:space-y-0 lg:text-center  lg:space-x-3 space-x-0 flex flex-col lg:flex-row text-sm text-lightBlack lg:text-white dark:text-white uppercase font-normal bg-white dark:bg-normalBlack lg:bg-transparent dark:lg:bg-transparent py-3 lg:py-0 `}
+            } text-left w-full lg:w-fit  ease-in-out lg:flex space-y-2 lg:space-y-0 lg:text-center space-x-0 lg:space-x-3 xl:space-x-4 2xl:space-x-5 3xl:space-x-[24px] flex flex-col lg:flex-row text-sm text-lightBlack lg:text-white dark:text-white uppercase font-normal bg-white dark:bg-normalBlack lg:bg-transparent dark:lg:bg-transparent py-3 lg:py-0 `}
           >
             <NavLink
               className={`${({ isActive, isPending }) =>
@@ -307,10 +306,10 @@ const Navbar = () => {
 
           {/* large device visible button and search icon */}
           <div className="hidden lg:flex items-center">
-            <span onClick={handleClick} className="mr-2 cursor-pointer group ">
+            <span onClick={handleClick} className="mr-3 cursor-pointer group ">
               {isDarkMode ? (
                 <BiSun
-                  className="text-white group-hover:rotate-180 rotate transition-all duration-300"
+                  className="text-white group-hover:rotate-90 rotate transition-all duration-300"
                   title="Apply Light Mode"
                   size={35}
                 />
@@ -322,9 +321,8 @@ const Navbar = () => {
                 />
               )}
             </span>
-            <Link to="/booking">
-              {" "}
-              <button className="btn-secondary">Booking Online</button>
+            <Link to="/find_room">
+              <button className="btn-secondary ">Booking Online</button>
             </Link>
           </div>
         </div>

@@ -7,7 +7,7 @@ const Gallery = () => {
       "(min-width: 400px)": {
         slides: { origin: "center", perView: 1.5 },
       },
-      "(min-width: 576px)": {
+      "(min-width: 600px)": {
         slides: { origin: "center", perView: 2 },
       },
       "(min-width: 768px)": {
@@ -28,8 +28,12 @@ const Gallery = () => {
     <section className=" dark:bg-lightBlack py-20 2xl:py-[120px]">
       <div className="">
         {/* section title */}
-        <div className="text-center px-5">
-          <p className="text-base leading-7 md:leading-10 lg:leading-[40px] 3xl:leading-[66px] text-khaki mb-1 font-normal font-Lora">
+        <div
+          className="text-center px-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <p className="text-base leading-7 md:leading-10 lg:leading-[40px] 3xl:leading-[66px] text-khaki mb-1 md:mb-0 font-normal font-Lora">
             Photos Gallery
           </p>
           <h3
@@ -44,7 +48,11 @@ const Gallery = () => {
         <div className="mt-14">
           <div ref={sliderRef} className="keen-slider">
             <div className="keen-slider__slide number-slide1">
-              <div className="gallery-effect bg-[url('/images/home-4/gallery-1.jpg')] group">
+              <div
+                className="gallery-effect bg-[url('/images/home-4/gallery-1.jpg')] group"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <img
                   src="/images/home-4/gallery-1.jpg"
                   alt=""
@@ -61,7 +69,11 @@ const Gallery = () => {
               </div>
             </div>
             <div className="keen-slider__slide number-slide2">
-              <div className="gallery-effect bg-[url('/images/home-4/gallery-2.jpg')] group ">
+              <div
+                className="gallery-effect bg-[url('/images/home-4/gallery-2.jpg')] group "
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
                 <img
                   src="/images/home-4/gallery-1.jpg"
                   alt=""
@@ -78,7 +90,11 @@ const Gallery = () => {
               </div>
             </div>
             <div className="keen-slider__slide number-slide3">
-              <div className="gallery-effect bg-[url('/images/home-4/gallery-3.jpg')] group ">
+              <div
+                className="gallery-effect bg-[url('/images/home-4/gallery-3.jpg')] group "
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <img
                   src="/images/home-4/gallery-1.jpg"
                   alt=""
@@ -95,7 +111,11 @@ const Gallery = () => {
               </div>
             </div>
             <div className="keen-slider__slide number-slide4">
-              <div className="gallery-effect bg-[url('/images/home-4/gallery-5.jpg')] group ">
+              <div
+                className="gallery-effect bg-[url('/images/home-4/gallery-5.jpg')] group "
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
                 <img
                   src="/images/home-4/gallery-1.jpg"
                   alt=""
@@ -112,7 +132,11 @@ const Gallery = () => {
               </div>
             </div>
             <div className="keen-slider__slide number-slide5">
-              <div className="gallery-effect bg-[url('/images/home-4/gallery-5.jpg')] group ">
+              <div
+                className="gallery-effect bg-[url('/images/home-4/gallery-5.jpg')] group "
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <img
                   src="/images/home-4/gallery-1.jpg"
                   alt=""

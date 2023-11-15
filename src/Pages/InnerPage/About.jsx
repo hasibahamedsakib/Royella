@@ -13,17 +13,20 @@ import "../../Components4/Testimonial/testimonials.css";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { Link } from "react-router-dom";
-
+import FsLightbox from "fslightbox-react";
 const About = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [loaded, setLoaded] = useState(false);
-
-  const [sliderRef, instanceRef] = useKeenSlider({
+  const [setCurrentSlide] = useState(0);
+  // const [setLoaded] = useState(false);
+  const [toggler, setToggler] = useState(false);
+  const [sliderRef] = useKeenSlider({
     breakpoints: {
-      "(min-width: 600px)": {
+      "(min-width: 320px)": {
+        slides: { perView: 1, spacing: 20 },
+      },
+      "(min-width:768px)": {
         slides: { perView: 2, spacing: 20 },
       },
-      "(min-width:1000px)": {
+      "(min-width:992px)": {
         slides: { perView: 3, spacing: 20 },
       },
     },
@@ -33,7 +36,7 @@ const About = () => {
       setCurrentSlide(slider.track.details.rel);
     },
     created() {
-      setLoaded(true);
+      // setLoaded(true);
     },
   });
 
@@ -46,27 +49,38 @@ const About = () => {
         <div className="Container py-20 2xl:py-[120px] sm:overflow-hidden lg:overflow-auto">
           <div className="flex flex-col md:flex-row items-center justify-between">
             {/* image */}
-            <div className="flex-1">
+            <div
+              className="flex-1"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               <img
                 src="/images/inner/about-thumb.jpg"
                 alt=""
                 className="w-full h-full"
               />
             </div>
+
             {/* text */}
-            <div className="mt-10 md:mt-0 md:ml-20 lg:ml-[90px] 2xl:ml-[100px] font-Garamond space-y-5 flex-1">
+            <div
+              className="mt-10 md:mt-0 md:ml-10 lg:ml-[90px] 2xl:ml-[100px] font-Garamond space-y-3 xl:space-y-4 flex-1"
+              data-aos="zoom-in-down"
+              data-aos-duration="1000"
+            >
               <h5 className="text-base text-khaki leading-[26px] font-medium">
                 LUXURY HOTEL AND RESORT
               </h5>
-              <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold ">
+              <h1 className="text-[22px] sm:text-2xl md:text-[21px]  xl:text-3xl 2xl:text-[38px] leading-6 md:leading-7 lg:leading-[30px] 2xl:leading-[44px] text-lightBlack dark:text-white font-semibold my-4">
                 LUXURY BEST HOTEL IN CITY CALIFORNIA, USA
               </h1>
-              <p className="text-sm sm:text-base font-Lora text-gray dark:text-lightGray font-normal leading-[26px]">
+              <p className="text-sm xl:text-base md:text-sm lg:text-base font-Lora text-gray dark:text-lightGray font-normal leading-[26px]">
                 Rapidiously myocardinate cross-platform intellectual capital
                 after marketing model. Appropriately create interactive
                 infrastructures after maintainable are Holisticly facilitate
-                stand-alone iframe
+                stand-alone inframe Compellingly create premier open data
+                through economically.
               </p>
+
               <p className="text-sm sm:text-base font-Lora text-gray dark:text-lightGray font-normal leading-[26px] mt-5">
                 Rapidiously myocardinate cross-platform intellectual capital
                 after marketing model. Appropriately create interactive
@@ -83,6 +97,8 @@ const About = () => {
               </div>
               <button className="btn-primary mt-[30px]">MORE ABOUT</button>
             </div>
+
+            {/* text */}
           </div>
         </div>
       </section>
@@ -93,33 +109,48 @@ const About = () => {
       <div className="bg-lightBlack -z-[1] py-20 2xl:py-[120px]">
         <div className="Container ">
           <div className=" w-full grid grid-cols-1 lg:grid-cols-2 items-center ">
-            <div className="flex-1 h-[100%] w-full relative ">
-              <img
-                src="/images/home-1/action-img.png"
-                className="h-full w-full md:h-[80%] lg:h-full object-cover"
-                alt=""
-              />
+            <div
+              className="flex-1 h-[100%] w-full relative "
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <div className="flex-1 h-[100%] w-full relative ">
+                <img
+                  src="/images/home-1/action-img.png"
+                  className="h-full w-full md:h-[80%] lg:h-full object-cover"
+                  alt=""
+                />
 
-              <div className="w-[70px] h-[70px]  text-white absolute top-1/2 md:top-[35%] lg:top-1/2 left-[45%] bg-khaki rounded-full flex items-center justify-center cursor-pointer z-[1] ">
-                <BsPlay className="w-8 h-8" />
+                <div
+                  className="w-[70px] h-[70px]  text-white absolute top-1/2 md:top-[35%] lg:top-1/2 left-[45%] bg-khaki rounded-full flex items-center justify-center cursor-pointer z-[1] "
+                  onClick={() => setToggler(!toggler)}
+                >
+                  <BsPlay className="w-8 h-8" />
+                </div>
+                <span className=" top-[47%] md:top-[33%] lg:top-[48%] left-[42%] lg:left-[43.5%] border w-[90px] h-[90px] rounded-full absolute border-white video-animation"></span>
               </div>
-              <span className=" top-[47%] md:top-[33%] lg:top-[48%] left-[42%] lg:left-[43.5%] border w-[90px] h-[90px] rounded-full absolute border-white video-animation"></span>
+              <FsLightbox
+                toggler={toggler}
+                sources={["https://youtu.be/fFDyoI73viQ?si=GbDzAagjoa_0Nv2x"]}
+              />
             </div>
-            <div className="bg-[#f8f6f3] dark:bg-normalBlack space-y-5 flex-1 font-Garamond px-5 sm:px-7 md:px-9 lg:pl-[70px] py-10 md:py-[96px] lg:pr-[70px]">
-              <h5 className="text-base text-khaki leading-[26px] font-medium">
+            <div
+              className="bg-[#f8f6f3] dark:bg-normalBlack space-y-5 flex-1 font-Garamond px-5 sm:px-7 md:px-9 lg:pl-[70px] py-10 md:py-[96px] lg:pr-[70px]"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <h5 className="text-base text-khaki leading-[26px] font-semibold">
                 MANAGER
               </h5>
-              <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold">
+              <h1 className="text-[22px] sm:text-2xl md:text-[28px] xl:text-[32px] 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold">
                 LUXURY BEST HOTEL IN CITY CALIFORNIA, USA
               </h1>
               <p className="text-sm sm:text-base font-Lora text-gray dark:text-lightGray font-normal leading-[26px]">
                 Rapidiously myocardinate cross-platform intellectual capital
-                after marketing model. Appropriately create interactive
-                infrastructures after maintainable are Holisticly facilitate
-                stand-alone inframe Compellingly create premier open data
-                through economically.
+                after model. Appropriately create interactive infrastructures
+                after main Holisticly facilitate stand-alone inframe
               </p>
-              <p className="text-sm sm:text-base font-Lora italic leading-[26px] underline font-normal text-gray dark:text-lightGray">
+              <p className="text-sm sm:text-base font-Lora italic leading-[26px] underline  text-gray dark:text-lightGray font-normal ">
                 “ Model. Appropriately create interactive infrastructures after
                 main Holisticly facilitate stand-alone inframe of the world ”
               </p>
@@ -134,7 +165,7 @@ const About = () => {
                   <h4 className="text-lg sm:text-[22px] leading-[26px] text-lightBlack dark:text-white font-semibold font-Garamond">
                     John D. Alexon
                   </h4>
-                  <p className="pt-1 text-base leading-[26px] font-normal text-gray dark:text-lightGray flex items-center">
+                  <p className="pt-1 text-base leading-[26px] font-normal text-gray dark:text-lightGray flex items-center font-Lora">
                     <span className="w-5 h-[1px] inline-block text-khaki bg-khaki mr-2"></span>
                     Manger
                   </p>
@@ -148,7 +179,12 @@ const About = () => {
       {/* Expert Members */}
       <div className="dark:bg-normalBlack py-20 2xl:py-[120px]">
         <div className="Container">
-          <div className="text-center sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px] mx-auto px-5 Container">
+          {/* section header */}
+          <div
+            className="text-center sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px] mx-auto px-5 Container"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             {/* Section logo */}
             <div className="flex items-center justify-center space-x-2">
               <hr className="w-[100px] h-[1px] bg-lightGray dark:bg-gray text-lightGray dark:text-gray" />
@@ -172,19 +208,23 @@ const About = () => {
           {/* Section Content */}
           <div className="mt-[60px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] ">
             {/* Member one */}
-            <div className="member group">
-              <img src="/images/inner/member-1.jpg" alt="" />
+            <div
+              className="member group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img src="/images/inner/member-1.jpg" className="w-full" alt="" />
               <div className="relative">
-                <div className="px-[30px] pt-5 ">
-                  <h3 className="text-xl lg:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center">
+                <div className="px-4  lg:px-[30px] pt-5 ">
+                  <h3 className="text-xl sm:text-2xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
                     Valentina Kerry
                   </h3>
-                  <p className="text-base leading-[26px] text-Gray dark:text-lightGray font-normal font-Lora text-center group-hover:text-white dark:hover:text-white">
+                  <p className="text-sm md:text-base leading-[26px] text-Gray dark:text-lightGray font-normal font-Lora text-center group-hover:text-white dark:hover:text-white hover:opacity-0">
                     General Manager
                   </p>
                 </div>
                 <div
-                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] group-hover:bottom-[-30px] transition-all
+                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] sm:bottom-[-170px] md:bottom-[-150px] group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all
                  duration-500 left-0 right-0"
                 >
                   <div className="flex items-center justify-center space-x-4 text-white">
@@ -200,19 +240,23 @@ const About = () => {
               </div>
             </div>
             {/* Member two */}
-            <div className="member group">
-              <img src="/images/inner/member-2.jpg" alt="" />
+            <div
+              className="member group"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              <img src="/images/inner/member-2.jpg" className="w-full" alt="" />
               <div className="relative">
-                <div className="px-[30px] pt-5 ">
-                  <h3 className="text-xl lg:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center">
+                <div className="px-4  lg:px-[30px] pt-5 ">
+                  <h3 className="text-xl sm:text-2xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
                     Leary Mart
                   </h3>
-                  <p className="text-base leading-[26px] text-Gray dark:text-lightGray font-normal font-Lora text-center group-hover:text-white dark:hover:text-white">
+                  <p className="text-sm md:text-base leading-[26px] text-Gray dark:text-lightGray font-normal font-Lora text-center group-hover:text-white dark:hover:text-white hover:opacity-0">
                     Product Manager
                   </p>
                 </div>
                 <div
-                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] group-hover:bottom-[-30px] transition-all
+                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] sm:bottom-[-170px] md:bottom-[-150px] group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all
                  duration-500 left-0 right-0"
                 >
                   <div className="flex items-center justify-center space-x-4 text-white">
@@ -228,19 +272,23 @@ const About = () => {
               </div>
             </div>
             {/* Member three */}
-            <div className="member group">
-              <img src="/images/inner/member-3.jpg" alt="" />
+            <div
+              className="member group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img src="/images/inner/member-3.jpg" className="w-full" alt="" />
               <div className="relative">
-                <div className="px-[30px] pt-5 ">
-                  <h3 className="text-xl lg:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center">
+                <div className="px-4  lg:px-[30px] pt-5 ">
+                  <h3 className="text-xl sm:text-2xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
                     Samantha Shen
                   </h3>
-                  <p className="text-base leading-[26px] text-Gray dark:text-lightGray font-normal font-Lora text-center group-hover:text-white dark:hover:text-white">
+                  <p className="text-sm md:text-base leading-[26px] text-Gray dark:text-lightGray font-normal font-Lora text-center group-hover:text-white dark:hover:text-white hover:opacity-0">
                     General Manager
                   </p>
                 </div>
                 <div
-                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] group-hover:bottom-[-30px] transition-all
+                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] sm:bottom-[-170px] md:bottom-[-150px] group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all
                  duration-500 left-0 right-0"
                 >
                   <div className="flex items-center justify-center space-x-4 text-white">
@@ -263,16 +311,20 @@ const About = () => {
       <section className="bg-[#f8f6f3] dark:bg-lightBlack py-20 lg:py-[120px]">
         <div className="Container  ">
           {/* Section heading */}
-          <div className="flex items-start justify-between relative">
-            <div className="space-y-5 md:w-[450px] xl:w-[550px] font-Garamond">
+          <div
+            className="flex items-start justify-between relative "
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div className="space-y-3 md:w-[450px] xl:w-[550px] font-Garamond">
               <h5 className="text-base text-khaki leading-[26px] font-medium">
-                LUXURY HOTEL AND RESORT
+                LUXURY FEEDBACK
               </h5>
-              <h1 className="text-xl sm:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold uppercase">
+              <h1 className="text-[22px] sm:text-3xl 2xl:text-[38px] leading-6 md:leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold uppercase">
                 resote clients feedback about services
               </h1>
             </div>
-            <div className="flex items-center lg:space-x-5  space-x-3">
+            <div className="hidden sm:flex items-center lg:space-x-5  space-x-3 ">
               <button className="lg:w-[50px] w-[30px] h-[30px] lg:h-[50px]  flex items-center justify-center border-[1px] border-[#cccbc8] text-[#cccbc8] hover:bg-khaki hover:border-none group">
                 <BsChevronLeft className="w-5 h-5 text-[#cccbc8] group-hover:text-white " />
               </button>
@@ -284,14 +336,18 @@ const About = () => {
               </button>
             </div>
           </div>
-          <hr className="w-full h-[2px] text-lightGray dark:text-gray bg-lightGray dark:bg-gray mt-10 " />
+          <hr className="w-full h-[2px] text-[#e8e8e8] dark:text-[#383838]  mt-10 " />
 
           {/* Clients Feedback  */}
-          <div className="relative">
+          <div
+            className="relative"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
             <div className="mt-[60px] keen-slider " ref={sliderRef}>
               {/* slide - 1 */}
               <div className="keen-slider__slide number-slide1 group ">
-                <div className="bg-white dark:bg-normalBlack group-hover:bg-khaki dark:hover:bg-khaki p-[30px] relative before:absolute before:w-6 before:h-6 before:bg-white before:group-hover:bg-khaki  dark:before:bg-normalBlack before:rotate-45 before:left-[37px] before:-bottom-[13px] ">
+                <div className="bg-white dark:bg-normalBlack group-hover:bg-khaki dark:hover:bg-khaki transition-all ease-in-out duration-500 p-[30px] relative before:absolute before:w-6 before:h-6 before:bg-white before:group-hover:bg-khaki  dark:before:bg-normalBlack before:rotate-45 before:left-[37px] before:-bottom-[13px] ">
                   <span className="flex items-center space-x-[5px] md:space-x-2 xl:space-x-3">
                     <FaStar
                       className="text-khaki group-hover:text-white"
@@ -333,7 +389,7 @@ const About = () => {
               </div>
               {/* slide - 2 */}
               <div className="keen-slider__slide number-slide1 group ">
-                <div className="bg-white dark:bg-normalBlack group-hover:bg-khaki dark:hover:bg-khaki p-[30px] relative before:absolute before:w-6 before:h-6 before:bg-white before:group-hover:bg-khaki  dark:before:bg-normalBlack before:rotate-45 before:left-[37px] before:-bottom-[13px] ">
+                <div className="bg-white dark:bg-normalBlack group-hover:bg-khaki dark:hover:bg-khaki transition-all ease-in-out duration-500 p-[30px] relative before:absolute before:w-6 before:h-6 before:bg-white before:group-hover:bg-khaki  dark:before:bg-normalBlack before:rotate-45 before:left-[37px] before:-bottom-[13px] ">
                   <span className="flex items-center space-x-[5px] md:space-x-2 xl:space-x-3">
                     <FaStar
                       className="text-khaki group-hover:text-white"
@@ -375,7 +431,7 @@ const About = () => {
               </div>
               {/* slide - 3 */}
               <div className="keen-slider__slide number-slide1 group ">
-                <div className="bg-white dark:bg-normalBlack group-hover:bg-khaki dark:hover:bg-khaki p-[30px] relative before:absolute before:w-6 before:h-6 before:bg-white before:group-hover:bg-khaki  dark:before:bg-normalBlack before:rotate-45 before:left-[37px] before:-bottom-[13px] ">
+                <div className="bg-white dark:bg-normalBlack group-hover:bg-khaki dark:hover:bg-khaki transition-all ease-in-out duration-500 p-[30px] relative before:absolute before:w-6 before:h-6 before:bg-white before:group-hover:bg-khaki  dark:before:bg-normalBlack before:rotate-45 before:left-[37px] before:-bottom-[13px] ">
                   <span className="flex items-center space-x-[5px] md:space-x-2 xl:space-x-3">
                     <FaStar
                       className="text-khaki group-hover:text-white"
@@ -424,18 +480,23 @@ const About = () => {
       <div className=" dark:bg-normalBlack">
         <section className="Container py-20 lg:py-[120px]">
           {/* Section Header */}
-          <div className="text-center mx-auto  px-5 sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px]">
-            {/* Section Logo */}
-            <div className="flex items-center justify-center space-x-2">
-              <hr className="w-[100px] h-[1px] bg-lightGray dark:bg-gray text-lightGray dark:text-gray" />
+          <div
+            className=" text-center mx-auto  px-5 sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            {/* Section logo */}
+            <div className="flex items-center justify-center space-x-2 mb-4  ">
+              <hr className="w-[100px] h-[1px] text-[#dedbd4] dark:text-[#3b3b3b] " />
               <img
-                src="/images/inner/inner-logo.png"
+                src="/images/home-1/section-shape1.png"
                 alt="room_section_logo"
                 className="w-[50px] h-[50px]"
               />
-              <hr className="w-[100px] h-[1px] bg-lightGray dark:bg-gray text-lightGray dark:text-gray" />
+              <hr className="w-[100px] h-[1px] text-[#dedbd4] dark:text-[#3b3b3b] " />
             </div>
-            <h1 className="text-xl sm:text-2xl md:text-3xl 2xl:text-[38px] leading-[44px] lg:leading-[52px] text-lightBlack dark:text-white mt-[30px] mb-[24px] font-Garamond font-semibold uppercase">
+
+            <h1 className="text-xl sm:text-2xl md:text-3xl 2xl:text-[38px] leading-[44px] lg:leading-[52px] text-lightBlack dark:text-white  font-Garamond font-semibold uppercase mb-[8px]">
               LATEST POST FROM BLOG
             </h1>
             <p className="font-Lora leading-[26px] text-gray dark:text-lightGray font-normal text-sm sm:text-base">
@@ -450,7 +511,11 @@ const About = () => {
               {/* slide - 1 */}
               <div className="keen-slider__slide number-slide1 ">
                 {/* card one */}
-                <div className="overflow-hidden 3xl:w-[410px] group">
+                <div
+                  className="overflow-hidden 3xl:w-[410px] group"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   <div className="relative">
                     <img
                       src="/images/home-1/blog-1.jpg "
@@ -458,8 +523,8 @@ const About = () => {
                       alt=""
                     />
                   </div>
-                  <div className="font-Garamond border border-[#ddd] dark:border-gray border-t-0">
-                    <div className="py-6 px-[30px] ">
+                  <div className="font-Garamond border border-[#e8e8e8] dark:border-[#424242] border-t-0">
+                    <div className="py-6 px-[30px] lg:px-5 xl:px-[25px] ">
                       <div className="flex items-center space-x-6">
                         <p className="text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal uppercase mr-7 ml-3 relative before:absolute before:w-[7px] before:h-[7px] before:left-[-13px] before:bg-[#d1d1d1] dark:before:bg-khaki before:top-[9px]">
                           August 10, 2023
@@ -468,14 +533,14 @@ const About = () => {
                           Interior
                         </p>
                       </div>
-                      <Link to="#">
-                        <h2 className="text-xl lg:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-4 hover:underline underline-offset-2">
+                      <Link to="/blog">
+                        <h2 className="text-xl sm:text-[22px] xl:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-2 sm:py-3 md:py-4 hover:underline underline-offset-2">
                           Luxury Hotel for Traveling Spot USA, California
                         </h2>
                       </Link>
                     </div>
-                    <div className="  border-t-[1px] border-[#ddd] dark:border-gray  py-5">
-                      <div className="px-[30px] flex items-center justify-between group cursor-pointer ">
+                    <div className="  border-t-[1px] border-[#e8e8e8] dark:border-[#424242]  py-2 lg:py-3">
+                      <div className="px-[30px] flex items-center justify-between ">
                         <div className="">
                           <span className=" text-sm sm:text-base flex items-center ">
                             <span className="ml-[10px] leading-[38px] uppercase text-lightBlack dark:text-white font-medium group-hover:text-khaki hover:underline  underline-offset-1">
@@ -496,7 +561,11 @@ const About = () => {
               </div>
               {/* slide - 2 */}
               <div className="keen-slider__slide number-slide1 ">
-                <div className="overflow-hidden 3xl:w-[410px] group">
+                <div
+                  className="overflow-hidden 3xl:w-[410px] group"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
                   <div className="relative">
                     <img
                       src="/images/home-1/blog-2.jpg "
@@ -504,8 +573,8 @@ const About = () => {
                       alt=""
                     />
                   </div>
-                  <div className="font-Garamond border border-[#ddd] dark:border-gray border-t-0">
-                    <div className="py-6 px-[30px] ">
+                  <div className="font-Garamond border border-[#e8e8e8] dark:border-[#424242] border-t-0">
+                    <div className="py-6 px-[30px] lg:px-5 xl:px-[25px] ">
                       <div className="flex items-center space-x-6">
                         <p className="text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal uppercase mr-7 ml-3 relative before:absolute before:w-[7px] before:h-[7px] before:left-[-13px] before:bg-[#d1d1d1] dark:before:bg-khaki before:top-[9px]">
                           August 10, 2023
@@ -514,14 +583,14 @@ const About = () => {
                           Interior
                         </p>
                       </div>
-                      <Link to="#">
-                        <h2 className="text-xl lg:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-4 hover:underline underline-offset-2">
+                      <Link to="/blog">
+                        <h2 className="text-xl sm:text-[22px] xl:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-2 sm:py-3 md:py-4 hover:underline underline-offset-2">
                           Luxury Hotel for Traveling Spot USA, California
                         </h2>
                       </Link>
                     </div>
-                    <div className="  border-t-[1px] border-[#ddd] dark:border-gray  py-5">
-                      <div className="px-[30px] flex items-center justify-between group cursor-pointer ">
+                    <div className="  border-t-[1px] border-[#e8e8e8] dark:border-[#424242]  py-2 lg:py-3">
+                      <div className="px-[30px] flex items-center justify-between ">
                         <div className="">
                           <span className=" text-sm sm:text-base flex items-center ">
                             <span className="ml-[10px] leading-[38px] uppercase text-lightBlack dark:text-white font-medium group-hover:text-khaki hover:underline  underline-offset-1">
@@ -542,7 +611,11 @@ const About = () => {
               </div>
               {/* slide - 3 */}
               <div className="keen-slider__slide number-slide1 ">
-                <div className="overflow-hidden 3xl:w-[410px] group">
+                <div
+                  className="overflow-hidden 3xl:w-[410px] group"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   <div className="relative">
                     <img
                       src="/images/home-1/blog-3.jpg "
@@ -550,8 +623,8 @@ const About = () => {
                       alt=""
                     />
                   </div>
-                  <div className="font-Garamond border border-[#ddd] dark:border-gray border-t-0">
-                    <div className="py-6 px-[30px] ">
+                  <div className="font-Garamond border border-[#e8e8e8] dark:border-[#424242] border-t-0">
+                    <div className="py-6 px-[30px] lg:px-5 xl:px-[25px] ">
                       <div className="flex items-center space-x-6">
                         <p className="text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal uppercase mr-7 ml-3 relative before:absolute before:w-[7px] before:h-[7px] before:left-[-13px] before:bg-[#d1d1d1] dark:before:bg-khaki before:top-[9px]">
                           August 10, 2023
@@ -560,14 +633,14 @@ const About = () => {
                           Interior
                         </p>
                       </div>
-                      <Link to="#">
-                        <h2 className="text-xl lg:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-4 hover:underline underline-offset-2">
+                      <Link to="/blog">
+                        <h2 className="text-xl sm:text-[22px] xl:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-2 sm:py-3 md:py-4 hover:underline underline-offset-2">
                           Luxury Hotel for Traveling Spot USA, California
                         </h2>
                       </Link>
                     </div>
-                    <div className="  border-t-[1px] border-[#ddd] dark:border-gray  py-5">
-                      <div className="px-[30px] flex items-center justify-between group cursor-pointer ">
+                    <div className="  border-t-[1px] border-[#e8e8e8] dark:border-[#424242]  py-2 lg:py-3">
+                      <div className="px-[30px] flex items-center justify-between ">
                         <div className="">
                           <span className=" text-sm sm:text-base flex items-center ">
                             <span className="ml-[10px] leading-[38px] uppercase text-lightBlack dark:text-white font-medium group-hover:text-khaki hover:underline  underline-offset-1">

@@ -9,7 +9,11 @@ const WelcomeSection = () => {
     <section className="dark:bg-lightBlack py-20 2xl:py-[120px]">
       <div className="Container flex flex-col md:flex-row items-center ">
         {/* WelcomeSection img */}
-        <div className="w-full md:w-[98%] lg:w-[96%] 2xl:w-[80%] p-[20px] lg:pl-[20px] 2xl:p-[50px] relative">
+        <div
+          className="w-full md:w-[98%] lg:w-[96%] 2xl:w-[80%] px-[20px] lg:pl-[20px] 2xl:px-[50px] relative"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <img
             src="/images/home-4/about-thumb.png"
             alt=""
@@ -32,14 +36,18 @@ const WelcomeSection = () => {
           />
         </div>
         {/* WelcomeSection text*/}
-        <div className="w-full  p-[20px] lg:pr-[20px] xl:p-[50px]">
+        <div
+          className="w-full  p-[20px] lg:pr-[20px] xl:p-[50px]"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <h2
             className="text-lightBlack dark:text-white text-3xl md:text-4xl lg:text-[40px] 2xl:text-[45px] leading-7 md:leading-10 lg:leading-[50px] 2xl:leading-[66px]
-           font-semibold font-Garamond mb-4 sm:mb-5"
+           font-semibold font-Garamond mb-3 mt-3 md:mt-0 "
           >
             Welcome to the West Coast
           </h2>
-          <p className="text-sm lg:text-base leading-[22px] sm:leading-[26px] text-gray dark:text-lightGray font-normal font-Lora mb-5 xl:mb-[25px]">
+          <p className="text-sm lg:text-base leading-[22px] sm:leading-[26px] text-gray dark:text-lightGray font-normal font-Lora mb-3">
             Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas si
             Aenean aspernaturaut odit aut fugit, sed quia consequuntur. Dicta
             sunt maximus ali explicabo elit sed.lorem, condimentum .

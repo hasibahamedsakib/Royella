@@ -60,7 +60,11 @@ const RoomDetails = () => {
         <div className="Container grid grid-cols-6 md:grid-cols-7 lg:grid-cols-6 gap-5 ">
           <div className="col-span-6 md:col-span-4">
             {/* Image custom slider */}
-            <div className="overflow-hidden relative group ">
+            <div
+              className="overflow-hidden relative group "
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               <img
                 src={images[imageIndex]}
                 alt=""
@@ -90,12 +94,20 @@ const RoomDetails = () => {
             {/* Room content */}
             <div className="pt-5 lg:pt-[35px]  pr-3">
               <p className="text-base font-Lora text-khaki">LUXURY ROOM</p>
-              <h2 className="py-2 sm:py-3 md:py-4 lg:py-[19px] 2xl:py-[25px] font-Garamond text-[22px] sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-[38px] 3xl:text-[40px] leading-6 lg:leading-[26px]  text-lightBlack dark:text-white font-semibold">
+              <h2
+                className="py-2 sm:py-3 md:py-4 lg:py-[19px] 2xl:py-[25px] font-Garamond text-[22px] sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-[38px] 3xl:text-[40px] leading-6 lg:leading-[26px]  text-lightBlack dark:text-white font-semibold"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+              >
                 {bookingsData && bookingsData.title
                   ? bookingsData.title
                   : "Delux Family Rooms"}
               </h2>
-              <p className="text-sm lg:text-base leading-6 text-gray dark:text-lightGray font-normal font-Lora">
+              <p
+                className="text-sm lg:text-base leading-6 text-gray dark:text-lightGray font-normal font-Lora"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+              >
                 Rapidiously myocardinate cross-platform intellectual capital
                 after marketing model. Appropriately create interactive
                 infrastructures after maintainable are Holisticly facilitate
@@ -104,7 +116,11 @@ const RoomDetails = () => {
                 rather than reliable e-services. Dramatically whiteboard
                 alternative
               </p>
-              <p className="mt-5 2xl:mt-7 text-sm lg:text-base leading-6 text-gray dark:text-lightGray font-normal font-Lora">
+              <p
+                className="mt-5 2xl:mt-7 text-sm lg:text-base leading-6 text-gray dark:text-lightGray font-normal font-Lora"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+              >
                 Conveniently fashion pandemic potentialities for team driven
                 technologies. Proactively orchestrate robust systems rather than
                 user-centric vortals. Distinctively seize top-line e-commerce
@@ -112,7 +128,11 @@ const RoomDetails = () => {
                 goal-oriented
               </p>
               {/* Check-In and check-Out */}
-              <div className="md:flex items-center flex-col md:flex-row md:justify-between py-10 lg:py-[60px]">
+              <div
+                className="md:flex items-center flex-col md:flex-row md:justify-between py-10 lg:py-[60px]"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+              >
                 {/* check-in */}
                 <div>
                   <div className="flex items-center space-x-2">
@@ -161,7 +181,7 @@ const RoomDetails = () => {
                 </div>
               </div>
               {/* House Roles */}
-              <div>
+              <div data-aos="zoom-in-up" data-aos-duration="1000">
                 <h2
                   className="pb-2 sm:pb-3 md:pb-4 lg:pb-[19px] 2xl:pb-6
                 font-Garamond text-[22px] sm:text-2xl md:text-3xl 2xl:text-[32px] leading-7 lg:leading-[26px] text-lightBlack dark:text-white font-semibold"
@@ -177,7 +197,11 @@ const RoomDetails = () => {
                 </p>
               </div>
               {/* Childreen & Extra Beds */}
-              <div className="pt-10 2xl:pt-[60px]">
+              <div
+                className="pt-10 2xl:pt-[60px]"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+              >
                 <h2
                   className="pb-2 sm:pb-3 md:pb-4 lg:pb-[19px] 2xl:pb-6
                 font-Garamond text-[22px] sm:text-2xl md:text-3xl 2xl:text-[32px] leading-7 lg:leading-[26px] text-lightBlack dark:text-white font-semibold"
@@ -227,7 +251,11 @@ const RoomDetails = () => {
                 <h4 className="font-Garamond text-xl sm:text-[22px] md:text-2xl xl:text-3xl leading-7 md:leading-8 lg:leading-10 xl:leading-[50px] 2xl:leading-[60px] 3xl:leading-[70px] text-lightBlack dark:text-white font-semibold mb-4">
                   Booking
                 </h4>
-                <div className="grid items-center gap-[18px] ">
+                <div
+                  className="grid items-center gap-[18px] "
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1000"
+                >
                   <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6 ">
                     <p className="text-sm md:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
                       Check In -{" "}
@@ -299,7 +327,11 @@ const RoomDetails = () => {
             </div>
 
             {/* Amenities */}
-            <div className="mt-3 sm:mt-4 md:mt-5 lg:mt-6">
+            <div
+              className="mt-3 sm:mt-4 md:mt-5 lg:mt-6"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               <h4 className="font-Garamond text-xl sm:text-[22px] md:text-2xl xl:text-3xl leading-7 md:leading-8 lg:leading-10 xl:leading-[50px] 2xl:leading-[60px] 3xl:leading-[70px] text-lightBlack dark:text-white font-semibold mb-6">
                 Amenities
               </h4>

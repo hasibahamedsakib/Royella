@@ -7,6 +7,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { IoIosCall } from "react-icons/io";
 import { MdEmail, MdOutlineShareLocation } from "react-icons/md";
+import Swal from "sweetalert2";
 
 const Room = () => {
   // facilities slider breckpoints
@@ -20,7 +21,7 @@ const Room = () => {
         slides: { origin: "center", perView: 1.5 },
         spacing: 10,
       },
-      "(min-width: 576px)": {
+      "(min-width: 600px)": {
         slides: { origin: "center", perView: 1 },
         spacing: 15,
       },
@@ -46,7 +47,11 @@ const Room = () => {
       <div className="bg-whiteSmoke dark:bg-lightBlack py-20 2xl:py-[120px]">
         <div className="Container ">
           {/* section heading */}
-          <div className=" text-center sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px]  mx-auto  px-5">
+          <div
+            className=" text-center sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px]  mx-auto  px-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             {/* Section Logo */}
             <div className="flex items-center justify-center space-x-2">
               <hr className="w-[100px] h-[1px] bg-lightGray dark:bg-gray text-lightGray dark:text-gray" />
@@ -65,7 +70,11 @@ const Room = () => {
 
           <div className="mt-14 2xl:mt-[60px] grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-[30px]">
             {/* Room - 1 */}
-            <div className="overflow-x-hidden 3xl:w-[410px] group">
+            <div
+              className="overflow-x-hidden 3xl:w-[410px] group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div className="relative">
                 <div className="overflow-hidden">
                   <img
@@ -88,16 +97,16 @@ const Room = () => {
                 </div>
               </div>
               <div className="font-Garamond">
-                <div className=" border-[1px] border-[#ddd] dark:border-gray border-t-0">
+                <div className=" border-[1px] border-[#e8e8e8] dark:border-[#424242]  border-t-0">
                   <div className="py-6 px-[30px]">
-                    <h4 className="text-sm leading-[26px] text-khaki">
+                    <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
                       Luxury Room
                     </h4>
                     <Link
                       to="/find_room"
                       state={{ price: "450", title: "Delux Family Rooms" }}
                     >
-                      <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
+                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                         Delux Family Rooms
                       </h2>
                     </Link>
@@ -105,7 +114,7 @@ const Room = () => {
                       1500 SQ.FT/Rooms
                     </p>
                   </div>
-                  <div className="  border-t-[1px] border-[#ddd] dark:border-gray py-5">
+                  <div className="  border-t-[1px] border-[#e8e8e8] dark:border-[#424242]  py-5">
                     <div className="px-[30px] flex items-center justify-between">
                       <div className="">
                         <span className="font-Lora text-base flex items-center ">
@@ -143,7 +152,11 @@ const Room = () => {
             </div>
 
             {/* Room - 2 */}
-            <div className="overflow-x-hidden 3xl:w-[410px] group">
+            <div
+              className="overflow-x-hidden 3xl:w-[410px] group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div className="relative">
                 <div className="overflow-hidden">
                   <img
@@ -165,16 +178,16 @@ const Room = () => {
                 </div>
               </div>
               <div className="font-Garamond">
-                <div className=" border-[1px] border-[#ddd] dark:border-gray border-t-0">
+                <div className=" border-[1px] border-[#e8e8e8] dark:border-[#424242]  border-t-0">
                   <div className="py-6 px-[30px]">
-                    <h4 className="text-sm leading-[26px] text-khaki">
+                    <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
                       Luxury Room
                     </h4>
                     <Link
                       to="/find_room"
                       state={{ price: "550", title: "Double Suite Rooms" }}
                     >
-                      <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
+                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                         Double Suite Rooms
                       </h2>
                     </Link>
@@ -182,7 +195,7 @@ const Room = () => {
                       1500 SQ.FT/Rooms
                     </p>
                   </div>
-                  <div className="  border-t-[1px] border-[#ddd] dark:border-gray py-5">
+                  <div className="  border-t-[1px] border-[#e8e8e8] dark:border-[#424242]  py-5">
                     <div className="px-[30px] flex items-center justify-between">
                       <div className="">
                         <span className="font-Lora text-base flex items-center ">
@@ -220,7 +233,11 @@ const Room = () => {
             </div>
 
             {/* Room - 3 */}
-            <div className="overflow-x-hidden 3xl:w-[410px] group">
+            <div
+              className="overflow-x-hidden 3xl:w-[410px] group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div className="relative">
                 <div className="overflow-hidden">
                   <img
@@ -242,16 +259,16 @@ const Room = () => {
                 </div>
               </div>
               <div className="font-Garamond">
-                <div className=" border-[1px] border-[#ddd] dark:border-gray border-t-0">
+                <div className=" border-[1px] border-[#e8e8e8] dark:border-[#424242]  border-t-0">
                   <div className="py-6 px-[30px]">
-                    <h4 className="text-sm leading-[26px] text-khaki">
+                    <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
                       Luxury Room
                     </h4>
                     <Link
                       to="/find_room"
                       state={{ price: "560", title: "Suprior Bed Rooms" }}
                     >
-                      <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
+                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                         Suprior Bed Rooms
                       </h2>
                     </Link>
@@ -259,7 +276,7 @@ const Room = () => {
                       1500 SQ.FT/Rooms
                     </p>
                   </div>
-                  <div className="  border-t-[1px] border-[#ddd] dark:border-gray py-5">
+                  <div className="  border-t-[1px] border-[#e8e8e8] dark:border-[#424242]  py-5">
                     <div className="px-[30px] flex items-center justify-between">
                       <div className="">
                         <span className="font-Lora text-base flex items-center ">
@@ -297,7 +314,11 @@ const Room = () => {
             </div>
 
             {/* Room - 4 */}
-            <div className="overflow-x-hidden 3xl:w-[410px] group">
+            <div
+              className="overflow-x-hidden 3xl:w-[410px] group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div className="relative">
                 <div className="overflow-hidden">
                   <img
@@ -319,16 +340,16 @@ const Room = () => {
                 </div>
               </div>
               <div className="font-Garamond">
-                <div className=" border-[1px] border-[#ddd] dark:border-gray border-t-0">
+                <div className=" border-[1px] border-[#e8e8e8] dark:border-[#424242]  border-t-0">
                   <div className="py-6 px-[30px]">
-                    <h4 className="text-sm leading-[26px] text-khaki">
+                    <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
                       Luxury Room
                     </h4>
                     <Link
                       to="/find_room"
                       state={{ price: "480", title: "Junior Suite Room" }}
                     >
-                      <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
+                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                         Junior Suite Room
                       </h2>
                     </Link>
@@ -336,7 +357,7 @@ const Room = () => {
                       1500 SQ.FT/Rooms
                     </p>
                   </div>
-                  <div className="  border-t-[1px] border-[#ddd] dark:border-gray py-5">
+                  <div className="  border-t-[1px] border-[#e8e8e8] dark:border-[#424242]  py-5">
                     <div className="px-[30px] flex items-center justify-between">
                       <div className="">
                         <span className="font-Lora text-base flex items-center ">
@@ -374,7 +395,11 @@ const Room = () => {
             </div>
 
             {/* Room - 5 */}
-            <div className="overflow-x-hidden 3xl:w-[410px] group">
+            <div
+              className="overflow-x-hidden 3xl:w-[410px] group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div className="relative">
                 <div className="overflow-hidden">
                   <img
@@ -396,16 +421,16 @@ const Room = () => {
                 </div>
               </div>
               <div className="font-Garamond">
-                <div className=" border-[1px] border-[#ddd] dark:border-gray border-t-0">
+                <div className=" border-[1px] border-[#e8e8e8] dark:border-[#424242]  border-t-0">
                   <div className="py-6 px-[30px]">
-                    <h4 className="text-sm leading-[26px] text-khaki">
+                    <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
                       Luxury Room
                     </h4>
                     <Link
                       to="/find_room"
                       state={{ price: "520", title: "Family Suite Room" }}
                     >
-                      <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
+                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                         Family Suite Room
                       </h2>
                     </Link>
@@ -413,7 +438,7 @@ const Room = () => {
                       1500 SQ.FT/Rooms
                     </p>
                   </div>
-                  <div className="  border-t-[1px] border-[#ddd] dark:border-gray py-5">
+                  <div className="  border-t-[1px] border-[#e8e8e8] dark:border-[#424242]  py-5">
                     <div className="px-[30px] flex items-center justify-between">
                       <div className="">
                         <span className="font-Lora text-base flex items-center ">
@@ -451,7 +476,11 @@ const Room = () => {
             </div>
 
             {/* Room - 6 */}
-            <div className="overflow-x-hidden 3xl:w-[410px] group">
+            <div
+              className="overflow-x-hidden 3xl:w-[410px] group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div className="relative">
                 <div className="overflow-hidden">
                   <img
@@ -473,16 +502,16 @@ const Room = () => {
                 </div>
               </div>
               <div className="font-Garamond">
-                <div className=" border-[1px] border-[#ddd] dark:border-gray border-t-0">
+                <div className=" border-[1px] border-[#e8e8e8] dark:border-[#424242]  border-t-0">
                   <div className="py-6 px-[30px]">
-                    <h4 className="text-sm leading-[26px] text-khaki">
+                    <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
                       Luxury Room
                     </h4>
                     <Link
                       to="/find_room"
                       state={{ price: "500", title: "Beautiful Family Rooms" }}
                     >
-                      <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
+                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                         Beautiful Family Rooms
                       </h2>
                     </Link>
@@ -490,7 +519,7 @@ const Room = () => {
                       1500 SQ.FT/Rooms
                     </p>
                   </div>
-                  <div className="  border-t-[1px] border-[#ddd] dark:border-gray py-5">
+                  <div className="  border-t-[1px] border-[#e8e8e8] dark:border-[#424242]  py-5">
                     <div className="px-[30px] flex items-center justify-between">
                       <div className="">
                         <span className="font-Lora text-base flex items-center ">
@@ -534,7 +563,11 @@ const Room = () => {
       <div className="bg-normalBlack py-20 lg:py-[120px] relative">
         <div className="Container pb-[100px] ">
           {/* Section heading */}
-          <div className="flex items-center justify-between relative">
+          <div
+            className="flex items-center justify-between relative"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div className=" sapce-y-3 md:space-y-4 lg:space-y-5 md:w-[450px] xl:w-[550px] font-Garamond">
               <h5 className="text-base text-khaki leading-[26px] font-medium">
                 LUXURY HOTEL AND RESORT
@@ -543,7 +576,7 @@ const Room = () => {
                 RESOTE’S EXTRA FACILITIES FOR LUXURIOUS LIFE
               </h1>
             </div>
-            <div className="flex items-center lg:space-x-5  space-x-3">
+            <div className="hidden sm:flex items-center lg:space-x-5  space-x-3">
               <button className="lg:w-[50px] w-[30px] h-[30px] lg:h-[50px]  flex items-center justify-center border-[1px] border-gray  text-lightGray hover:bg-khaki hover:border-none group">
                 <BsChevronLeft className="w-5 h-5 text-gray  group-hover:text-white " />
               </button>
@@ -559,7 +592,11 @@ const Room = () => {
 
           {/* Clients Facilities  */}
           <div className="mt-14 2xl:mt-[60px] grid grid-cols-6 gap-5 md:gap-[30px] ">
-            <div className="col-span-6 sm:col-span-2 ">
+            <div
+              className="col-span-6 sm:col-span-2 "
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               <img
                 src="/images/inner/faciliies-icon.png"
                 alt="facilities-icon"
@@ -587,6 +624,8 @@ const Room = () => {
             <div
               ref={sliderRef}
               className="keen-slider col-span-6 sm:col-span-4"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
             >
               {/* slide 1 */}
               <div className="keen-slider__slide number-slide1">
@@ -597,7 +636,7 @@ const Room = () => {
                     alt=""
                   />
                   <div className="inline-flex items-center justify-between bg-lightBlack  hover:bg-whiteSmoke dark:hover:bg-white transition-all duration-300 w-[90%] float-right absolute bottom-0 right-[20px] group">
-                    <p className="text-white text-lg sm:text-xl md:text-[22px]  group-hover:text-lightBlack leading-6 font-semibold font-Garamond px-5">
+                    <p className="text-white text-lg sm:text-xl lg:text-[18px] xl:text-[22px]  group-hover:text-lightBlack leading-6 font-semibold font-Garamond px-5">
                       Gym Training Ground
                     </p>
                     <button className="w-[30px] h-[30px] lg:w-[50px] lg:h-[50px]  flex items-center justify-center bg-khaki">
@@ -615,7 +654,7 @@ const Room = () => {
                     alt=""
                   />
                   <div className="inline-flex items-center justify-between bg-lightBlack  hover:bg-whiteSmoke dark:hover:bg-white transition-all duration-300 w-[90%] float-right absolute bottom-0 right-[20px] group">
-                    <p className="text-white text-lg sm:text-xl md:text-[22px]  group-hover:text-lightBlack leading-6 font-semibold font-Garamond px-5">
+                    <p className="text-white text-lg sm:text-xl lg:text-[18px] xl:text-[22px]  group-hover:text-lightBlack leading-6 font-semibold font-Garamond px-5">
                       Gym Training Ground
                     </p>
                     <button className="w-[30px] h-[30px] lg:w-[50px] lg:h-[50px]  flex items-center justify-center bg-khaki">
@@ -633,7 +672,7 @@ const Room = () => {
                     alt=""
                   />
                   <div className="inline-flex items-center justify-between bg-lightBlack  hover:bg-whiteSmoke dark:hover:bg-white transition-all duration-300 w-[90%] float-right absolute bottom-0 right-[20px] group">
-                    <p className="text-white text-lg sm:text-xl md:text-[22px]  group-hover:text-lightBlack leading-6 font-semibold font-Garamond px-5">
+                    <p className="text-white text-lg sm:text-xl lg:text-[18px] xl:text-[22px]  group-hover:text-lightBlack leading-6 font-semibold font-Garamond px-5">
                       Gym Training Ground
                     </p>
                     <button className="w-[30px] h-[30px] lg:w-[50px] lg:h-[50px]  flex items-center justify-center bg-khaki">
@@ -651,8 +690,12 @@ const Room = () => {
       {/* Contact with Us */}
       <div className="">
         <div className="Container bg-whiteSmoke  px-7 md:px-10 lg:px-14 2xl:px-20 py-10 md:py-14 lg:py-18 xl:py-20 2xl:py-[100px] relative  z-[1] mt-[-100px] mb-[100px]">
-          <div className="flex items-center flex-col md:flex-row">
-            <div className="p-5 flex-1">
+          <div className="flex md:items-center flex-col md:flex-row">
+            <div
+              className="px-2 py-5 sm:p-5 flex-1"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               <p className="text-Garamond text-base leading-[26px] text-khaki font-medium">
                 CONTACT US
               </p>
@@ -667,8 +710,8 @@ const Room = () => {
               </p>
 
               {/* call */}
-              <div className="flex items-center my-4 md:my-5 lg:my-[26px] group">
-                <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] 2xl:w-[60px] 2xl:h-[60px] bg-white group-hover:bg-khaki dark:group-hover:bg-khaki grid items-center justify-center rounded-full">
+              <div className="flex items-center my-4  lg:my-[26px] group">
+                <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] 2xl:w-[60px] 2xl:h-[60px] bg-white group-hover:bg-khaki dark:group-hover:bg-khaki grid items-center justify-center rounded-full transition-all duration-300">
                   <IoIosCall
                     size={20}
                     className="text-khaki group-hover:text-whiteSmoke"
@@ -685,8 +728,8 @@ const Room = () => {
               </div>
               <hr className="dark:text-gray dark:bg-gray text-lightGray bg-lightGray h-[1px]" />
               {/* email */}
-              <div className="flex items-center my-4 md:my-5 lg:my-[26px] group">
-                <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] 2xl:w-[60px] 2xl:h-[60px] bg-white group-hover:bg-khaki dark:group-hover:bg-khaki grid items-center justify-center rounded-full">
+              <div className="flex items-center my-4  lg:my-[26px] group">
+                <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] 2xl:w-[60px] 2xl:h-[60px] bg-white group-hover:bg-khaki dark:group-hover:bg-khaki grid items-center justify-center rounded-full transition-all duration-300">
                   <MdEmail
                     size={20}
                     className="text-khaki group-hover:text-whiteSmoke"
@@ -703,8 +746,8 @@ const Room = () => {
               </div>
               <hr className="dark:text-gray dark:bg-gray text-lightGray bg-lightGray h-[1px]" />
               {/* location */}
-              <div className="flex items-center my-4 md:my-5 lg:my-[26px] group">
-                <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] 2xl:w-[60px] 2xl:h-[60px] bg-white group-hover:bg-khaki dark:group-hover:bg-khaki grid items-center justify-center rounded-full">
+              <div className="flex items-center my-4  lg:my-[26px] group">
+                <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] 2xl:w-[60px] 2xl:h-[60px] bg-white group-hover:bg-khaki dark:group-hover:bg-khaki grid items-center justify-center rounded-full transition-all duration-300">
                   <MdOutlineShareLocation
                     size={20}
                     className="text-khaki group-hover:text-whiteSmoke"
@@ -721,25 +764,41 @@ const Room = () => {
                 </div>
               </div>
             </div>
-            <div className="flex-1 p-5">
+            <div
+              className="flex-1 py-5 sm:p-5"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               <div className="bg-lightBlack  p-[30px] lg:p-[45px] 2xl:p-[61px]">
                 <h2 className="font-Garamond text-[22px] sm:text-2xl md:text-[28px] leading-7 md:leading-8 lg:leading-9 xl:leading-10 2xl:leading-[44px] text-white font-semibold text-center">
                   GET IN TOUCH
                 </h2>
-                <div className="grid items-center grid-cols-1 gap-2 mt-8">
+                <form className="grid items-center grid-cols-1 gap-2 mt-8">
                   <input
                     type="text"
-                    className="w-full h-12 md:h-13 lg:h-[59px] px-4 border border-gray dark:border-lightGray text-gray dark:text-lightGray outline-none  bg-transparent mt-4 focus:ring-0 placeholder:text-gray"
+                    className="w-full h-12 md:h-13 lg:h-[59px] px-4 border border-gray  text-lightGray outline-none focus:border-gray bg-transparent mt-4 focus:ring-0 placeholder:text-gray"
                     placeholder="Your Name"
                     required
                   />
                   <input
                     type="email"
-                    className="w-full h-12 md:h-13 lg:h-[59px] px-4 border  border-gray dark:border-lightGray text-gray dark:text-lightGray outline-none  bg-transparent mt-4 focus:ring-0 placeholder:text-gray"
+                    className="w-full h-12 md:h-13 lg:h-[59px] px-4 border  border-gray  text-lightGray outline-none focus:border-gray  bg-transparent mt-4 focus:ring-0 placeholder:text-gray"
                     placeholder="Enter E-mail"
                     required
                   />
-                  <select className="w-full h-12 md:h-13 lg:h-[59px] px-4 border border-gray dark:border-lightGray text-gray dark:text-lightGray outline-none  bg-transparent mt-4 focus:ring-0 ">
+                  <select
+                    className="w-full h-12 md:h-13 lg:h-[59px] px-4 border border-gray  text-lightGray outline-none  bg-transparent mt-4 focus:ring-0 focus:border-gray "
+                    onFocus={(e) => {
+                      e.target.size = 6;
+                    }}
+                    onBlur={(e) => {
+                      e.target.size = 0;
+                    }}
+                    onChange={(e) => {
+                      e.target.size = 1;
+                      e.target.blur();
+                    }}
+                  >
                     <option
                       className="bg-khaki text-white px-3 py-3"
                       value=""
@@ -777,13 +836,40 @@ const Room = () => {
                     id=""
                     cols="30"
                     rows="10"
-                    className="w-full h-[121px] px-4 border border-gray dark:border-lightGray text-gray dark:text-lightGray outline-none  bg-transparent mt-4 focus:ring-0 placeholder:text-gray resize-none"
+                    className="w-full h-[121px] px-4 border border-gray  text-lightGray outline-none  bg-transparent mt-4 focus:ring-0  focus:border-gray placeholder:text-gray resize-none"
                     placeholder="Write Message:"
+                    required
                   ></textarea>
-                  <button className="w-full bg-khaki text-white text-center h-10 2xl:h-[55px] mt-5">
+                  <button
+                    className="w-full bg-khaki text-white text-center h-10 2xl:h-[55px] mt-5"
+                    onClick={() => {
+                      Swal.fire({
+                        title: "Form Fill-Up Complete?",
+                        text: "Please Fill All Type Of Field",
+                        icon: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#008000",
+                        cancelButtonColor: "#d33",
+                        confirmButtonText: "Yes, complete!",
+                        color: "#fff",
+                        background: "#c19d68",
+                      }).then((result) => {
+                        if (result.isConfirmed) {
+                          Swal.fire({
+                            title: "Congratulation!",
+                            text: "Your Appointment Added Successful!",
+                            icon: "success",
+                            background: "#c19d68",
+                            color: "#fff",
+                            confirmButtonColor: "#008000",
+                          });
+                        }
+                      });
+                    }}
+                  >
                     SEND MESSAGE
                   </button>
-                </div>
+                </form>
               </div>
             </div>
           </div>

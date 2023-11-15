@@ -7,7 +7,11 @@ const BookingVideo = () => {
   return (
     <section className="py-20 xl:py-[120px] bg-[url('/images/home-4/video-bg.jpg')] bg-center bg-cover ">
       <div className="grid items-center justify-center">
-        <div className=" text-center px-5">
+        <div
+          className=" text-center px-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <img
             src="/images/home-4/section-sahpe.png"
             alt=""
@@ -24,13 +28,17 @@ const BookingVideo = () => {
           </div>
           <div className="grid items-center justify-center">
             {" "}
-            <hr className="w-[60px] h-[3px] bg-khaki my-3 md:my-4 lg:my-5" />
+            <hr className="w-[60px] h-[3px] bg-khaki my-3 md:my-4 lg:mt-5 lg:mb-2" />
           </div>
           <p className="text-white text-sm sm:text-base leading-7 md:leading-10 2xl:leading-[50px] font-normal font-Lora sm:px-[60px] lg:px-[135px] xl:px-[235px] 2xl:px-[335px] 3xl:px-[535px]">
             This house is one of the favorite houses of our clients, leave
             reviews.
           </p>
-          <div className="grid items-center justify-center mt-5 lg:mt-[30px]">
+          <div
+            className="grid items-center justify-center mt-[15px]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div
               className=" w-[50px] h-[50px] xl:w-[80px] xl:h-[80px] rounded-full border-2 border-white grid items-center justify-center cursor-pointer"
               title="click me and see details"

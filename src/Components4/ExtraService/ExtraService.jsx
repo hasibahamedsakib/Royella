@@ -1,15 +1,19 @@
 const ExtraService = () => {
   return (
-    <section className="bg-whiteSmoke dark:bg-normalBlack py-20 2xl:py-[120px]">
+    <section className="bg-[#ededed] dark:bg-normalBlack py-20 2xl:py-[120px]">
       <div className="Container">
         {/* section header */}
-        <div className="flex md:flex-row flex-col items-center justify-between space-y-1 md:space-y-0">
+        <div
+          className="flex md:flex-row flex-col items-center justify-between space-y-1 md:space-y-0"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div>
-            <p className="text-base leading-7 md:leading-10 lg:leading-[40px] 3xl:leading-[66px] mb-1 text-khaki font-normal font-Lora text-center md:text-left">
+            <p className="text-base leading-7 md:leading-10 lg:leading-[40px] 3xl:leading-[66px] text-khaki font-normal font-Lora text-center md:text-left">
               Best Prices
             </p>
             <h3
-              className="text-lightBlack dark:text-white text-2xl sm:text-3xl md:text-4xl lg:text-[40px] 2xl:text-[45px] leading-7 md:leading-10 lg:leading-[40px] 2xl:leading-[66px]
+              className="text-lightBlack dark:text-white text-2xl sm:text-3xl md:text-4xl lg:text-[40px] 2xl:text-[45px] leading-7 md:leading-9
            font-semibold font-Garamond"
             >
               Extra Services
@@ -30,7 +34,11 @@ const ExtraService = () => {
         {/* section content */}
         <div className="pt-10 xl:pt-[60px]">
           <div className="grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] lg:gap-[30px] ">
-            <div className="extra-service bg-[url('/images/home-4/service-1.jpg')] group">
+            <div
+              className="extra-service bg-[url('/images/home-4/service-1.jpg')] group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <img
                 src="/images/home-4/service-1.jpg"
                 className="opacity-0 w-full h-[450px] 2xl:h-[500px]"
@@ -50,7 +58,11 @@ const ExtraService = () => {
               </div>
             </div>
             {/* service-2 */}
-            <div className="extra-service bg-[url('/images/home-4/service-2.jpg')] group">
+            <div
+              className="extra-service bg-[url('/images/home-4/service-2.jpg')] group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <img
                 src="/images/home-4/service-2.jpg"
                 className="opacity-0 w-full h-[450px] 2xl:h-[500px]"
@@ -70,7 +82,11 @@ const ExtraService = () => {
               </div>
             </div>
             {/* service -3 */}
-            <div className="extra-service bg-[url('/images/home-4/service-3.jpg')] group">
+            <div
+              className="extra-service bg-[url('/images/home-4/service-3.jpg')] group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <img
                 src="/images/home-4/service-3.jpg"
                 className="opacity-0 w-full h-[450px] 2xl:h-[500px]"
@@ -93,7 +109,11 @@ const ExtraService = () => {
           {/* 2nd grid */}
           <div className="grid items-center grid-cols-1 md:grid-cols-2  gap-[20px] lg:gap-[30px] mt-[30px]">
             {/* service- 04 */}
-            <div className="extra-service bg-[url('/images/home-4/service-4.jpg')] group">
+            <div
+              className="extra-service bg-[url('/images/home-4/service-4.jpg')] group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <img
                 src="/images/home-4/service-4.jpg"
                 className="opacity-0 w-full h-[450px] 2xl:h-[500px]"
@@ -113,7 +133,11 @@ const ExtraService = () => {
               </div>
             </div>
             {/* service- 05 */}
-            <div className="extra-service bg-[url('/images/home-4/service-5.jpg')] group">
+            <div
+              className="extra-service bg-[url('/images/home-4/service-5.jpg')] group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <img
                 src="/images/home-4/service-5.jpg"
                 className="opacity-0 w-full h-[450px] 2xl:h-[500px]"

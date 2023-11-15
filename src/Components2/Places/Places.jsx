@@ -5,10 +5,10 @@ const Places = () => {
   const [toggler, setToggler] = useState(false);
   return (
     <section className="py-20 2xl:py-[120px] dark:bg-lightBlack">
-      <div className="Container">
+      <div className="Container" data-aos="fade-up" data-aos-duration="1000">
         {/* section heading */}
         <div className="text-center mx-auto px-5 sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[280px] font-Garamond">
-          <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white mt-[23px] mb-[12px] font-bold">
+          <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white mb-[12px] font-bold">
             Royella Is Waiting For You!
           </h1>
           <p className="font-Lora leading-[26px] text-gray dark:text-lightGray font-normal text-sm sm:text-base mb-[35px]">
@@ -16,14 +16,18 @@ const Places = () => {
             these royella dolor consectetur adipiscing elit dos eiusmod tempor
             incididunt resort sweet spring
           </p>
-          <button className="btn-primary">MORE OUR PLACES</button>
+          <button className="btn-primary 2xl:w-[200px]">MORE OUR PLACES</button>
         </div>
       </div>
       {/* section Content */}
       <div className="mt-14 2xl:mt-[60px]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] px-5 ">
           {/* place-1 */}
-          <div className="overflow-hidden relative group cursor-grab">
+          <div
+            className="overflow-hidden relative group cursor-grab"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <span className="bg-khaki text-white text-sm font-medium font-Garamond px-[20px] py-[6px] uppercase absolute top-[29px] right-[27px]">
               East terrace
             </span>
@@ -40,7 +44,11 @@ const Places = () => {
             </span>
           </div>
           {/* place-2 */}
-          <div className="overflow-hidden relative group cursor-grab">
+          <div
+            className="overflow-hidden relative group cursor-grab"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <span className="bg-khaki text-white text-sm font-medium font-Garamond px-[20px] py-[6px] uppercase absolute top-[29px] right-[27px]">
               East terrace
             </span>
@@ -57,7 +65,11 @@ const Places = () => {
             </span>
           </div>
           {/* place-3 */}
-          <div className="overflow-hidden relative group cursor-grab">
+          <div
+            className="overflow-hidden relative group cursor-grab"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <span className="bg-khaki text-white text-sm font-medium font-Garamond px-[20px] py-[6px] uppercase absolute top-[29px] right-[27px]">
               East terrace
             </span>

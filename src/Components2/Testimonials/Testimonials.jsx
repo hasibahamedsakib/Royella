@@ -22,11 +22,15 @@ const Testimonials = () => {
     <section className="py-20 2xl:py-[120px] dark:bg-lightBlack">
       <div className="Container">
         {/* section heading */}
-        <div className="text-center mx-auto px-5 sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[280px] font-Garamond">
+        <div
+          className="text-center mx-auto px-5 sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[280px] font-Garamond"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h4 className="text-base lg:text-lg font-medium text-khaki leading-[28px]">
             OUR TESTIMONIALS
           </h4>
-          <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white mt-[23px] mb-[12px] font-bold">
+          <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white mt-2 md:mt-[10px]  mb-[12px] font-bold">
             Feedback From Our Guests
           </h1>
           <p className="font-Lora leading-[26px] text-gray dark:text-lightGray font-normal text-sm sm:text-base ">
@@ -48,7 +52,11 @@ const Testimonials = () => {
           >
             {/* slide-1 */}
             <SwiperSlide>
-              <div className="p-5 lg:relative">
+              <div
+                className="p-5 lg:relative"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <img
                   src="/images/home-2/testi-shape.png"
                   className=" h-full hidden lg:block lg:h-[332px] xl:h-[316px] 2xl:h-full"
@@ -99,7 +107,11 @@ const Testimonials = () => {
             </SwiperSlide>
             {/* slide-2 */}
             <SwiperSlide>
-              <div className="p-5 lg:relative">
+              <div
+                className="p-5 lg:relative"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <img
                   src="/images/home-2/testi-shape.png"
                   className=" h-full hidden lg:block lg:h-[332px] xl:h-[316px] 2xl:h-full"
@@ -150,7 +162,11 @@ const Testimonials = () => {
             </SwiperSlide>
             {/* slide-3 */}
             <SwiperSlide>
-              <div className="p-5 lg:relative">
+              <div
+                className="p-5 lg:relative"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <img
                   src="/images/home-2/testi-shape.png"
                   className=" h-full hidden lg:block lg:h-[332px] xl:h-[316px] 2xl:h-full"
@@ -201,7 +217,11 @@ const Testimonials = () => {
             </SwiperSlide>
             {/* slide-4 */}
             <SwiperSlide>
-              <div className="p-5 lg:relative">
+              <div
+                className="p-5 lg:relative"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <img
                   src="/images/home-2/testi-shape.png"
                   className=" h-full hidden lg:block lg:h-[332px] xl:h-[316px] 2xl:h-full"

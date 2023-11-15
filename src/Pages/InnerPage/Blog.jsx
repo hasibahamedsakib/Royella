@@ -12,7 +12,11 @@ const Blog = () => {
           <div className="col-span-6 md:col-span-4">
             <div className="grid items-center gap-5 2xl:gap-y-[30px] grid-cols-1 lg:grid-cols-2">
               {/* Blog One */}
-              <div className="overflow-hidden 3xl:w-[410px] group">
+              <div
+                className="overflow-hidden 3xl:w-[410px] group"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div className="relative">
                   <img
                     src="/images/home-1/blog-1.jpg "
@@ -30,9 +34,14 @@ const Blog = () => {
                         Interior
                       </p>
                     </div>
-                    <Link to="/blog_details">
+                    <Link
+                      to="/blog_details"
+                      state={{
+                        title: "How to Book a Room online Step by Step Guide",
+                      }}
+                    >
                       <h2 className="text-xl md:text-[22px] xl:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-2 sm:py-3 md:py-4 hover:underline underline-offset-2">
-                        Luxury Hotel for Traveling Spot USA, California
+                        How to Book a Room online Step by Step Guide
                       </h2>
                     </Link>
                   </div>
@@ -56,7 +65,11 @@ const Blog = () => {
                 </div>
               </div>
               {/* Blog two */}
-              <div className="overflow-hidden 3xl:w-[410px] group">
+              <div
+                className="overflow-hidden 3xl:w-[410px] group"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div className="relative">
                   <img
                     src="/images/home-1/blog-2.jpg "
@@ -74,9 +87,15 @@ const Blog = () => {
                         Interior
                       </p>
                     </div>
-                    <Link to="/blog">
+                    <Link
+                      to="/blog_details"
+                      state={{
+                        title:
+                          "Pre Booking Benifits for the Traveller on our Hotel",
+                      }}
+                    >
                       <h2 className="text-xl md:text-[22px] xl:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-2 sm:py-3 md:py-4 hover:underline underline-offset-2">
-                        Luxury Hotel for Traveling Spot USA, California
+                        Pre Booking Benifits for the Traveller on our Hotel
                       </h2>
                     </Link>
                   </div>
@@ -100,7 +119,11 @@ const Blog = () => {
                 </div>
               </div>
               {/* Blog three */}
-              <div className="overflow-hidden 3xl:w-[410px] group">
+              <div
+                className="overflow-hidden 3xl:w-[410px] group"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div className="relative">
                   <img
                     src="/images/home-1/blog-3.jpg "
@@ -118,9 +141,15 @@ const Blog = () => {
                         Interior
                       </p>
                     </div>
-                    <Link to="/blog_details">
+                    <Link
+                      to="/blog_details"
+                      state={{
+                        title:
+                          "5 Discount Period every year for Valuable Clients",
+                      }}
+                    >
                       <h2 className="text-xl md:text-[22px] xl:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-2 sm:py-3 md:py-4 hover:underline underline-offset-2">
-                        Luxury Hotel for Traveling Spot USA, California
+                        5 Discount Period every year for Valuable Clients
                       </h2>
                     </Link>
                   </div>
@@ -144,7 +173,11 @@ const Blog = () => {
                 </div>
               </div>
               {/* Blog four */}
-              <div className="overflow-hidden 3xl:w-[410px] group">
+              <div
+                className="overflow-hidden 3xl:w-[410px] group"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div className="relative">
                   <img
                     src="/images/home-1/blog-2.jpg "
@@ -162,7 +195,12 @@ const Blog = () => {
                         Interior
                       </p>
                     </div>
-                    <Link to="/blog">
+                    <Link
+                      to="/blog_details"
+                      state={{
+                        title: "Luxury Hotel for Travelling Spot Sandigo , UK",
+                      }}
+                    >
                       <h2 className="text-xl md:text-[22px] xl:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-2 sm:py-3 md:py-4 hover:underline underline-offset-2">
                         Luxury Hotel for Traveling Spot USA, California
                       </h2>
@@ -188,7 +226,11 @@ const Blog = () => {
                 </div>
               </div>
               {/* Blog five */}
-              <div className="overflow-hidden 3xl:w-[410px] group">
+              <div
+                className="overflow-hidden 3xl:w-[410px] group"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div className="relative">
                   <img
                     src="/images/home-1/blog-1.jpg "
@@ -206,7 +248,13 @@ const Blog = () => {
                         Interior
                       </p>
                     </div>
-                    <Link to="/blog_details">
+                    <Link
+                      to="/blog_details"
+                      state={{
+                        title:
+                          "Luxury Hotel for Traveling Spot USA, California",
+                      }}
+                    >
                       <h2 className="text-xl md:text-[22px] xl:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-2 sm:py-3 md:py-4 hover:underline underline-offset-2">
                         Luxury Hotel for Traveling Spot USA, California
                       </h2>
@@ -232,7 +280,11 @@ const Blog = () => {
                 </div>
               </div>
               {/* Blog six */}
-              <div className="overflow-hidden 3xl:w-[410px] group">
+              <div
+                className="overflow-hidden 3xl:w-[410px] group"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div className="relative">
                   <img
                     src="/images/home-1/blog-3.jpg "
@@ -250,9 +302,14 @@ const Blog = () => {
                         Interior
                       </p>
                     </div>
-                    <Link to="/blog">
+                    <Link
+                      to="/blog_details"
+                      state={{
+                        title: "Top 10 Best Hotel & Resort in Sandigo, USA",
+                      }}
+                    >
                       <h2 className="text-xl md:text-[22px] xl:text-2xl 2xl:text-[26px] leading-[34px] font-semibold text-lightBlack dark:text-white py-2 sm:py-3 md:py-4 hover:underline underline-offset-2">
-                        Luxury Hotel for Traveling Spot USA, California
+                        Top 10 Best Hotel & Resort in Sandigo, USA
                       </h2>
                     </Link>
                   </div>

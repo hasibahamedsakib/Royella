@@ -35,11 +35,15 @@ const Team = () => {
           {/* Section Content */}
           <div className="mt-[60px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-5 lg:gap-[30px] ">
             {/* Member one */}
-            <div className="member group">
-              <img src="/images/inner/member-1.jpg" alt="" />
+            <div
+              className="member group"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <img src="/images/inner/member-1.jpg" className="w-full" alt="" />
               <div className="relative">
                 <div className="px-4  lg:px-[30px] pt-5 ">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
+                  <h3 className="text-xl sm:text-2xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
                     Valentina Kerry
                   </h3>
                   <p className="text-sm md:text-base leading-[26px] text-Gray dark:text-lightGray font-normal font-Lora text-center group-hover:text-white dark:hover:text-white hover:opacity-0">
@@ -63,11 +67,15 @@ const Team = () => {
               </div>
             </div>
             {/* Member two */}
-            <div className="member group">
-              <img src="/images/inner/member-2.jpg" alt="" />
+            <div
+              className="member group"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <img src="/images/inner/member-2.jpg" className="w-full" alt="" />
               <div className="relative">
                 <div className="px-4  lg:px-[30px] pt-5 ">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
+                  <h3 className="text-xl sm:text-2xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
                     Leary Mart
                   </h3>
                   <p className="text-sm md:text-base leading-[26px] text-Gray dark:text-lightGray font-normal font-Lora text-center group-hover:text-white dark:hover:text-white hover:opacity-0">
@@ -91,11 +99,15 @@ const Team = () => {
               </div>
             </div>
             {/* Member three */}
-            <div className="member group">
-              <img src="/images/inner/member-3.jpg" alt="" />
+            <div
+              className="member group"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <img src="/images/inner/member-3.jpg" className="w-full" alt="" />
               <div className="relative">
                 <div className="px-4  lg:px-[30px] pt-5 ">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
+                  <h3 className="text-xl sm:text-2xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
                     Samantha Shen
                   </h3>
                   <p className="text-sm md:text-base leading-[26px] text-Gray dark:text-lightGray font-normal font-Lora text-center group-hover:text-white dark:hover:text-white hover:opacity-0">
@@ -119,11 +131,15 @@ const Team = () => {
               </div>
             </div>
             {/* Member four */}
-            <div className="member group">
-              <img src="/images/inner/member-1.jpg" alt="" />
+            <div
+              className="member group"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <img src="/images/inner/member-1.jpg" className="w-full" alt="" />
               <div className="relative">
                 <div className="px-4  lg:px-[30px] pt-5 ">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
+                  <h3 className="text-xl sm:text-2xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
                     Amanda Z. Web
                   </h3>
                   <p className="text-sm md:text-base leading-[26px] text-Gray dark:text-lightGray font-normal font-Lora text-center group-hover:text-white dark:hover:text-white hover:opacity-0">
@@ -147,11 +163,15 @@ const Team = () => {
               </div>
             </div>
             {/* Member five */}
-            <div className="member group">
-              <img src="/images/inner/member-4.jpg" alt="" />
+            <div
+              className="member group"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <img src="/images/inner/member-4.jpg" className="w-full" alt="" />
               <div className="relative">
                 <div className="px-4  lg:px-[30px] pt-5 ">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
+                  <h3 className="text-xl sm:text-2xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
                     Henry K. Hamar
                   </h3>
                   <p className="text-sm md:text-base leading-[26px] text-Gray dark:text-lightGray font-normal font-Lora text-center group-hover:text-white dark:hover:text-white hover:opacity-0">
@@ -175,11 +195,15 @@ const Team = () => {
               </div>
             </div>
             {/* Member six */}
-            <div className="member group">
-              <img src="/images/inner/member-6.jpg" alt="" />
+            <div
+              className="member group"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <img src="/images/inner/member-6.jpg" className="w-full" alt="" />
               <div className="relative">
                 <div className="px-4  lg:px-[30px] pt-5 ">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
+                  <h3 className="text-xl sm:text-2xl lg:text-2xl xl:text-[28px] leading-7 md:leading-8 lg:leading-10 text-lightBlack dark:text-white font-semibold font-Garamond text-center hover:opacity-0">
                     Diana R. Newell
                   </h3>
                   <p className="text-sm md:text-base leading-[26px] text-Gray dark:text-lightGray font-normal font-Lora text-center group-hover:text-white dark:hover:text-white hover:opacity-0">
