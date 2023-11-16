@@ -30,11 +30,11 @@ const Make_Appointment = () => {
     <section className="py-20 2xl:py-[120px] dark:bg-lightBlack shadow-xl">
       <div className="Container shadow-custom dark:shadow-none dark:bg-normalBlack ">
         <div
-          className="flex items-center lg:flex-row flex-col "
+          className="lg:flex items-center"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <div>
+          <div className="h-[280px] sm:h-[350px] lg:h-[520px] xl:h-[580px] 2xl:h-[620px] w-full lg:w-fit xl:w-[540px] 2xl:w-full">
             <img
               src="/images/home-5/Make_Ap.jpg"
               alt=""
@@ -44,7 +44,7 @@ const Make_Appointment = () => {
 
           <form
             onSubmit={(e) => e.preventDefault()}
-            className="p-5 py-7 lg:pl-[40px] xl:pl-[50px] 2xl:pl-[90px]"
+            className="p-5 py-7 lg:pl-[40px] xl:pl-[50px] 2xl:pl-[95px] 2xl:w-full 2xl:pr-[100px]"
           >
             <div className="flex items-center mb-3 mt-5 lg:mt-0 ">
               <div className="relative mr-[10px]">

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer2 = () => {
   return (
-    <footer className="lg:pt-[100px] pb-[60px] dark:bg-lightBlack ">
+    <footer className="lg:pt-[100px]  dark:bg-lightBlack ">
       <div className=" py-20 2xl:py-[120px]">
         <div className="Container grid items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-9 2xl:grid-cols-12  justify-between gap-5 px-2">
           {/* logo and text */}
@@ -95,11 +95,7 @@ const Footer2 = () => {
       </div>
       {/* bottom footer */}
 
-      <div
-        className="bg-whiteSmoke dark:bg-normalBlack py-7"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
+      <div className="bg-whiteSmoke dark:bg-normalBlack py-7">
         <div className="Container flex flex-col sm:flex-row items-center justify-between">
           <p
             className="text-sm xl:text-base text-gray dark:text-lightGray

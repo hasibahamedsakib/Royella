@@ -1,16 +1,22 @@
 import { createBrowserRouter } from "react-router-dom";
+
+// Home And Main Home1
 import Main from "../Main/Main";
 import Home1 from "../Pages/Home1/Home1";
+// Home And Main Home2
 import Main2 from "../Main/Main2";
 import Home2 from "../Pages/Home2/Home2";
+// Home And Main Home3
 import Main3 from "../Main/Main3";
 import Home3 from "../Pages/Home3/Home3";
+// Home And Main Home4
 import Main4 from "../Main/Main4";
 import Home4 from "../Pages/Home4/Home4";
+// Home And Main Home-5
 import Home5 from "../Pages/Home5/Home5";
 import Main5 from "../Main/Main5";
-import Main6 from "../Main/Main6";
-import Home6 from "../Pages/Home6/Home6";
+
+// All InnerPage
 import About from "../Pages/InnerPage/About";
 import Room from "../Pages/InnerPage/Room";
 import FindRoom from "../Pages/InnerPage/FindRoom";
@@ -22,8 +28,9 @@ import Pricing from "../Pages/InnerPage/Pricing";
 import Blog from "../Pages/InnerPage/Blog";
 import BlogDetails from "../Pages/InnerPage/BlogDetails";
 import Contact from "../Pages/InnerPage/Contact";
-import ErrorPage from "../ErrorPage/ErrorPage";
+import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 
+// Starting React Router.
 const router = createBrowserRouter([
   {
     path: "/",
@@ -302,18 +309,6 @@ const router = createBrowserRouter([
       {
         path: "/home5/contact",
         element: <Contact />,
-      },
-    ],
-  },
-  // six home router
-  {
-    path: "/home6",
-    element: <Main6 />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/home6",
-        element: <Home6 />,
       },
     ],
   },

@@ -89,7 +89,7 @@ const Offers = () => {
                     <div className="py-[30px] text-center">
                       <Link to="/room">
                         <h2
-                          className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:underline-offset-2
+                          className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:text-khaki dark:hover:text-khaki transition-[0.4s] hover:underline-offset-2
                         "
                         >
                           Delux Family Rooms
@@ -125,7 +125,7 @@ const Offers = () => {
                     <div className="py-[30px] text-center">
                       <Link to="/room">
                         <h2
-                          className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:underline-offset-2
+                          className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:text-khaki dark:hover:text-khaki transition-[0.4s] hover:underline-offset-2
                         "
                         >
                           Double Suite Rooms
@@ -161,7 +161,7 @@ const Offers = () => {
                     <div className="py-[30px] text-center">
                       <Link to="/room">
                         <h2
-                          className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:underline-offset-2
+                          className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:text-khaki dark:hover:text-khaki transition-[0.4s] hover:underline-offset-2
                         "
                         >
                           Suprior Bed Room
@@ -197,7 +197,7 @@ const Offers = () => {
                     <div className="py-[30px] text-center">
                       <Link to="/room">
                         <h2
-                          className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:underline-offset-2
+                          className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:text-khaki dark:hover:text-khaki transition-[0.4s] hover:underline-offset-2
                         "
                         >
                           Junior Suite Room

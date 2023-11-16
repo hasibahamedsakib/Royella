@@ -79,11 +79,21 @@ const Apartments = () => {
         <div className="Container lg:flex items-center ">
           {/* best-apartments image */}
           <div
-            className="w-full  px-[20px] lg:pr-[20px] 2xl:px-[30px]"
+            className="w-full  px-[20px] lg:pr-[20px] 2xl:px-[30px] relative"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <img src="/images/home-5/best-apartments.png" className="" alt="" />
+            <img src="/images/home-5/best-apartment.png" className="" alt="" />
+            <div className="w-[120px] h-[85px] sm:w-[195px] sm:h-[145px] bg-khaki grid items-center justify-center text-white font-Garamond absolute left-[28px] bottom-[40%]">
+              <div className="text-center">
+                <h1 className="text-5xl sm:text-[80px] leading-[26px] font-semibold">
+                  22+
+                </h1>
+                <p className="text-base sm:text-lg leading-[26px] mt-1 sm:mt-4">
+                  Years Experience
+                </p>
+              </div>
+            </div>
           </div>
           {/* best-apartments content */}
           <div

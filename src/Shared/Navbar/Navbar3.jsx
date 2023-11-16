@@ -118,7 +118,7 @@ const Navbar3 = () => {
                 <BiChevronDown className="ml-1" />
               </span>
               <div className="absolute pt-5 lg:pt-8 z-20">
-                <ul className="shadow-2xl hidden group-hover:block rounded-sm bg-white text-black w-60 text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm py-4 ">
+                <ul className="shadow-2xl hidden group-hover:block rounded-sm bg-white text-black w-[200px] text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm py-4 ">
                   <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
                       <NavLink to="/" className="py-2 block">
@@ -133,6 +133,15 @@ const Navbar3 = () => {
                       </NavLink>
                     </li>
                   </div>
+
+                  <div className=" px-5 group hover:bg-khaki hover:text-white">
+                    <li className="hover:ml-3 duration-300  ">
+                      <NavLink to="/home3" className="py-2 block">
+                        Hostel
+                      </NavLink>
+                    </li>
+                  </div>
+
                   <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
                       <NavLink to="/home4" className="py-2 block">
@@ -145,13 +154,6 @@ const Navbar3 = () => {
                     <li className="hover:ml-3 duration-300  ">
                       <NavLink to="/home5" className="py-2 block">
                         Apartment
-                      </NavLink>
-                    </li>
-                  </div>
-                  <div className=" px-5 group hover:bg-khaki hover:text-white">
-                    <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/home6" className="py-2 block">
-                        Tourist
                       </NavLink>
                     </li>
                   </div>
@@ -183,7 +185,7 @@ const Navbar3 = () => {
                 <BiChevronDown className="ml-1" />
               </span>
               <div className="absolute pt-5 lg:pt-8 z-20">
-                <ul className="shadow-2xl hidden group-hover:block rounded-sm bg-white text-black w-60 text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm py-4 ">
+                <ul className="shadow-2xl hidden group-hover:block rounded-sm bg-white text-black w-[200px] text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm py-4 ">
                   <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
                       <NavLink to="/home3/room" className="block py-2">
@@ -222,7 +224,7 @@ const Navbar3 = () => {
                 <BiChevronDown className="ml-1" />
               </span>
               <div className="absolute pt-5 lg:pt-8 z-20">
-                <ul className="shadow-2xl hidden group-hover:block rounded-sm bg-white text-black w-60 text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm py-4 ">
+                <ul className="shadow-2xl hidden group-hover:block rounded-sm bg-white text-black w-[200px] text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm py-4 ">
                   <div className=" px-5 group hover:bg-khaki hover:text-white">
                     <li className="hover:ml-3 duration-300  ">
                       <NavLink to="/home3/about" className="py-2 block">

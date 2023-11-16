@@ -6,7 +6,8 @@ import GoToTop from "../Shared/GoToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import HelmetChanger from "../Helmet/Helmet";
+import HelmetChanger from "../Shared/Helmet/Helmet";
+
 const Main2 = () => {
   useEffect(() => {
     AOS.init();

@@ -4,7 +4,7 @@ import { FaFacebookF, FaPinterestP, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Footer4 = () => {
   return (
-    <footer className="bg-lightBlack">
+    <footer className="bg-lightBlack dark:bg-normalBlack">
       <div className="  ">
         <div className="Container grid items-start grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 2xl:grid-cols-4 justify-between px-3 gap-x-5 lg:gap-x-0 2xl:gap-g-5 gap-y-6 border-b-[1px] border-[#484848] py-20 2xl:py-[120px] ">
           {/* logo and text */}

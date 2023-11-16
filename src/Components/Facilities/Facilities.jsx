@@ -28,7 +28,7 @@ const Facilities = () => {
         {/* facilities container */}
         <div className="">
           {/* facilities section -1  */}
-          <hr className="text-[#e8e8e8] dark:text-[#383838] my-10" />
+          <hr className="text-[#e8e8e8] dark:text-[#383838] mb-10 mt-10" />
           <div
             className="grid grid-cols-1 md:grid-cols-2 "
             data-aos="fade-up"
@@ -96,7 +96,7 @@ const Facilities = () => {
               </Link>
             </div>
 
-            <div className="w-full h-[100%] md:pl-[30px] relative mt-5 md:mt-0">
+            <div className="w-full  md:pl-[30px] relative mt-5 md:mt-0">
               <img
                 src="/images/home-1/facilities-thumb-2.jpg"
                 alt=""
@@ -110,7 +110,7 @@ const Facilities = () => {
             </div>
           </div>
           {/* facilities section - 3 */}
-          <hr className="text-[#e8e8e8] dark:text-[#383838] my-10" />
+          <hr className="text-[#e8e8e8] dark:text-[#383838] mb-10 mt-10" />
           <div
             className="grid grid-cols-1 md:grid-cols-2 "
             data-aos="fade-up"

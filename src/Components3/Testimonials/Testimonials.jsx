@@ -77,18 +77,18 @@ const Testimonials = () => {
         >
           {/* keen slider */}
           <div
-            className="keen-slider  h-[620px] sm:h-[660px] xl:h-[500px]"
+            className="keen-slider  h-[620px] sm:h-[660px] md:h-[500px]"
             ref={sliderRef}
           >
             {/* slide one... */}
-            <div className="keen-slider__slide w-full number-slide1 flex flex-col md:flex-row">
+            <div className="keen-slider__slide w-full number-slide1 flex flex-col md:flex-row items-center">
               <img
                 src="/images/home-3/testi-thumb.png"
-                className="w-full h-1/2 lg:h-full"
+                className="w-full h-1/2 md:h-[63%] lg:h-full"
                 alt=""
               />
               <div className="grid items-center  ">
-                <div className="px-5 sm:px-10 md:px-[50px] xl:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] relative">
+                <div className="px-5 sm:px-10 md:pl-[30px] md:pr-[10px] lg:px-[50px] xl:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] relative">
                   <h1 className="text-2xl md:text-3xl 2xl:text-[34px] leading-[26px] text-lightBlack dark:text-white mb-2 lg:mb-[12px]  font-semibold">
                     Aqsaa Arafaa
                   </h1>
@@ -128,14 +128,14 @@ const Testimonials = () => {
               </div>
             </div>
             {/* slide two... */}
-            <div className="keen-slider__slide w-full number-slide1 flex flex-col md:flex-row">
+            <div className="keen-slider__slide w-full number-slide1 flex flex-col md:flex-row items-center">
               <img
                 src="/images/home-3/testi-thumb.png"
-                className="w-full h-1/2 lg:h-full"
+                className="w-full h-1/2 md:h-[63%] lg:h-full"
                 alt=""
               />
               <div className="grid items-center  ">
-                <div className="px-5 sm:px-10 md:px-[50px] xl:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] relative">
+                <div className="px-5 sm:px-10 md:pl-[30px] md:pr-[10px] lg:px-[50px] xl:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] relative">
                   <h1 className="text-2xl md:text-3xl 2xl:text-[34px] leading-[26px] text-lightBlack dark:text-white mb-2 lg:mb-[12px]  font-semibold">
                     Memona Moeez
                   </h1>
@@ -175,14 +175,14 @@ const Testimonials = () => {
               </div>
             </div>
             {/* slide three */}
-            <div className="keen-slider__slide w-full number-slide1 flex flex-col md:flex-row">
+            <div className="keen-slider__slide w-full number-slide1 flex flex-col md:flex-row items-center">
               <img
                 src="/images/home-3/testi-thumb.png"
-                className="w-full h-1/2 lg:h-full"
+                className="w-full h-1/2 md:h-[63%] lg:h-full"
                 alt=""
               />
               <div className="grid items-center  ">
-                <div className="px-5 sm:px-10 md:px-[50px] xl:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] relative">
+                <div className="px-5 sm:px-10 md:pl-[30px] md:pr-[10px] lg:px-[50px] xl:px-[60px] 2xl:px-[77px] font-Garamond py-6 lg:py-[60px] 2xl:py-[77px] relative">
                   <h1 className="text-2xl md:text-3xl 2xl:text-[34px] leading-[26px] text-lightBlack dark:text-white mb-2 lg:mb-[12px]  font-semibold">
                     Farjana Islam
                   </h1>

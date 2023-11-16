@@ -24,7 +24,7 @@ const HeroSection = () => {
             <div className="flex items-center pt-[18px] ">
               <input
                 type="date"
-                className=" bg-transparent focus:outline-transparent  text-white placeholder:text-white outline-0  flex-initial text-sm lg:text-base focus:ring-transparent border-t-0 border-l-0 border-r-0 border-b-[1px] border-khaki focus:border-khaki text-left pl-0 w-[120px] sm:w-[160px] lg:w-[210px] xl:w-[160px] 2xl:w-[210px]"
+                className=" bg-transparent focus:outline-transparent  text-white placeholder:text-white outline-0  flex-initial text-sm lg:text-base focus:ring-transparent border-t-0 border-l-0 border-r-0 border-b-[1px] border-khaki focus:border-khaki text-left pl-0 w-[120px] sm:w-[160px] lg:w-[210px] xl:w-[160px] 2xl:w-[210px] "
                 placeholder="Check in Date "
               />
             </div>
@@ -36,7 +36,7 @@ const HeroSection = () => {
             <div className="flex items-center pt-[18px] ">
               <input
                 type="date"
-                className=" bg-transparent focus:outline-transparent text-white placeholder:text-white  outline-0   flex-initial text-sm lg:text-base focus:ring-transparent border-t-0 border-l-0 border-r-0 border-b-[1px] border-khaki focus:border-khaki text-left pl-0 w-[120px] sm:w-[160px] lg:w-[210px] xl:w-[160px] 2xl:w-[210px]"
+                className=" bg-transparent focus:outline-transparent text-white placeholder:text-white  outline-0   flex-initial text-sm lg:text-base focus:ring-transparent border-t-0 border-l-0 border-r-0 border-b-[1px] border-khaki focus:border-khaki text-left pl-0 w-[120px] sm:w-[160px] lg:w-[210px] xl:w-[160px] 2xl:w-[210px] "
                 placeholder="Check in Date"
               />
             </div>
@@ -47,7 +47,7 @@ const HeroSection = () => {
             </p>
             <div className="flex items-center pt-[18px]">
               <select
-                className="w-[120px] sm:w-[160px] lg:w-[210px] xl:w-[160px] 2xl:w-[210px] h-[46px] flex-initial bg-transparent  outline-0 text-sm lg:text-base text-white  focus:outline-none  focus:ring-transparent border border-khaki focus:border-khaki text-left "
+                className="w-[120px] sm:w-[160px] lg:w-[210px] xl:w-[160px] 2xl:w-[210px]  flex-initial bg-transparent  outline-0 text-sm lg:text-base text-white  focus:outline-none  focus:ring-transparent border border-khaki focus:border-khaki text-left h-[50px]"
                 onFocus={(e) => {
                   e.target.size = 6;
                 }}
@@ -84,7 +84,7 @@ const HeroSection = () => {
             </p>
             <div className="flex items-center pt-[18px]">
               <select
-                className="w-[120px] sm:w-[160px] lg:w-[2 2xl: xl:w-[160px]w-[210px] h-[46px] flex-initial bg-transparent  outline-0 text-sm lg:text-base focus:outline-none  focus:ring-transparent text-white border border-khaki focus:border-khaki"
+                className="w-[120px] sm:w-[160px] lg:w-[210px] xl:w-[160px] 2xl:w-[210px] h-[50px] flex-initial bg-transparent  outline-0 text-sm lg:text-base focus:outline-none  focus:ring-transparent text-white border border-khaki focus:border-khaki"
                 onFocus={(e) => {
                   e.target.size = 6;
                 }}
@@ -115,7 +115,7 @@ const HeroSection = () => {
             </div>
           </div>
           <Link to="/home2/find_room">
-            <button className="w-[142px] h-[50px] text-[15px] bg-khaki font-Garamond text-white sm:mt-[47px]">
+            <button className="w-[142px] 2xl:w-[210px] h-[50px] text-[15px] bg-khaki font-Garamond text-white sm:mt-[47px] hover-animBg after:bg-normalBlack after:rounded-none">
               Checkout Now
             </button>
           </Link>

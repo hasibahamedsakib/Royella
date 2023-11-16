@@ -53,7 +53,7 @@ const Wrapper = styled.section`
     box-shadow: ;
     border-radius: 50%;
     position: fixed;
-    bottom: 5rem;
+    bottom: 3rem;
     right: 5rem;
     z-index: 999;
     display: flex;
