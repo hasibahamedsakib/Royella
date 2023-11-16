@@ -22,12 +22,13 @@ import Pricing from "../Pages/InnerPage/Pricing";
 import Blog from "../Pages/InnerPage/Blog";
 import BlogDetails from "../Pages/InnerPage/BlogDetails";
 import Contact from "../Pages/InnerPage/Contact";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
-    errorElement: <h1>Error Page</h1>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -83,7 +84,7 @@ const router = createBrowserRouter([
   {
     path: "/home2",
     element: <Main2 />,
-    errorElement: <h1>Error Page</h1>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/home2",
@@ -140,7 +141,7 @@ const router = createBrowserRouter([
   {
     path: "/home3",
     element: <Main3 />,
-    errorElement: <h1>Error Page</h1>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/home3",
@@ -196,7 +197,7 @@ const router = createBrowserRouter([
   {
     path: "/home4",
     element: <Main4 />,
-    errorElement: <h1>Error Page</h1>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/home4",
@@ -252,7 +253,7 @@ const router = createBrowserRouter([
   {
     path: "/home5",
     element: <Main5 />,
-    errorElement: <h1>Error Page</h1>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/home5",
@@ -308,7 +309,7 @@ const router = createBrowserRouter([
   {
     path: "/home6",
     element: <Main6 />,
-    errorElement: <h1>Error Page</h1>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/home6",

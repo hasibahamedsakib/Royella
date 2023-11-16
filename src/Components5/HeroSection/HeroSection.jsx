@@ -209,11 +209,7 @@ const HeroSection = () => {
           </div>
         </div>
         {/* slider-2 */}
-        <div
-          className="keen-slider__slide number-slide1 bg-[url('/images/home-5/hero-2.jpg')] bg-center  bg-no-repeat bg-cover h-[700px] md:h-[800px] xl:h-[850px] 3xl:h-[950px] grid items-center justify-center"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-        >
+        <div className="keen-slider__slide number-slide1 bg-[url('/images/home-5/hero-2.jpg')] bg-center  bg-no-repeat bg-cover h-[700px] md:h-[800px] xl:h-[850px] 3xl:h-[950px] grid items-center justify-center">
           <div className=" text-center mx-auto">
             <p className="text-khaki text-sm sm:text-base 2xl:text-lg leading-[26px] font-normal font-Lora my-2">
               Welcome to Kojistay, a luxury apartment hotel in Ulipur
@@ -360,11 +356,7 @@ const HeroSection = () => {
           </div>
         </div>
         {/* slider-3 */}
-        <div
-          className="keen-slider__slide number-slide1 bg-[url('/images/home-5/hero-3.jpg')] bg-center  bg-no-repeat bg-cover h-[700px] md:h-[800px] xl:h-[850px] 3xl:h-[950px] grid items-center justify-center"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-        >
+        <div className="keen-slider__slide number-slide1 bg-[url('/images/home-5/hero-3.jpg')] bg-center  bg-no-repeat bg-cover h-[700px] md:h-[800px] xl:h-[850px] 3xl:h-[950px] grid items-center justify-center">
           <div className=" text-center mx-auto">
             <p className="text-khaki text-sm sm:text-base 2xl:text-lg leading-[26px] font-normal font-Lora my-2">
               Welcome to Kojistay, a luxury apartment hotel in Ulipur

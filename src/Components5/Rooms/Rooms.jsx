@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 const Rooms = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded] = useState(false);
+
   const [sliderRef, instanceRef] = useKeenSlider({
     breakpoints: {
       "(min-width: 320px)": {
@@ -21,14 +22,11 @@ const Rooms = () => {
       "(min-width:1000px)": {
         slides: { perView: 3, spacing: 20 },
       },
-      loop: true,
-      initial: 0,
-      slideChanged(slider) {
-        setCurrentSlide(slider.track.details.rel);
-      },
-      created() {
-        // setLoaded(true);
-      },
+    },
+    loop: true,
+    initial: 0,
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
     },
   });
 
@@ -244,7 +242,7 @@ const Rooms = () => {
         </div>
 
         {/* slider breckpoints */}
-        <div className="mx-auto mt-6 md:mt-7 lg:mt-8 xl:mt-9 2xl:mt-10">
+        <div className="mx-auto  hidden md:block z-[1]">
           {loaded && instanceRef.current && (
             <div className="dots flex items-center justify-center">
               {[

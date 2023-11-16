@@ -577,12 +577,18 @@ const Room = () => {
               </h1>
             </div>
             <div className="hidden sm:flex items-center lg:space-x-5  space-x-3">
-              <button className="lg:w-[50px] w-[30px] h-[30px] lg:h-[50px]  flex items-center justify-center border-[1px] border-gray  text-lightGray hover:bg-khaki hover:border-none group">
+              <button
+                className="lg:w-[50px] w-[30px] h-[30px] lg:h-[50px]  flex items-center justify-center border-[1px] border-gray  text-lightGray hover:bg-khaki hover:border-none group"
+                title="Button disabled use swapping"
+                disabled
+              >
                 <BsChevronLeft className="w-5 h-5 text-gray  group-hover:text-white " />
               </button>
               <button
                 className="lg:w-[50px] w-[30px] h-[30px] lg:h-[50px]  flex items-center justify-center border-[1px] border-gray  text-lightGray hover:bg-khaki
              hover:border-none group"
+                title="Button disabled use swapping"
+                disabled
               >
                 <BsChevronRight className="w-5 h-5 text-gray   group-hover:text-white" />
               </button>

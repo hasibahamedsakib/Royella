@@ -23,7 +23,7 @@ const HeroSection = () => {
             </p>
             <div className="flex items-center pt-[18px] ">
               <input
-                type="text"
+                type="date"
                 className=" bg-transparent focus:outline-transparent  text-white placeholder:text-white outline-0  flex-initial text-sm lg:text-base focus:ring-transparent border-t-0 border-l-0 border-r-0 border-b-[1px] border-khaki focus:border-khaki text-left pl-0 w-[120px] sm:w-[160px] lg:w-[210px] xl:w-[160px] 2xl:w-[210px]"
                 placeholder="Check in Date "
               />
@@ -35,7 +35,7 @@ const HeroSection = () => {
             </p>
             <div className="flex items-center pt-[18px] ">
               <input
-                type="text"
+                type="date"
                 className=" bg-transparent focus:outline-transparent text-white placeholder:text-white  outline-0   flex-initial text-sm lg:text-base focus:ring-transparent border-t-0 border-l-0 border-r-0 border-b-[1px] border-khaki focus:border-khaki text-left pl-0 w-[120px] sm:w-[160px] lg:w-[210px] xl:w-[160px] 2xl:w-[210px]"
                 placeholder="Check in Date"
               />

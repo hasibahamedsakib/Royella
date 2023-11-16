@@ -40,8 +40,8 @@ const Facilities = () => {
                 alt=""
                 className="w-full h-full"
               />
-              <div className=" hidden md:block absolute -top-[0px] md:-right-[12%] -right-[7%]">
-                <h2 className="text-3xl md:text-4xl lg:text-[40px] leading-[38px] text-khaki">
+              <div className=" hidden md:block absolute -top-[0px] md:-right-[12%] -right-[7%] xl:-right-[5%]">
+                <h2 className="text-3xl md:text-4xl lg:text-[40px] leading-[38px] text-khaki font-Garamond">
                   01
                 </h2>
               </div>
@@ -102,8 +102,8 @@ const Facilities = () => {
                 alt=""
                 className="w-full h-full"
               />
-              <div className="hidden md:block absolute -top-[0px] -left-[12%]">
-                <h1 className="text-3xl md:text-4xl lg:text-[40px] leading-[38px] text-khaki">
+              <div className="hidden md:block absolute -top-[0px] -left-[12%] xl:-left-[6%]">
+                <h1 className="text-3xl md:text-4xl lg:text-[40px] leading-[38px] text-khaki  font-Garamond">
                   02
                 </h1>
               </div>
@@ -122,8 +122,8 @@ const Facilities = () => {
                 alt=""
                 className="w-full h-full"
               />
-              <div className="hidden md:block absolute -top-[0px] md:-right-[12%] -right-[7%]">
-                <h2 className="text-3xl md:text-4xl lg:text-[40px] leading-[38px] text-khaki">
+              <div className="hidden md:block absolute -top-[0px] md:-right-[12%] -right-[7%] xl:-right-[5%]">
+                <h2 className="text-3xl md:text-4xl lg:text-[40px] leading-[38px] text-khaki font-Garamond">
                   03
                 </h2>
               </div>
@@ -184,8 +184,8 @@ const Facilities = () => {
                 alt=""
                 className="w-full h-full "
               />
-              <div className="hidden md:block absolute -top-[0px] -left-[12%]">
-                <h1 className="text-3xl md:text-4xl lg:text-[40px] leading-[38px] text-khaki">
+              <div className="hidden md:block absolute -top-[0px] -left-[12%] xl:-left-[6%]">
+                <h1 className="text-3xl md:text-4xl lg:text-[40px] leading-[38px] text-khaki font-Garamond">
                   04
                 </h1>
               </div>

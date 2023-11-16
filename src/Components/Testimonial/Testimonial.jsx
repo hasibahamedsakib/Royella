@@ -308,7 +308,7 @@ const Testimonial = () => {
           </div>
         </div>
         {/* slide changer */}
-        <div className="mx-auto mt-5 md:mt-7 lg:mt-8 xl:mt-9 2xl:mt-10 hidden sm:block">
+        <div className="mx-auto  ">
           {loaded && instanceRef.current && (
             <div className="dots flex items-center justify-center">
               {[

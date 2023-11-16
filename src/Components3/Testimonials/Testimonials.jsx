@@ -8,7 +8,7 @@ import "./styles.css";
 const Testimonials = () => {
   // keen config code...
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [loaded] = useState(false);
+  const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
     slides: {
@@ -22,7 +22,7 @@ const Testimonials = () => {
       setCurrentSlide(slider.track.details.rel);
     },
     created() {
-      // setLoaded(true);
+      setLoaded(true);
     },
   });
 
@@ -95,7 +95,7 @@ const Testimonials = () => {
                   <p className="font-Lora text-[15px] leading-[26px] text-khaki font-medium uppercase ">
                     Web Developer
                   </p>
-                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-3 sm:my-4 md:my-[20px] lg:mt-[25px] lg:mb-[30px] lg:text-justify 2xl:text-center">
+                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-3 sm:my-4 md:my-[20px] lg:mt-[25px] lg:mb-[30px] lg:text-justify 2xl:text-left">
                     multimedia based technologies. Dramatically e-enable
                     superior schemas rather backward compatible human capital.
                     Efficiently network world-class customer service and
@@ -142,7 +142,7 @@ const Testimonials = () => {
                   <p className="font-Lora text-[15px] leading-[26px] text-khaki font-medium uppercase ">
                     Ui/Ux Designer
                   </p>
-                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-3 sm:my-4 md:my-[20px] lg:mt-[25px] lg:mb-[30px] lg:text-justify 2xl:text-center">
+                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-3 sm:my-4 md:my-[20px] lg:mt-[25px] lg:mb-[30px] lg:text-justify 2xl:text-left">
                     multimedia based technologies. Dramatically e-enable
                     superior schemas rather backward compatible human capital.
                     Efficiently network world-class customer service and
@@ -189,7 +189,7 @@ const Testimonials = () => {
                   <p className="font-Lora text-[15px] leading-[26px] text-khaki font-medium uppercase ">
                     Graphic Designer
                   </p>
-                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-3 sm:my-4 md:my-[20px] lg:mt-[25px] lg:mb-[30px] lg:text-justify 2xl:text-center">
+                  <p className="font-Lora text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal my-3 sm:my-4 md:my-[20px] lg:mt-[25px] lg:mb-[30px] lg:text-justify 2xl:text-left">
                     multimedia based technologies. Dramatically e-enable
                     superior schemas rather backward compatible human capital.
                     Efficiently network world-class customer service and

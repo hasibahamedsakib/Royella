@@ -34,11 +34,14 @@ const Make_Appointment = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <img
-            src="/images/home-5/Make_Ap.jpg"
-            alt=""
-            className="h-[280px] sm:h-[350px] lg:h-[520px] xl:h-[580px] 2xl:h-[620px] w-full lg:w-[50%]  object-cover"
-          />
+          <div>
+            <img
+              src="/images/home-5/Make_Ap.jpg"
+              alt=""
+              className="h-[280px] sm:h-[350px] lg:h-[520px] xl:h-[580px] 2xl:h-[620px] w-full   object-cover"
+            />
+          </div>
+
           <form
             onSubmit={(e) => e.preventDefault()}
             className="p-5 py-7 lg:pl-[40px] xl:pl-[50px] 2xl:pl-[90px]"

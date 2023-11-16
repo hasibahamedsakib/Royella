@@ -61,7 +61,7 @@ export default function Accordion({ children, title, id, active = false }) {
         }`}
       >
         <div className="overflow-hidden">
-          <p className="py-4 text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-[22px] ">
+          <p className="py-4 text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-[22px] font-Garamond">
             {children}
           </p>
         </div>

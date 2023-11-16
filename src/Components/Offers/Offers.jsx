@@ -18,7 +18,7 @@ const Offers = () => {
         slides: { perView: 3, spacing: 20 },
       },
       "(min-width:1200px)": {
-        slides: { perView: 3, spacing: 20 },
+        slides: { perView: 4, spacing: 20 },
       },
     },
     loop: true,
@@ -41,12 +41,18 @@ const Offers = () => {
             </h1>
           </div>
           <div className="flex items-center lg:space-x-5  space-x-3">
-            <button className="lg:w-[50px] w-[30px] h-[30px] lg:h-[50px]  flex items-center justify-center border-[1px] border-[#cccbc8] text-[#cccbc8] hover:bg-khaki hover:border-none group">
+            <button
+              className="lg:w-[50px] w-[30px] h-[30px] lg:h-[50px]  flex items-center justify-center border-[1px] border-[#cccbc8] text-[#cccbc8] hover:bg-khaki hover:border-none group"
+              disabled
+              title="Button disabled use swapping"
+            >
               <BsChevronLeft className="w-5 h-5 text-[#cccbc8] group-hover:text-white " />
             </button>
             <button
               className="lg:w-[50px] w-[30px] h-[30px] lg:h-[50px]  flex items-center justify-center border-[1px] border-[#cccbc8] text-[#cccbc8] hover:bg-khaki
              hover:border-none group"
+              disabled
+              title="Button disabled use swapping"
             >
               <BsChevronRight className="w-5 h-5 text-[#cccbc8]  group-hover:text-white" />
             </button>
@@ -81,7 +87,7 @@ const Offers = () => {
 
                   <div className="bg-white dark:bg-lightBlack">
                     <div className="py-[30px] text-center">
-                      <Link to="#">
+                      <Link to="/room">
                         <h2
                           className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:underline-offset-2
                         "
@@ -117,7 +123,7 @@ const Offers = () => {
 
                   <div className="bg-white dark:bg-lightBlack">
                     <div className="py-[30px] text-center">
-                      <Link to="#">
+                      <Link to="/room">
                         <h2
                           className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:underline-offset-2
                         "
@@ -153,7 +159,7 @@ const Offers = () => {
 
                   <div className="bg-white dark:bg-lightBlack">
                     <div className="py-[30px] text-center">
-                      <Link to="#">
+                      <Link to="/room">
                         <h2
                           className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:underline-offset-2
                         "
@@ -189,7 +195,7 @@ const Offers = () => {
 
                   <div className="bg-white dark:bg-lightBlack">
                     <div className="py-[30px] text-center">
-                      <Link to="#">
+                      <Link to="/room">
                         <h2
                           className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:underline-offset-2
                         "

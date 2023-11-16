@@ -6,6 +6,7 @@ import GoToTop from "../Shared/GoToTop";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import HelmetChanger from "../Helmet/Helmet";
 
 const Main3 = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const Main3 = () => {
 
   return (
     <>
+      <HelmetChanger title="Hostel" />
       <ScrollToTop />
       <GoToTop />
       <Navbar3 />

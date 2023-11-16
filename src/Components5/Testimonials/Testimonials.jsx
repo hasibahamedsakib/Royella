@@ -170,7 +170,7 @@ const Testimonials = () => {
         </div>
 
         {/* slider breckpoints */}
-        <div className="mx-auto mt-6 md:mt-7 lg:mt-8 xl:mt-9 2xl:mt-10">
+        <div className="mx-auto ">
           {loaded && instanceRef.current && (
             <div className="dots flex items-center justify-center">
               {[
