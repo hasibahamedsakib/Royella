@@ -192,7 +192,7 @@ const Rooms = () => {
       </div>
       {/* Rooms section heading */}
       <div className=" py-20 2xl:py-[120px] w-full bg-[url('/images/home-1/section-shape2.png')] bg-no-repeat bg-top bg-opacity-[0.07]">
-        <div className="Container   pt-[50px] pb-[10px]">
+        <div className="Container ">
           {/* section heading */}
           <div
             className=" text-center sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px]  mx-auto  px-5"

@@ -43,45 +43,7 @@ const Rooms = () => {
         <div className="mt-14 2xl:mt-[60px]  ">
           <div ref={sliderRef} className="keen-slider relative">
             {/* Room - one */}
-            {/* <div className="keen-slider__slide number-slide1">
-              <div className="relative ">
-                <img
-                  src="/images/home-2/box-shape.png"
-                  alt=""
-                  className="h-[550px] sm:h-[562px] md:h-[580px] xl:h-[600px]"
-                />
-                <div className=" 3xl:w-[410px] group absolute top-[0px] right-0">
-                  <div className="relative ">
-                    <img
-                      src="/images/home-2/room-1.jpg "
-                      className="w-full object-cover "
-                      alt=""
-                    />
-                  </div>
-                  <div className="font-Garamond bg-white dark:bg-lightBlack p-[35px] leading-[38px] text-lightBlack dark:text-white font-bold">
-                    <div>
-                      <h3 className="text-2xl lg:text-[28px] "><Link to="/home2/room"> Classic Room </Link></h3>
-                      <p className="text-base md:text-[17px] leading-[38px] text-gray dark:text-lightGray font-Lora font-normal mt-1">
-                        Ocean view
-                      </p>
-                    </div>
-                    <div className="mt-3 ">
-                      <ul className="font-Lora text-sm sm:text-[15px] font-normal leading-6 md:leading-7 lg:leading-8 xl:leading-[38px]">
-                        <li className="flex items-center justify-between pb-2 border-b-[1px] border-[#cfcfcf] dark:border-[#323232] text-gray dark:text-lightGray">
-                          Status<span>Rent</span>
-                        </li>
-                        <li className="flex items-center justify-between pb-2 border-b-[1px] border-[#cfcfcf] dark:border-[#323232] text-gray dark:text-lightGray mt-2">
-                          Area<span>58 Sq. Ft.</span>
-                        </li>
-                        <li className="flex items-center justify-between  text-gray dark:text-lightGray mt-2">
-                          Type<span>Apartment</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+
             <div className="keen-slider__slide number-slide1">
               <div
                 className="lg:relative  pt-10 xsm:pb-12 sm:pb-16 md:pb-0"
