@@ -52,7 +52,7 @@ const Action = () => {
           >
             <img
               src="/images/home-1/action-img.png"
-              className="h-full w-full md:h-[80%] lg:h-full object-cover"
+              className="h-full w-full md:h-[80%] lg:h-full 2xl:h-[99%] "
               alt=""
             />
 

@@ -59,7 +59,7 @@ const HotelAndFacilities = () => {
               </div>
               <div className="">
                 <h4 className="text-[22px] leading-[52px] font-Garamond text-white font-medium mt-[45px] relative before:absolute before:w-[1px] before:h-[25px] before:left-[50%] before:top-[-27px] before:bg-slate-500 before:group-hover:bg-khaki">
-                  Room Services
+                  Wi-Fi Internet
                 </h4>
               </div>
             </div>
@@ -75,7 +75,7 @@ const HotelAndFacilities = () => {
               </div>
               <div className="">
                 <h4 className="text-[22px] leading-[52px] font-Garamond text-white font-medium mt-[45px] relative before:absolute before:w-[1px] before:h-[25px] before:left-[50%] before:top-[-27px] before:bg-slate-500 before:group-hover:bg-khaki">
-                  Room Services
+                  Smart Key
                 </h4>
               </div>
             </div>
@@ -90,7 +90,7 @@ const HotelAndFacilities = () => {
               </div>
               <div className="">
                 <h4 className="text-[22px] leading-[52px] font-Garamond text-white font-medium mt-[45px] relative before:absolute before:w-[1px] before:h-[25px] before:left-[50%] before:top-[-27px] before:bg-slate-500 before:group-hover:bg-khaki">
-                  Room Services
+                  Breakfast
                 </h4>
               </div>
             </div>
@@ -106,7 +106,7 @@ const HotelAndFacilities = () => {
               </div>
               <div className="">
                 <h4 className="text-[22px] leading-[52px] font-Garamond text-white font-medium mt-[45px] relative before:absolute before:w-[1px] before:h-[25px] before:left-[50%] before:top-[-27px] before:bg-slate-500 before:group-hover:bg-khaki">
-                  Room Services
+                  Swimming Pool
                 </h4>
               </div>
             </div>
@@ -121,7 +121,7 @@ const HotelAndFacilities = () => {
               </div>
               <div className="">
                 <h4 className="text-[22px] leading-[52px] font-Garamond text-white font-medium mt-[45px] relative before:absolute before:w-[1px] before:h-[25px] before:left-[50%] before:top-[-27px] before:bg-slate-500 before:group-hover:bg-khaki">
-                  Room Services
+                  Room Service
                 </h4>
               </div>
             </div>
