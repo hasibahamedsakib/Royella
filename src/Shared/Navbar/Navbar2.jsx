@@ -45,7 +45,7 @@ const Navbar2 = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* website Logo */}
           <div className=" w-48 lg:w-52 lg:p-4 ">
-            <Link to="/">
+            <Link to="/home2">
               <img
                 src="/images/home-2/logo.png"
                 className="hidden lg:block w-full h-full"

@@ -115,7 +115,7 @@ const HeroSection = () => {
             </div>
           </div>
           <Link to="/home2/find_room">
-            <button className="w-[142px] 2xl:w-[210px] h-[50px] text-[15px] bg-khaki font-Garamond text-white sm:mt-[47px] hover-animBg after:bg-normalBlack after:rounded-none">
+            <button className="w-[142px] 2xl:w-[210px] h-[50px] text-[15px] bg-khaki font-Garamond text-white sm:mt-[47px] hover-animBg after:bg-normalBlack after:rounded-none text-base md:text-lg">
               Checkout Now
             </button>
           </Link>

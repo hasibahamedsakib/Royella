@@ -31,7 +31,7 @@ const Apartments = () => {
             <div>
               <img
                 src="/images/home-5/Apartment2.png"
-                className="mx-auto pb-[10px] filter group-hover:brightness-0 invert-[1] transition-all duration-500"
+                className="mx-auto pb-[10px] filter dark:brightness-0 group-hover:brightness-0 invert-[1] transition-all duration-500"
                 alt=""
               />
               <h4 className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl leading-4 text-gray dark:text-lightGray group-hover:text-white font-bold font-Garamond text-center">

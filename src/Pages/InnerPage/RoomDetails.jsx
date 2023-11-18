@@ -264,7 +264,7 @@ const RoomDetails = () => {
                           ? new Date(bookingsData.selectedInDate)
                               .toDateString()
                               .slice(4)
-                          : "04 dec, 2023"}
+                          : new Date().toDateString().slice(4)}
                       </span>
                     </p>
                   </div>
@@ -276,7 +276,11 @@ const RoomDetails = () => {
                           ? new Date(bookingsData.selectedOutDate)
                               .toDateString()
                               .slice(4)
-                          : "10 dec, 2023"}
+                          : new Date(
+                              new Date().setDate(new Date().getDate() + 3)
+                            )
+                              .toDateString()
+                              .slice(4)}
                       </span>{" "}
                     </p>
                   </div>
@@ -309,7 +313,7 @@ const RoomDetails = () => {
                         0
                         {bookingsData && bookingsData.room
                           ? bookingsData.room
-                          : "2"}
+                          : "1"}
                       </span>{" "}
                     </p>
                   </div>
@@ -318,7 +322,7 @@ const RoomDetails = () => {
 
               <div className="py-5">
                 <button
-                  className="bg-khaki w-full h-10 2xl:h-[50px] text-white font-Lora font-semibold px-5"
+                  className="bg-khaki w-full h-10 2xl:h-[50px] text-white font-Lora font-semibold px-5 hover-animBg after:rounded-none after:bg-normalBlack"
                   onClick={() => setAlert()}
                 >
                   Confirm Booking
