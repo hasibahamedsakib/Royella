@@ -182,7 +182,9 @@ const Footer5 = () => {
         <div className="Container ">
           <hr className=" text-white text-opacity-10 " />
           <p className="text-sm sm:text-base md:text-lg  leading-[27px] text-[#f7f9fb] font-normal font-Lora text-center py-[30px]">
-            Royella @2023. <b>Royella</b> All Rights Reserved By{" "}
+            {`
+            Royella @${new Date().getFullYear()}. `}
+            <b>Royella</b> All Rights Reserved By{" "}
             <span className="text-khaki">Dream IT</span>
           </p>
         </div>

@@ -154,7 +154,7 @@ const Footer4 = () => {
       Container "
       >
         <p className="text-center">
-          © 2023 All Rights Reserved Royella Luxury Hotel
+          {` © ${new Date().getFullYear()} All Rights Reserved Royella Luxury Hotel`}
         </p>
         <p className="flex items-center space-x-1 text-center justify-center mt-[6px] lg:mt-0">
           <Link className="hover:text-khaki transition-all duration-300">

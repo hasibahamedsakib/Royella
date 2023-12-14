@@ -101,7 +101,7 @@ const Footer2 = () => {
             className="text-sm xl:text-base text-gray dark:text-lightGray
            font-Lora font-normal"
           >
-            © 2023 Royella. All Rights Reserved.
+            {` © ${new Date().getFullYear()} Royella. All Rights Reserved.`}
           </p>
           <p
             className="text-sm xl:text-base text-gray dark:text-lightGray

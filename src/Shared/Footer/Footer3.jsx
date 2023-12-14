@@ -66,8 +66,9 @@ const Footer3 = () => {
         <hr className="text-[#353535] w-full h-[2px]" />
         <div className="py-5 md:py-6 lg:py-[22px]   flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
           <p className="text-[13px] xsm:text-sm sm:text-base leading-[26px] lg:leading-[38px] font-Lora font-medium ml-4 text-white">
-            Copyright © <span className="text-khaki">2023 Royella.</span> All
-            Rights Reserved.
+            Copyright ©{" "}
+            <span className="text-khaki">{`${new Date().getFullYear()} Royella.`}</span>{" "}
+            All Rights Reserved.
           </p>
           <div>
             <ul className="flex space-x-3">
