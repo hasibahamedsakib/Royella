@@ -45,7 +45,7 @@ const Navbar4 = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* website Logo */}
           <div className=" w-48 lg:w-52 lg:p-4 hidden lg:block">
-            <Link to="/home4">
+            <Link to="/">
               <img
                 src="/images/home-4/logo.png"
                 className="dark:hidden"
@@ -62,7 +62,7 @@ const Navbar4 = () => {
           {/* small screen size */}
           <div className="px-3 w-full lg:hidden flex justify-between items-center text-white bg-white dark:bg-lightBlack h-[70px] p-3">
             <div className=" w-28  ">
-              <Link to="/home4">
+              <Link to="/">
                 <img
                   src="/images/home-4/logo.png"
                   className="dark:hidden"
